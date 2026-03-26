@@ -1,0 +1,36 @@
+# Claude workspace
+.claude/
+
+# Node modules (POC)
+poc/game/src/node_modules/
+poc/game/node_modules/
+**/node_modules/
+
+# Unity Library (auto-generated)
+DinoMonsters/[Ll]ibrary/
+DinoMonsters/[Tt]emp/
+DinoMonsters/[Oo]bj/
+DinoMonsters/[Bb]uild/
+DinoMonsters/[Bb]uilds/
+DinoMonsters/[Ll]ogs/
+DinoMonsters/[Uu]ser[Ss]ettings/
+
+# Imported asset store packages (re-import via Package Manager)
+DinoMonsters/Assets/EmaceArt/
+DinoMonsters/Assets/Normalgon/
+DinoMonsters/Assets/Resources/TownKit/
+DinoMonsters/Assets/Resources/Characters/
+
+# IDE
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vs/
+.idea/

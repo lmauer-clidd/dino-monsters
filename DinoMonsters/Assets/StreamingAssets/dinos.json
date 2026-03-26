@@ -1,0 +1,11466 @@
+[
+  {
+    "id": 1,
+    "name": "Pyrex",
+    "types": [
+      2
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 55,
+      "def": 44,
+      "spatk": 50,
+      "spdef": 42,
+      "speed": 60
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 62,
+    "evolution": {
+      "to": 2,
+      "level": 16
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 20
+      },
+      {
+        "level": 14,
+        "moveId": 22
+      },
+      {
+        "level": 18,
+        "moveId": 24
+      },
+      {
+        "level": 22,
+        "moveId": 25
+      },
+      {
+        "level": 22,
+        "moveId": 130
+      },
+      {
+        "level": 28,
+        "moveId": 26
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Machoire"
+    ],
+    "height": 0.6,
+    "weight": 8.5,
+    "description": "La flamme au bout de sa queue indique son humeur. Quand Pyrex est heureux, elle brille d'un orange eclatant.",
+    "habitat": "Starter (Laboratoire du Professeur Paleo)"
+  },
+  {
+    "id": 2,
+    "name": "Pyrovore",
+    "types": [
+      2
+    ],
+    "baseStats": {
+      "hp": 91,
+      "atk": 80,
+      "def": 60,
+      "spatk": 70,
+      "spdef": 60,
+      "speed": 65
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 142,
+    "evolution": {
+      "to": 3,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 20
+      },
+      {
+        "level": 13,
+        "moveId": 27
+      },
+      {
+        "level": 14,
+        "moveId": 22
+      },
+      {
+        "level": 18,
+        "moveId": 24
+      },
+      {
+        "level": 22,
+        "moveId": 25
+      },
+      {
+        "level": 22,
+        "moveId": 130
+      },
+      {
+        "level": 28,
+        "moveId": 26
+      },
+      {
+        "level": 33,
+        "moveId": 21
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Machoire"
+    ],
+    "height": 2.1,
+    "weight": 85.0,
+    "description": "Pyrovore chasse en embuscade, cachant ses flammes sous ses ecailles avant de bondir sur sa proie dans une eruption de chaleur.",
+    "habitat": "Starter evolution"
+  },
+  {
+    "id": 3,
+    "name": "Volcanorex",
+    "types": [
+      2,
+      0
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 110,
+      "def": 90,
+      "spatk": 95,
+      "spdef": 78,
+      "speed": 40
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 240,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 20
+      },
+      {
+        "level": 13,
+        "moveId": 27
+      },
+      {
+        "level": 14,
+        "moveId": 22
+      },
+      {
+        "level": 18,
+        "moveId": 24
+      },
+      {
+        "level": 22,
+        "moveId": 25
+      },
+      {
+        "level": 22,
+        "moveId": 130
+      },
+      {
+        "level": 28,
+        "moveId": 26
+      },
+      {
+        "level": 33,
+        "moveId": 21
+      },
+      {
+        "level": 36,
+        "moveId": 3
+      },
+      {
+        "level": 42,
+        "moveId": 7
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Machoire"
+    ],
+    "height": 4.5,
+    "weight": 350.0,
+    "description": "On dit que Volcanorex peut provoquer des eruptions miniatures en frappant le sol. Les anciens peuples le veneraient comme le gardien des volcans.",
+    "habitat": "Starter evolution"
+  },
+  {
+    "id": 4,
+    "name": "Aquadon",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 53,
+      "def": 54,
+      "spatk": 55,
+      "spdef": 54,
+      "speed": 40
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 62,
+    "evolution": {
+      "to": 5,
+      "level": 16
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 11
+      },
+      {
+        "level": 14,
+        "moveId": 13
+      },
+      {
+        "level": 18,
+        "moveId": 16
+      },
+      {
+        "level": 22,
+        "moveId": 15
+      },
+      {
+        "level": 28,
+        "moveId": 17
+      },
+      {
+        "level": 28,
+        "moveId": 131
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Nage Rapide"
+    ],
+    "height": 0.8,
+    "weight": 12.0,
+    "description": "Aquadon adore jouer dans les vagues. Il utilise son long cou pour attraper des poissons avec une precision surprenante.",
+    "habitat": "Starter (Laboratoire du Professeur Paleo)"
+  },
+  {
+    "id": 5,
+    "name": "Marexis",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 55,
+      "def": 78,
+      "spatk": 75,
+      "spdef": 78,
+      "speed": 50
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 142,
+    "evolution": {
+      "to": 6,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 11
+      },
+      {
+        "level": 13,
+        "moveId": 18
+      },
+      {
+        "level": 14,
+        "moveId": 13
+      },
+      {
+        "level": 18,
+        "moveId": 16
+      },
+      {
+        "level": 22,
+        "moveId": 15
+      },
+      {
+        "level": 28,
+        "moveId": 17
+      },
+      {
+        "level": 28,
+        "moveId": 131
+      },
+      {
+        "level": 33,
+        "moveId": 14
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Nage Rapide"
+    ],
+    "height": 3.0,
+    "weight": 120.0,
+    "description": "Marexis peut plonger a plus de 200 metres. Les lumieres sur ses flancs servent a communiquer avec ses congeneres dans les profondeurs.",
+    "habitat": "Starter evolution"
+  },
+  {
+    "id": 6,
+    "name": "Abyssaure",
+    "types": [
+      1,
+      4
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 65,
+      "def": 96,
+      "spatk": 110,
+      "spdef": 108,
+      "speed": 35
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 240,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 11
+      },
+      {
+        "level": 13,
+        "moveId": 18
+      },
+      {
+        "level": 14,
+        "moveId": 13
+      },
+      {
+        "level": 18,
+        "moveId": 16
+      },
+      {
+        "level": 22,
+        "moveId": 15
+      },
+      {
+        "level": 28,
+        "moveId": 17
+      },
+      {
+        "level": 28,
+        "moveId": 131
+      },
+      {
+        "level": 33,
+        "moveId": 14
+      },
+      {
+        "level": 36,
+        "moveId": 37
+      },
+      {
+        "level": 42,
+        "moveId": 12
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Nage Rapide"
+    ],
+    "height": 8.0,
+    "weight": 680.0,
+    "description": "Abyssaure regne sur les abysses les plus froids. Quand il remonte a la surface, la temperature chute brutalement et la mer gele sur des kilometres.",
+    "habitat": "Starter evolution"
+  },
+  {
+    "id": 7,
+    "name": "Florasaur",
+    "types": [
+      3
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 45,
+      "def": 60,
+      "spatk": 50,
+      "spdef": 60,
+      "speed": 35
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 62,
+    "evolution": {
+      "to": 8,
+      "level": 16
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 32
+      },
+      {
+        "level": 22,
+        "moveId": 33
+      },
+      {
+        "level": 28,
+        "moveId": 34
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Photosynthese"
+    ],
+    "height": 1.0,
+    "weight": 15.0,
+    "description": "Les fleurs sur le dos de Florasaur changent de couleur avec les saisons. Au printemps, elles repandent un parfum qui attire les papillons.",
+    "habitat": "Starter (Laboratoire du Professeur Paleo)"
+  },
+  {
+    "id": 8,
+    "name": "Sylvacolle",
+    "types": [
+      3
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 60,
+      "def": 84,
+      "spatk": 65,
+      "spdef": 84,
+      "speed": 45
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 142,
+    "evolution": {
+      "to": 9,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 29
+      },
+      {
+        "level": 13,
+        "moveId": 35
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 32
+      },
+      {
+        "level": 22,
+        "moveId": 33
+      },
+      {
+        "level": 28,
+        "moveId": 34
+      },
+      {
+        "level": 33,
+        "moveId": 36
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Photosynthese"
+    ],
+    "height": 3.5,
+    "weight": 180.0,
+    "description": "Sylvacolle sert de refuge ambulant pour de nombreux petits animaux. Les arbres sur son dos produisent des fruits nutritifs toute l'annee.",
+    "habitat": "Starter evolution"
+  },
+  {
+    "id": 9,
+    "name": "Titanarbore",
+    "types": [
+      3,
+      6
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 80,
+      "def": 114,
+      "spatk": 85,
+      "spdef": 102,
+      "speed": 30
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 240,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 29
+      },
+      {
+        "level": 13,
+        "moveId": 35
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 32
+      },
+      {
+        "level": 22,
+        "moveId": 33
+      },
+      {
+        "level": 28,
+        "moveId": 34
+      },
+      {
+        "level": 33,
+        "moveId": 36
+      },
+      {
+        "level": 36,
+        "moveId": 55
+      },
+      {
+        "level": 42,
+        "moveId": 30
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Photosynthese"
+    ],
+    "height": 12.0,
+    "weight": 1200.0,
+    "description": "Titanarbore est si ancien que certaines forets entieres sont nees de ses passages. On dit qu'il porte sur son dos l'equilibre de la nature elle-meme.",
+    "habitat": "Starter evolution"
+  },
+  {
+    "id": 10,
+    "name": "Caillex",
+    "types": [
+      0
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 45,
+      "def": 66,
+      "spatk": 25,
+      "spdef": 36,
+      "speed": 35
+    },
+    "captureRate": 255,
+    "xpGroup": "fast",
+    "xpYield": 50,
+    "evolution": {
+      "to": 11,
+      "level": 18
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 2
+      },
+      {
+        "level": 13,
+        "moveId": 8
+      },
+      {
+        "level": 14,
+        "moveId": 5
+      },
+      {
+        "level": 18,
+        "moveId": 6
+      },
+      {
+        "level": 23,
+        "moveId": 3
+      },
+      {
+        "level": 28,
+        "moveId": 7
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Carapace"
+    ],
+    "height": 0.5,
+    "weight": 10.0,
+    "description": "Caillex adore se rouler dans les graviers. Plus il accumule de pierres sur sa peau, plus il se sent en securite.",
+    "habitat": "Route 1 - Sentier des Fossiles"
+  },
+  {
+    "id": 11,
+    "name": "Graviroc",
+    "types": [
+      0
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 65,
+      "def": 96,
+      "spatk": 35,
+      "spdef": 54,
+      "speed": 30
+    },
+    "captureRate": 150,
+    "xpGroup": "fast",
+    "xpYield": 120,
+    "evolution": {
+      "to": 12,
+      "level": 34
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 2
+      },
+      {
+        "level": 13,
+        "moveId": 8
+      },
+      {
+        "level": 14,
+        "moveId": 5
+      },
+      {
+        "level": 18,
+        "moveId": 6
+      },
+      {
+        "level": 23,
+        "moveId": 3
+      },
+      {
+        "level": 28,
+        "moveId": 7
+      },
+      {
+        "level": 32,
+        "moveId": 9
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Carapace"
+    ],
+    "height": 1.2,
+    "weight": 65.0,
+    "description": "Graviroc peut identifier l'age d'une roche rien qu'en la touchant du museau.",
+    "habitat": "Route 1 - Sentier des Fossiles"
+  },
+  {
+    "id": 12,
+    "name": "Monolisaure",
+    "types": [
+      0,
+      9
+    ],
+    "baseStats": {
+      "hp": 118,
+      "atk": 90,
+      "def": 144,
+      "spatk": 40,
+      "spdef": 72,
+      "speed": 25
+    },
+    "captureRate": 75,
+    "xpGroup": "fast",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 2
+      },
+      {
+        "level": 13,
+        "moveId": 8
+      },
+      {
+        "level": 14,
+        "moveId": 5
+      },
+      {
+        "level": 18,
+        "moveId": 6
+      },
+      {
+        "level": 23,
+        "moveId": 3
+      },
+      {
+        "level": 28,
+        "moveId": 7
+      },
+      {
+        "level": 32,
+        "moveId": 9
+      },
+      {
+        "level": 34,
+        "moveId": 78
+      },
+      {
+        "level": 40,
+        "moveId": 80
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Armure Naturelle"
+    ],
+    "height": 3.0,
+    "weight": 450.0,
+    "description": "Monolisaure est aussi immobile qu'une montagne. Les voyageurs le confondent parfois avec un rocher avant qu'il ne se leve.",
+    "habitat": "Grottes de Gneiss"
+  },
+  {
+    "id": 13,
+    "name": "Plumex",
+    "types": [
+      5
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 40,
+      "def": 30,
+      "spatk": 35,
+      "spdef": 36,
+      "speed": 60
+    },
+    "captureRate": 255,
+    "xpGroup": "fast",
+    "xpYield": 45,
+    "evolution": {
+      "to": 14,
+      "level": 15
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 49
+      },
+      {
+        "level": 13,
+        "moveId": 104
+      },
+      {
+        "level": 15,
+        "moveId": 46
+      },
+      {
+        "level": 17,
+        "moveId": 50
+      },
+      {
+        "level": 22,
+        "moveId": 51
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Velocite"
+    ],
+    "height": 0.3,
+    "weight": 2.0,
+    "description": "Plumex ne sait pas encore bien voler. Il saute d'arbre en arbre en battant frenetiquement ses quatre ailes.",
+    "habitat": "Route 1 - Sentier des Fossiles"
+  },
+  {
+    "id": 14,
+    "name": "Aeroraptor",
+    "types": [
+      5
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 60,
+      "def": 42,
+      "spatk": 50,
+      "spdef": 48,
+      "speed": 80
+    },
+    "captureRate": 150,
+    "xpGroup": "fast",
+    "xpYield": 110,
+    "evolution": {
+      "to": 15,
+      "level": 32
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 49
+      },
+      {
+        "level": 13,
+        "moveId": 104
+      },
+      {
+        "level": 15,
+        "moveId": 46
+      },
+      {
+        "level": 17,
+        "moveId": 50
+      },
+      {
+        "level": 22,
+        "moveId": 51
+      },
+      {
+        "level": 27,
+        "moveId": 47
+      },
+      {
+        "level": 30,
+        "moveId": 52
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Velocite"
+    ],
+    "height": 0.8,
+    "weight": 12.0,
+    "description": "Aeroraptor chasse en plein vol avec une precision chirurgicale.",
+    "habitat": "Foret du Cretace"
+  },
+  {
+    "id": 15,
+    "name": "Cieloptere",
+    "types": [
+      5,
+      7
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 85,
+      "def": 60,
+      "spatk": 75,
+      "spdef": 66,
+      "speed": 105
+    },
+    "captureRate": 75,
+    "xpGroup": "fast",
+    "xpYield": 198,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 49
+      },
+      {
+        "level": 13,
+        "moveId": 104
+      },
+      {
+        "level": 15,
+        "moveId": 46
+      },
+      {
+        "level": 17,
+        "moveId": 50
+      },
+      {
+        "level": 22,
+        "moveId": 51
+      },
+      {
+        "level": 27,
+        "moveId": 47
+      },
+      {
+        "level": 30,
+        "moveId": 52
+      },
+      {
+        "level": 32,
+        "moveId": 62
+      },
+      {
+        "level": 38,
+        "moveId": 63
+      },
+      {
+        "level": 44,
+        "moveId": 48
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Charge Statique"
+    ],
+    "height": 5.0,
+    "weight": 95.0,
+    "description": "Cieloptere vole si haut qu'il traverse les nuages d'orage. Il se nourrit de la foudre elle-meme.",
+    "habitat": "Falaises Venteuses"
+  },
+  {
+    "id": 16,
+    "name": "Toxidon",
+    "types": [
+      8
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 35,
+      "def": 36,
+      "spatk": 50,
+      "spdef": 48,
+      "speed": 40
+    },
+    "captureRate": 200,
+    "xpGroup": "medium",
+    "xpYield": 55,
+    "evolution": {
+      "to": 17,
+      "level": 17
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 71
+      },
+      {
+        "level": 13,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 73
+      },
+      {
+        "level": 18,
+        "moveId": 74
+      },
+      {
+        "level": 22,
+        "moveId": 72
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Sang Froid"
+    ],
+    "height": 0.6,
+    "weight": 7.0,
+    "description": "Toxidon est l'un des rares dinosaures venimeux. Une seule egratignure de ses griffes peut paralyser un adversaire.",
+    "habitat": "Route 2 - Marais Toxiques"
+  },
+  {
+    "id": 17,
+    "name": "Venomex",
+    "types": [
+      8
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 50,
+      "def": 54,
+      "spatk": 70,
+      "spdef": 66,
+      "speed": 50
+    },
+    "captureRate": 120,
+    "xpGroup": "medium",
+    "xpYield": 120,
+    "evolution": {
+      "to": 18,
+      "level": 35
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 71
+      },
+      {
+        "level": 13,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 73
+      },
+      {
+        "level": 18,
+        "moveId": 74
+      },
+      {
+        "level": 22,
+        "moveId": 72
+      },
+      {
+        "level": 28,
+        "moveId": 76
+      },
+      {
+        "level": 33,
+        "moveId": 77
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Sang Froid"
+    ],
+    "height": 1.8,
+    "weight": 45.0,
+    "description": "Venomex projette un brouillard toxique depuis ses cretes pour etourdir ses proies.",
+    "habitat": "Marais Toxiques"
+  },
+  {
+    "id": 18,
+    "name": "Pandemonium",
+    "types": [
+      8,
+      10
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 65,
+      "def": 72,
+      "spatk": 100,
+      "spdef": 90,
+      "speed": 65
+    },
+    "captureRate": 60,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 11,
+        "moveId": 71
+      },
+      {
+        "level": 13,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 73
+      },
+      {
+        "level": 18,
+        "moveId": 74
+      },
+      {
+        "level": 22,
+        "moveId": 72
+      },
+      {
+        "level": 28,
+        "moveId": 76
+      },
+      {
+        "level": 33,
+        "moveId": 77
+      },
+      {
+        "level": 35,
+        "moveId": 87
+      },
+      {
+        "level": 40,
+        "moveId": 89
+      },
+      {
+        "level": 45,
+        "moveId": 90
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Ombre Furtive"
+    ],
+    "height": 3.5,
+    "weight": 140.0,
+    "description": "Pandemonium se deplace dans un nuage de poison si dense qu'il obscurcit la lumiere.",
+    "habitat": "Jungle Nocturne"
+  },
+  {
+    "id": 19,
+    "name": "Fernex",
+    "types": [
+      3
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 50,
+      "def": 48,
+      "spatk": 35,
+      "spdef": 42,
+      "speed": 50
+    },
+    "captureRate": 200,
+    "xpGroup": "fast",
+    "xpYield": 55,
+    "evolution": {
+      "to": 20,
+      "level": 18
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 32
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 34
+      },
+      {
+        "level": 18,
+        "moveId": 36
+      },
+      {
+        "level": 22,
+        "moveId": 35
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Griffe Aceree"
+    ],
+    "height": 0.7,
+    "weight": 9.0,
+    "description": "Fernex se camoufle si bien dans les fougeres qu'il est presque invisible.",
+    "habitat": "Foret du Cretace"
+  },
+  {
+    "id": 20,
+    "name": "Fougeraptor",
+    "types": [
+      3
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 70,
+      "def": 66,
+      "spatk": 50,
+      "spdef": 54,
+      "speed": 60
+    },
+    "captureRate": 120,
+    "xpGroup": "fast",
+    "xpYield": 120,
+    "evolution": {
+      "to": 21,
+      "level": 34
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 32
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 34
+      },
+      {
+        "level": 18,
+        "moveId": 36
+      },
+      {
+        "level": 22,
+        "moveId": 35
+      },
+      {
+        "level": 28,
+        "moveId": 30
+      },
+      {
+        "level": 32,
+        "moveId": 33
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Griffe Aceree"
+    ],
+    "height": 1.5,
+    "weight": 40.0,
+    "description": "Fougeraptor taille les arbres avec ses griffes pour marquer son territoire.",
+    "habitat": "Foret du Cretace"
+  },
+  {
+    "id": 21,
+    "name": "Junglorex",
+    "types": [
+      3,
+      8
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 95,
+      "def": 84,
+      "spatk": 65,
+      "spdef": 72,
+      "speed": 60
+    },
+    "captureRate": 60,
+    "xpGroup": "fast",
+    "xpYield": 195,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 32
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 34
+      },
+      {
+        "level": 18,
+        "moveId": 36
+      },
+      {
+        "level": 22,
+        "moveId": 35
+      },
+      {
+        "level": 28,
+        "moveId": 30
+      },
+      {
+        "level": 32,
+        "moveId": 33
+      },
+      {
+        "level": 34,
+        "moveId": 70
+      },
+      {
+        "level": 40,
+        "moveId": 73
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Venin"
+    ],
+    "height": 2.8,
+    "weight": 120.0,
+    "description": "Junglorex est le predateur supreme de la jungle. Sa vegetation toxique paralyse quiconque s'approche trop pres.",
+    "habitat": "Vallee des Fougeres"
+  },
+  {
+    "id": 22,
+    "name": "Terravore",
+    "types": [
+      6
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 45,
+      "def": 60,
+      "spatk": 30,
+      "spdef": 48,
+      "speed": 30
+    },
+    "captureRate": 200,
+    "xpGroup": "slow",
+    "xpYield": 55,
+    "evolution": {
+      "to": 23,
+      "level": 20
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 54
+      },
+      {
+        "level": 12,
+        "moveId": 59
+      },
+      {
+        "level": 14,
+        "moveId": 60
+      },
+      {
+        "level": 18,
+        "moveId": 57
+      },
+      {
+        "level": 22,
+        "moveId": 56
+      },
+      {
+        "level": 28,
+        "moveId": 55
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Armure Naturelle"
+    ],
+    "height": 0.6,
+    "weight": 18.0,
+    "description": "Terravore passe la majeure partie de sa journee a creuser des terriers.",
+    "habitat": "Foret du Cretace"
+  },
+  {
+    "id": 23,
+    "name": "Seismops",
+    "types": [
+      6
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 65,
+      "def": 90,
+      "spatk": 40,
+      "spdef": 66,
+      "speed": 30
+    },
+    "captureRate": 120,
+    "xpGroup": "slow",
+    "xpYield": 120,
+    "evolution": {
+      "to": 24,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 54
+      },
+      {
+        "level": 12,
+        "moveId": 59
+      },
+      {
+        "level": 14,
+        "moveId": 60
+      },
+      {
+        "level": 18,
+        "moveId": 57
+      },
+      {
+        "level": 22,
+        "moveId": 56
+      },
+      {
+        "level": 28,
+        "moveId": 55
+      },
+      {
+        "level": 33,
+        "moveId": 58
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Armure Naturelle"
+    ],
+    "height": 1.5,
+    "weight": 90.0,
+    "description": "Seismops communique avec les autres de son espece par des vibrations dans le sol.",
+    "habitat": "Plaines de Boue"
+  },
+  {
+    "id": 24,
+    "name": "Tectonyx",
+    "types": [
+      6,
+      0
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 50,
+      "def": 144,
+      "spatk": 45,
+      "spdef": 84,
+      "speed": 20
+    },
+    "captureRate": 60,
+    "xpGroup": "slow",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 54
+      },
+      {
+        "level": 12,
+        "moveId": 59
+      },
+      {
+        "level": 14,
+        "moveId": 60
+      },
+      {
+        "level": 18,
+        "moveId": 57
+      },
+      {
+        "level": 22,
+        "moveId": 56
+      },
+      {
+        "level": 28,
+        "moveId": 55
+      },
+      {
+        "level": 33,
+        "moveId": 58
+      },
+      {
+        "level": 36,
+        "moveId": 1
+      },
+      {
+        "level": 42,
+        "moveId": 3
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Cuirasse"
+    ],
+    "height": 4.0,
+    "weight": 520.0,
+    "description": "Tectonyx est si lourd que chacun de ses pas fait trembler la terre.",
+    "habitat": "Gorge Tectonique"
+  },
+  {
+    "id": 25,
+    "name": "Zephyros",
+    "types": [
+      5
+    ],
+    "baseStats": {
+      "hp": 119,
+      "atk": 30,
+      "def": 36,
+      "spatk": 45,
+      "spdef": 48,
+      "speed": 55
+    },
+    "captureRate": 200,
+    "xpGroup": "medium",
+    "xpYield": 55,
+    "evolution": {
+      "to": 26,
+      "level": 19
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 96
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 50
+      },
+      {
+        "level": 18,
+        "moveId": 51
+      },
+      {
+        "level": 22,
+        "moveId": 47
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Regeneration"
+    ],
+    "height": 0.3,
+    "weight": 1.5,
+    "description": "Zephyros est plus a l'aise a sautiller qu'a voler.",
+    "habitat": "Foret du Cretace"
+  },
+  {
+    "id": 26,
+    "name": "Galewing",
+    "types": [
+      5
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 45,
+      "def": 54,
+      "spatk": 65,
+      "spdef": 66,
+      "speed": 70
+    },
+    "captureRate": 120,
+    "xpGroup": "medium",
+    "xpYield": 115,
+    "evolution": {
+      "to": 27,
+      "level": 35
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 96
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 50
+      },
+      {
+        "level": 18,
+        "moveId": 51
+      },
+      {
+        "level": 22,
+        "moveId": 47
+      },
+      {
+        "level": 28,
+        "moveId": 52
+      },
+      {
+        "level": 33,
+        "moveId": 48
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Regeneration"
+    ],
+    "height": 0.8,
+    "weight": 8.0,
+    "description": "Galewing danse dans les courants ascendants avec une grace hypnotisante.",
+    "habitat": "Canopee Ancienne"
+  },
+  {
+    "id": 27,
+    "name": "Tempestail",
+    "types": [
+      5,
+      1
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 60,
+      "def": 72,
+      "spatk": 78,
+      "spdef": 90,
+      "speed": 85
+    },
+    "captureRate": 60,
+    "xpGroup": "medium",
+    "xpYield": 198,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 96
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 50
+      },
+      {
+        "level": 18,
+        "moveId": 51
+      },
+      {
+        "level": 22,
+        "moveId": 47
+      },
+      {
+        "level": 28,
+        "moveId": 52
+      },
+      {
+        "level": 33,
+        "moveId": 48
+      },
+      {
+        "level": 35,
+        "moveId": 10
+      },
+      {
+        "level": 40,
+        "moveId": 11
+      },
+      {
+        "level": 45,
+        "moveId": 14
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Nage Rapide"
+    ],
+    "height": 2.5,
+    "weight": 55.0,
+    "description": "Tempestail est le messager des tempetes. Les marins le redoutent.",
+    "habitat": "Col des Vents"
+  },
+  {
+    "id": 28,
+    "name": "Ignitops",
+    "types": [
+      2
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 50,
+      "def": 54,
+      "spatk": 40,
+      "spdef": 42,
+      "speed": 35
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 60,
+    "evolution": {
+      "to": 29,
+      "level": 20
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 1
+      },
+      {
+        "level": 12,
+        "moveId": 20
+      },
+      {
+        "level": 14,
+        "moveId": 24
+      },
+      {
+        "level": 18,
+        "moveId": 23
+      },
+      {
+        "level": 22,
+        "moveId": 26
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Peau Dure"
+    ],
+    "height": 0.7,
+    "weight": 15.0,
+    "description": "Ignitops rechauffe les grottes froides avec sa collerette incandescente.",
+    "habitat": "Grottes Embrasees"
+  },
+  {
+    "id": 29,
+    "name": "Lavacorne",
+    "types": [
+      2
+    ],
+    "baseStats": {
+      "hp": 91,
+      "atk": 75,
+      "def": 78,
+      "spatk": 55,
+      "spdef": 60,
+      "speed": 35
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 130,
+    "evolution": {
+      "to": 30,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 1
+      },
+      {
+        "level": 12,
+        "moveId": 20
+      },
+      {
+        "level": 14,
+        "moveId": 24
+      },
+      {
+        "level": 18,
+        "moveId": 23
+      },
+      {
+        "level": 22,
+        "moveId": 26
+      },
+      {
+        "level": 28,
+        "moveId": 5
+      },
+      {
+        "level": 34,
+        "moveId": 21
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Peau Dure"
+    ],
+    "height": 1.6,
+    "weight": 80.0,
+    "description": "Lavacorne charge avec la force d'une coulee de lave.",
+    "habitat": "Grottes Embrasees"
+  },
+  {
+    "id": 30,
+    "name": "Magmatops",
+    "types": [
+      2,
+      0
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 105,
+      "def": 108,
+      "spatk": 65,
+      "spdef": 72,
+      "speed": 30
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 205,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 1
+      },
+      {
+        "level": 12,
+        "moveId": 20
+      },
+      {
+        "level": 14,
+        "moveId": 24
+      },
+      {
+        "level": 18,
+        "moveId": 23
+      },
+      {
+        "level": 22,
+        "moveId": 26
+      },
+      {
+        "level": 28,
+        "moveId": 5
+      },
+      {
+        "level": 34,
+        "moveId": 21
+      },
+      {
+        "level": 36,
+        "moveId": 3
+      },
+      {
+        "level": 42,
+        "moveId": 7
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Cuirasse"
+    ],
+    "height": 3.2,
+    "weight": 380.0,
+    "description": "Magmatops vit au coeur des volcans actifs. On raconte que sa colere peut reveiller un volcan endormi.",
+    "habitat": "Caldeira Ardente"
+  },
+  {
+    "id": 31,
+    "name": "Stalagmor",
+    "types": [
+      0
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 35,
+      "def": 72,
+      "spatk": 35,
+      "spdef": 54,
+      "speed": 20
+    },
+    "captureRate": 150,
+    "xpGroup": "slow",
+    "xpYield": 55,
+    "evolution": {
+      "to": 32,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 8
+      },
+      {
+        "level": 18,
+        "moveId": 9
+      },
+      {
+        "level": 22,
+        "moveId": 6
+      },
+      {
+        "level": 28,
+        "moveId": 96
+      }
+    ],
+    "abilities": [
+      "Carapace",
+      "Ecailles Epaisses"
+    ],
+    "height": 0.5,
+    "weight": 20.0,
+    "description": "Stalagmor grandit si lentement que les stalactites ont le temps de se former sur son dos.",
+    "habitat": "Grottes de Gneiss"
+  },
+  {
+    "id": 32,
+    "name": "Calcitaure",
+    "types": [
+      0
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 50,
+      "def": 102,
+      "spatk": 50,
+      "spdef": 72,
+      "speed": 20
+    },
+    "captureRate": 90,
+    "xpGroup": "slow",
+    "xpYield": 120,
+    "evolution": {
+      "to": 33,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 8
+      },
+      {
+        "level": 18,
+        "moveId": 9
+      },
+      {
+        "level": 22,
+        "moveId": 6
+      },
+      {
+        "level": 28,
+        "moveId": 96
+      },
+      {
+        "level": 34,
+        "moveId": 3
+      }
+    ],
+    "abilities": [
+      "Carapace",
+      "Ecailles Epaisses"
+    ],
+    "height": 1.5,
+    "weight": 100.0,
+    "description": "Calcitaure peut rester immobile pendant des semaines entieres.",
+    "habitat": "Caverne de Cristal"
+  },
+  {
+    "id": 33,
+    "name": "Geodonte",
+    "types": [
+      0,
+      11
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 60,
+      "def": 138,
+      "spatk": 70,
+      "spdef": 102,
+      "speed": 20
+    },
+    "captureRate": 45,
+    "xpGroup": "slow",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 8
+      },
+      {
+        "level": 18,
+        "moveId": 9
+      },
+      {
+        "level": 22,
+        "moveId": 6
+      },
+      {
+        "level": 28,
+        "moveId": 96
+      },
+      {
+        "level": 34,
+        "moveId": 3
+      },
+      {
+        "level": 38,
+        "moveId": 97
+      },
+      {
+        "level": 44,
+        "moveId": 101
+      }
+    ],
+    "abilities": [
+      "Carapace",
+      "Aura Lumineuse"
+    ],
+    "height": 3.0,
+    "weight": 350.0,
+    "description": "Geodonte est une merveille geologique vivante. Les cristaux sur son dos refractent la lumiere en arcs-en-ciel souterrains.",
+    "habitat": "Caverne de Cristal"
+  },
+  {
+    "id": 34,
+    "name": "Forgeron",
+    "types": [
+      9
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 50,
+      "def": 66,
+      "spatk": 30,
+      "spdef": 48,
+      "speed": 35
+    },
+    "captureRate": 75,
+    "xpGroup": "slow",
+    "xpYield": 60,
+    "evolution": {
+      "to": 35,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 78
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 79
+      },
+      {
+        "level": 12,
+        "moveId": 82
+      },
+      {
+        "level": 14,
+        "moveId": 83
+      },
+      {
+        "level": 18,
+        "moveId": 85
+      },
+      {
+        "level": 22,
+        "moveId": 84
+      }
+    ],
+    "abilities": [
+      "Cuirasse",
+      "Intimidation"
+    ],
+    "height": 0.8,
+    "weight": 25.0,
+    "description": "Forgeron aiguise ses plaques metalliques en les frottant contre les rochers.",
+    "habitat": "Grottes de Gneiss"
+  },
+  {
+    "id": 35,
+    "name": "Blindorex",
+    "types": [
+      9
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 75,
+      "def": 96,
+      "spatk": 40,
+      "spdef": 66,
+      "speed": 30
+    },
+    "captureRate": 45,
+    "xpGroup": "slow",
+    "xpYield": 130,
+    "evolution": {
+      "to": 36,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 78
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 79
+      },
+      {
+        "level": 12,
+        "moveId": 82
+      },
+      {
+        "level": 14,
+        "moveId": 83
+      },
+      {
+        "level": 18,
+        "moveId": 85
+      },
+      {
+        "level": 22,
+        "moveId": 84
+      },
+      {
+        "level": 28,
+        "moveId": 80
+      },
+      {
+        "level": 34,
+        "moveId": 86
+      }
+    ],
+    "abilities": [
+      "Cuirasse",
+      "Intimidation"
+    ],
+    "height": 2.0,
+    "weight": 110.0,
+    "description": "Blindorex est si bien blinde que meme les predateurs les plus feroces renoncent a l'attaquer.",
+    "habitat": "Mine Abandonnee"
+  },
+  {
+    "id": 36,
+    "name": "Titanacier",
+    "types": [
+      9,
+      2
+    ],
+    "baseStats": {
+      "hp": 118,
+      "atk": 100,
+      "def": 132,
+      "spatk": 55,
+      "spdef": 84,
+      "speed": 25
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 210,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 78
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 79
+      },
+      {
+        "level": 12,
+        "moveId": 82
+      },
+      {
+        "level": 14,
+        "moveId": 83
+      },
+      {
+        "level": 18,
+        "moveId": 85
+      },
+      {
+        "level": 22,
+        "moveId": 84
+      },
+      {
+        "level": 28,
+        "moveId": 80
+      },
+      {
+        "level": 34,
+        "moveId": 86
+      },
+      {
+        "level": 38,
+        "moveId": 19
+      },
+      {
+        "level": 44,
+        "moveId": 24
+      },
+      {
+        "level": 50,
+        "moveId": 81
+      }
+    ],
+    "abilities": [
+      "Cuirasse",
+      "Peau Dure"
+    ],
+    "height": 4.0,
+    "weight": 480.0,
+    "description": "Titanacier forge son propre blindage en absorbant le metal de son environnement.",
+    "habitat": "Forge Naturelle"
+  },
+  {
+    "id": 37,
+    "name": "Ondivore",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 35,
+      "def": 42,
+      "spatk": 50,
+      "spdef": 48,
+      "speed": 45
+    },
+    "captureRate": 200,
+    "xpGroup": "fast",
+    "xpYield": 55,
+    "evolution": {
+      "to": 38,
+      "level": 18
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 18
+      },
+      {
+        "level": 14,
+        "moveId": 13
+      },
+      {
+        "level": 18,
+        "moveId": 15
+      },
+      {
+        "level": 22,
+        "moveId": 17
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Nage Rapide"
+    ],
+    "height": 0.5,
+    "weight": 8.0,
+    "description": "Ondivore nage en cercles pour creer de petits tourbillons dans lesquels il piege ses proies.",
+    "habitat": "Lac du Cretace"
+  },
+  {
+    "id": 38,
+    "name": "Courantin",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 50,
+      "def": 60,
+      "spatk": 70,
+      "spdef": 66,
+      "speed": 55
+    },
+    "captureRate": 120,
+    "xpGroup": "fast",
+    "xpYield": 120,
+    "evolution": {
+      "to": 39,
+      "level": 34
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 18
+      },
+      {
+        "level": 14,
+        "moveId": 13
+      },
+      {
+        "level": 18,
+        "moveId": 15
+      },
+      {
+        "level": 22,
+        "moveId": 17
+      },
+      {
+        "level": 28,
+        "moveId": 14
+      },
+      {
+        "level": 32,
+        "moveId": 12
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Nage Rapide"
+    ],
+    "height": 1.5,
+    "weight": 35.0,
+    "description": "Courantin peut nager a contre-courant meme dans les rapides les plus violents.",
+    "habitat": "Riviere Azur"
+  },
+  {
+    "id": 39,
+    "name": "Maelstrom",
+    "types": [
+      1,
+      5
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 65,
+      "def": 78,
+      "spatk": 90,
+      "spdef": 84,
+      "speed": 75
+    },
+    "captureRate": 60,
+    "xpGroup": "fast",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 18
+      },
+      {
+        "level": 14,
+        "moveId": 13
+      },
+      {
+        "level": 18,
+        "moveId": 15
+      },
+      {
+        "level": 22,
+        "moveId": 17
+      },
+      {
+        "level": 28,
+        "moveId": 14
+      },
+      {
+        "level": 32,
+        "moveId": 12
+      },
+      {
+        "level": 34,
+        "moveId": 45
+      },
+      {
+        "level": 40,
+        "moveId": 47
+      },
+      {
+        "level": 46,
+        "moveId": 48
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Ailes Coupantes"
+    ],
+    "height": 2.5,
+    "weight": 60.0,
+    "description": "Maelstrom est aussi a l'aise dans les airs que dans l'eau.",
+    "habitat": "Cascades d'Opale"
+  },
+  {
+    "id": 40,
+    "name": "Fulgure",
+    "types": [
+      7
+    ],
+    "baseStats": {
+      "hp": 49,
+      "atk": 40,
+      "def": 36,
+      "spatk": 55,
+      "spdef": 42,
+      "speed": 55
+    },
+    "captureRate": 150,
+    "xpGroup": "fast",
+    "xpYield": 55,
+    "evolution": {
+      "to": 41,
+      "level": 20
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 63
+      },
+      {
+        "level": 12,
+        "moveId": 69
+      },
+      {
+        "level": 14,
+        "moveId": 67
+      },
+      {
+        "level": 18,
+        "moveId": 68
+      },
+      {
+        "level": 22,
+        "moveId": 65
+      }
+    ],
+    "abilities": [
+      "Charge Statique",
+      "Velocite"
+    ],
+    "height": 0.5,
+    "weight": 6.0,
+    "description": "Fulgure est toujours en mouvement. Il accumule tant d'electricite statique que tout ce qu'il touche recoit une decharge.",
+    "habitat": "Plaines Orageuses"
+  },
+  {
+    "id": 41,
+    "name": "Voltacroc",
+    "types": [
+      7
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 60,
+      "def": 48,
+      "spatk": 75,
+      "spdef": 60,
+      "speed": 70
+    },
+    "captureRate": 90,
+    "xpGroup": "fast",
+    "xpYield": 125,
+    "evolution": {
+      "to": 42,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 63
+      },
+      {
+        "level": 12,
+        "moveId": 69
+      },
+      {
+        "level": 14,
+        "moveId": 67
+      },
+      {
+        "level": 18,
+        "moveId": 68
+      },
+      {
+        "level": 22,
+        "moveId": 65
+      },
+      {
+        "level": 28,
+        "moveId": 66
+      },
+      {
+        "level": 34,
+        "moveId": 64
+      }
+    ],
+    "abilities": [
+      "Charge Statique",
+      "Velocite"
+    ],
+    "height": 1.2,
+    "weight": 25.0,
+    "description": "Voltacroc attire la foudre pendant les orages pour recharger son corps.",
+    "habitat": "Plaines Orageuses"
+  },
+  {
+    "id": 42,
+    "name": "Oragriffe",
+    "types": [
+      7,
+      9
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 85,
+      "def": 72,
+      "spatk": 100,
+      "spdef": 78,
+      "speed": 85
+    },
+    "captureRate": 45,
+    "xpGroup": "fast",
+    "xpYield": 210,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 63
+      },
+      {
+        "level": 12,
+        "moveId": 69
+      },
+      {
+        "level": 14,
+        "moveId": 67
+      },
+      {
+        "level": 18,
+        "moveId": 68
+      },
+      {
+        "level": 22,
+        "moveId": 65
+      },
+      {
+        "level": 28,
+        "moveId": 66
+      },
+      {
+        "level": 34,
+        "moveId": 64
+      },
+      {
+        "level": 36,
+        "moveId": 78
+      },
+      {
+        "level": 42,
+        "moveId": 85
+      }
+    ],
+    "abilities": [
+      "Charge Statique",
+      "Griffe Aceree"
+    ],
+    "height": 3.0,
+    "weight": 130.0,
+    "description": "Oragriffe canalise la puissance de la foudre dans ses griffes d'acier.",
+    "habitat": "Pic Tonnerre"
+  },
+  {
+    "id": 43,
+    "name": "Givrex",
+    "types": [
+      4
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 40,
+      "def": 48,
+      "spatk": 50,
+      "spdef": 54,
+      "speed": 35
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 44,
+      "level": 20
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 37
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 41
+      },
+      {
+        "level": 12,
+        "moveId": 38
+      },
+      {
+        "level": 14,
+        "moveId": 40
+      },
+      {
+        "level": 18,
+        "moveId": 42
+      },
+      {
+        "level": 22,
+        "moveId": 43
+      }
+    ],
+    "abilities": [
+      "Gel Eternel",
+      "Sang Froid"
+    ],
+    "height": 0.7,
+    "weight": 12.0,
+    "description": "Givrex laisse des empreintes de givre partout ou il marche.",
+    "habitat": "Col des Vents"
+  },
+  {
+    "id": 44,
+    "name": "Cryodonte",
+    "types": [
+      4
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 55,
+      "def": 66,
+      "spatk": 70,
+      "spdef": 78,
+      "speed": 40
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 125,
+    "evolution": {
+      "to": 45,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 37
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 41
+      },
+      {
+        "level": 12,
+        "moveId": 38
+      },
+      {
+        "level": 14,
+        "moveId": 40
+      },
+      {
+        "level": 18,
+        "moveId": 42
+      },
+      {
+        "level": 22,
+        "moveId": 43
+      },
+      {
+        "level": 28,
+        "moveId": 44
+      },
+      {
+        "level": 34,
+        "moveId": 39
+      }
+    ],
+    "abilities": [
+      "Gel Eternel",
+      "Sang Froid"
+    ],
+    "height": 1.8,
+    "weight": 55.0,
+    "description": "Cryodonte peut geler l'eau instantanement avec son souffle.",
+    "habitat": "Vallee Givree"
+  },
+  {
+    "id": 45,
+    "name": "Glaciadon",
+    "types": [
+      4,
+      6
+    ],
+    "baseStats": {
+      "hp": 118,
+      "atk": 70,
+      "def": 90,
+      "spatk": 100,
+      "spdef": 96,
+      "speed": 35
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 37
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 41
+      },
+      {
+        "level": 12,
+        "moveId": 38
+      },
+      {
+        "level": 14,
+        "moveId": 40
+      },
+      {
+        "level": 18,
+        "moveId": 42
+      },
+      {
+        "level": 22,
+        "moveId": 43
+      },
+      {
+        "level": 28,
+        "moveId": 44
+      },
+      {
+        "level": 34,
+        "moveId": 39
+      },
+      {
+        "level": 36,
+        "moveId": 53
+      },
+      {
+        "level": 42,
+        "moveId": 55
+      }
+    ],
+    "abilities": [
+      "Gel Eternel",
+      "Tempete de Sable"
+    ],
+    "height": 3.5,
+    "weight": 200.0,
+    "description": "Glaciadon est le souverain des terres gelees. Sa presence transforme le paysage en toundra arctique.",
+    "habitat": "Glacier Ancien"
+  },
+  {
+    "id": 46,
+    "name": "Dunex",
+    "types": [
+      12
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 45,
+      "def": 48,
+      "spatk": 35,
+      "spdef": 42,
+      "speed": 50
+    },
+    "captureRate": 200,
+    "xpGroup": "fast",
+    "xpYield": 52,
+    "evolution": {
+      "to": 47,
+      "level": 18
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 104
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 105
+      },
+      {
+        "level": 14,
+        "moveId": 109
+      },
+      {
+        "level": 18,
+        "moveId": 106
+      },
+      {
+        "level": 22,
+        "moveId": 111
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Velocite"
+    ],
+    "height": 0.6,
+    "weight": 8.0,
+    "description": "Dunex court si vite sur le sable qu'il ne s'enfonce jamais.",
+    "habitat": "Desert du Permien"
+  },
+  {
+    "id": 47,
+    "name": "Sirocco",
+    "types": [
+      12
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 60,
+      "def": 66,
+      "spatk": 50,
+      "spdef": 60,
+      "speed": 70
+    },
+    "captureRate": 120,
+    "xpGroup": "fast",
+    "xpYield": 120,
+    "evolution": {
+      "to": 48,
+      "level": 34
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 104
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 105
+      },
+      {
+        "level": 14,
+        "moveId": 109
+      },
+      {
+        "level": 18,
+        "moveId": 106
+      },
+      {
+        "level": 22,
+        "moveId": 111
+      },
+      {
+        "level": 28,
+        "moveId": 110
+      },
+      {
+        "level": 32,
+        "moveId": 108
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Velocite"
+    ],
+    "height": 1.5,
+    "weight": 35.0,
+    "description": "Sirocco peut courir a la vitesse du vent du desert.",
+    "habitat": "Dunes d'Ambre"
+  },
+  {
+    "id": 48,
+    "name": "Tempestable",
+    "types": [
+      12,
+      5
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 80,
+      "def": 78,
+      "spatk": 65,
+      "spdef": 72,
+      "speed": 95
+    },
+    "captureRate": 60,
+    "xpGroup": "fast",
+    "xpYield": 195,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 104
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 105
+      },
+      {
+        "level": 14,
+        "moveId": 109
+      },
+      {
+        "level": 18,
+        "moveId": 106
+      },
+      {
+        "level": 22,
+        "moveId": 111
+      },
+      {
+        "level": 28,
+        "moveId": 110
+      },
+      {
+        "level": 32,
+        "moveId": 108
+      },
+      {
+        "level": 34,
+        "moveId": 45
+      },
+      {
+        "level": 40,
+        "moveId": 47
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Ailes Coupantes"
+    ],
+    "height": 2.2,
+    "weight": 65.0,
+    "description": "Tempestable commande les vents du desert. Il peut declencher des tempetes de sable d'un battement d'ailes.",
+    "habitat": "Canyon Ecarlate"
+  },
+  {
+    "id": 49,
+    "name": "Bourbex",
+    "types": [
+      6
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 40,
+      "def": 54,
+      "spatk": 40,
+      "spdef": 54,
+      "speed": 30
+    },
+    "captureRate": 200,
+    "xpGroup": "medium",
+    "xpYield": 55,
+    "evolution": {
+      "to": 50,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 54
+      },
+      {
+        "level": 12,
+        "moveId": 57
+      },
+      {
+        "level": 14,
+        "moveId": 59
+      },
+      {
+        "level": 18,
+        "moveId": 60
+      },
+      {
+        "level": 22,
+        "moveId": 10
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Regeneration"
+    ],
+    "height": 0.7,
+    "weight": 14.0,
+    "description": "Bourbex adore se rouler dans la boue. Cette couche protectrice le garde au frais.",
+    "habitat": "Plaines de Boue"
+  },
+  {
+    "id": 50,
+    "name": "Marechal",
+    "types": [
+      6,
+      1
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 55,
+      "def": 78,
+      "spatk": 55,
+      "spdef": 72,
+      "speed": 35
+    },
+    "captureRate": 120,
+    "xpGroup": "medium",
+    "xpYield": 120,
+    "evolution": {
+      "to": 51,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 54
+      },
+      {
+        "level": 12,
+        "moveId": 57
+      },
+      {
+        "level": 14,
+        "moveId": 59
+      },
+      {
+        "level": 18,
+        "moveId": 60
+      },
+      {
+        "level": 22,
+        "moveId": 10
+      },
+      {
+        "level": 28,
+        "moveId": 11
+      },
+      {
+        "level": 34,
+        "moveId": 55
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Regeneration"
+    ],
+    "height": 2.0,
+    "weight": 80.0,
+    "description": "Marechal est un dinosaure pacifique qui protege les zones humides.",
+    "habitat": "Marais du Jurassique"
+  },
+  {
+    "id": 51,
+    "name": "Diluvion",
+    "types": [
+      6,
+      1
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 70,
+      "def": 102,
+      "spatk": 75,
+      "spdef": 96,
+      "speed": 30
+    },
+    "captureRate": 60,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 54
+      },
+      {
+        "level": 12,
+        "moveId": 57
+      },
+      {
+        "level": 14,
+        "moveId": 59
+      },
+      {
+        "level": 18,
+        "moveId": 60
+      },
+      {
+        "level": 22,
+        "moveId": 10
+      },
+      {
+        "level": 28,
+        "moveId": 11
+      },
+      {
+        "level": 34,
+        "moveId": 55
+      },
+      {
+        "level": 36,
+        "moveId": 12
+      },
+      {
+        "level": 42,
+        "moveId": 58
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Nage Rapide"
+    ],
+    "height": 5.0,
+    "weight": 350.0,
+    "description": "Diluvion peut provoquer des inondations controlees pour proteger son territoire.",
+    "habitat": "Delta Boueux"
+  },
+  {
+    "id": 52,
+    "name": "Nocturex",
+    "types": [
+      8
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 35,
+      "def": 42,
+      "spatk": 55,
+      "spdef": 54,
+      "speed": 45
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 53,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 87
+      },
+      {
+        "level": 10,
+        "moveId": 71
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 88
+      },
+      {
+        "level": 18,
+        "moveId": 73
+      },
+      {
+        "level": 22,
+        "moveId": 74
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Ombre Furtive"
+    ],
+    "height": 0.5,
+    "weight": 5.0,
+    "description": "Nocturex ne sort que la nuit. Ses yeux brillants dans le noir sont souvent confondus avec des feux follets.",
+    "habitat": "Jungle Nocturne"
+  },
+  {
+    "id": 53,
+    "name": "Spectrovore",
+    "types": [
+      8,
+      10
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 50,
+      "def": 54,
+      "spatk": 75,
+      "spdef": 72,
+      "speed": 55
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 125,
+    "evolution": {
+      "to": 54,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 87
+      },
+      {
+        "level": 10,
+        "moveId": 71
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 88
+      },
+      {
+        "level": 18,
+        "moveId": 73
+      },
+      {
+        "level": 22,
+        "moveId": 74
+      },
+      {
+        "level": 28,
+        "moveId": 89
+      },
+      {
+        "level": 34,
+        "moveId": 72
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Ombre Furtive"
+    ],
+    "height": 1.2,
+    "weight": 22.0,
+    "description": "Spectrovore se fond dans les ombres comme s'il en faisait partie.",
+    "habitat": "Foret Obscure"
+  },
+  {
+    "id": 54,
+    "name": "Abyssinthe",
+    "types": [
+      8,
+      10
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 60,
+      "def": 66,
+      "spatk": 105,
+      "spdef": 96,
+      "speed": 70
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 205,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 87
+      },
+      {
+        "level": 10,
+        "moveId": 71
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 88
+      },
+      {
+        "level": 18,
+        "moveId": 73
+      },
+      {
+        "level": 22,
+        "moveId": 74
+      },
+      {
+        "level": 28,
+        "moveId": 89
+      },
+      {
+        "level": 34,
+        "moveId": 72
+      },
+      {
+        "level": 38,
+        "moveId": 90
+      },
+      {
+        "level": 44,
+        "moveId": 77
+      },
+      {
+        "level": 50,
+        "moveId": 93
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Instinct Predateur"
+    ],
+    "height": 2.5,
+    "weight": 65.0,
+    "description": "Abyssinthe est le cauchemar de la nuit. Son venin corrompt autant le corps que l'esprit.",
+    "habitat": "Abime Corrompue"
+  },
+  {
+    "id": 55,
+    "name": "Pteracier",
+    "types": [
+      5
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 45,
+      "def": 54,
+      "spatk": 40,
+      "spdef": 42,
+      "speed": 50
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 56,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 78
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 51
+      },
+      {
+        "level": 18,
+        "moveId": 50
+      },
+      {
+        "level": 22,
+        "moveId": 47
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Cuirasse"
+    ],
+    "height": 0.6,
+    "weight": 8.0,
+    "description": "Pteracier s'entraine a voler en se jetant des falaises.",
+    "habitat": "Falaises Venteuses"
+  },
+  {
+    "id": 56,
+    "name": "Aeronyx",
+    "types": [
+      5,
+      9
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 65,
+      "def": 78,
+      "spatk": 55,
+      "spdef": 60,
+      "speed": 60
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 130,
+    "evolution": {
+      "to": 57,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 78
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 51
+      },
+      {
+        "level": 18,
+        "moveId": 50
+      },
+      {
+        "level": 22,
+        "moveId": 47
+      },
+      {
+        "level": 28,
+        "moveId": 79
+      },
+      {
+        "level": 34,
+        "moveId": 80
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Cuirasse"
+    ],
+    "height": 2.0,
+    "weight": 45.0,
+    "description": "Aeronyx peut voler a travers les tempetes de grele sans une egratignure.",
+    "habitat": "Mine Abandonnee"
+  },
+  {
+    "id": 57,
+    "name": "Chromaile",
+    "types": [
+      5,
+      9
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 90,
+      "def": 102,
+      "spatk": 70,
+      "spdef": 78,
+      "speed": 70
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 210,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 78
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 51
+      },
+      {
+        "level": 18,
+        "moveId": 50
+      },
+      {
+        "level": 22,
+        "moveId": 47
+      },
+      {
+        "level": 28,
+        "moveId": 79
+      },
+      {
+        "level": 34,
+        "moveId": 80
+      },
+      {
+        "level": 38,
+        "moveId": 81
+      },
+      {
+        "level": 44,
+        "moveId": 48
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Intimidation"
+    ],
+    "height": 5.0,
+    "weight": 150.0,
+    "description": "Chromaile est un chasseur aerien inegalable. Ses ailes d'acier chrome coupent l'air avec un sifflement terrifiant.",
+    "habitat": "Forge Naturelle"
+  },
+  {
+    "id": 58,
+    "name": "Ombrix",
+    "types": [
+      10
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 50,
+      "def": 36,
+      "spatk": 45,
+      "spdef": 42,
+      "speed": 55
+    },
+    "captureRate": 75,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 59,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 87
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 88
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 92
+      },
+      {
+        "level": 22,
+        "moveId": 93
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Instinct Predateur"
+    ],
+    "height": 0.4,
+    "weight": 4.0,
+    "description": "Ombrix ne projette pas d'ombre — il EST l'ombre.",
+    "habitat": "Foret Obscure"
+  },
+  {
+    "id": 59,
+    "name": "Tenebrix",
+    "types": [
+      10
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 70,
+      "def": 48,
+      "spatk": 60,
+      "spdef": 60,
+      "speed": 70
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 125,
+    "evolution": {
+      "to": 60,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 87
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 88
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 92
+      },
+      {
+        "level": 22,
+        "moveId": 93
+      },
+      {
+        "level": 28,
+        "moveId": 90
+      },
+      {
+        "level": 34,
+        "moveId": 95
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Instinct Predateur"
+    ],
+    "height": 1.0,
+    "weight": 15.0,
+    "description": "Tenebrix chasse dans l'obscurite totale avec une efficacite effrayante.",
+    "habitat": "Grotte d'Ombre"
+  },
+  {
+    "id": 60,
+    "name": "Nocturnyx",
+    "types": [
+      10,
+      5
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 95,
+      "def": 66,
+      "spatk": 80,
+      "spdef": 72,
+      "speed": 90
+    },
+    "captureRate": 30,
+    "xpGroup": "medium",
+    "xpYield": 210,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 87
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 88
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 92
+      },
+      {
+        "level": 22,
+        "moveId": 93
+      },
+      {
+        "level": 28,
+        "moveId": 90
+      },
+      {
+        "level": 34,
+        "moveId": 95
+      },
+      {
+        "level": 36,
+        "moveId": 45
+      },
+      {
+        "level": 42,
+        "moveId": 47
+      },
+      {
+        "level": 48,
+        "moveId": 91
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Velocite"
+    ],
+    "height": 2.5,
+    "weight": 50.0,
+    "description": "Nocturnyx est le predateur ultime de la nuit. Son vol silencieux le rend invisible.",
+    "habitat": "Neant Obscur"
+  },
+  {
+    "id": 61,
+    "name": "Solaurex",
+    "types": [
+      11
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 35,
+      "def": 48,
+      "spatk": 55,
+      "spdef": 60,
+      "speed": 40
+    },
+    "captureRate": 75,
+    "xpGroup": "medium",
+    "xpYield": 60,
+    "evolution": {
+      "to": 62,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 101
+      },
+      {
+        "level": 22,
+        "moveId": 103
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Regeneration"
+    ],
+    "height": 0.5,
+    "weight": 7.0,
+    "description": "Solaurex brille d'une lumiere douce qui reconforte tous ceux qui l'entourent.",
+    "habitat": "Prairie Lumineuse"
+  },
+  {
+    "id": 62,
+    "name": "Heliodonte",
+    "types": [
+      11
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 50,
+      "def": 66,
+      "spatk": 75,
+      "spdef": 84,
+      "speed": 45
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 130,
+    "evolution": {
+      "to": 63,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 101
+      },
+      {
+        "level": 22,
+        "moveId": 103
+      },
+      {
+        "level": 28,
+        "moveId": 102
+      },
+      {
+        "level": 34,
+        "moveId": 23
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Regeneration"
+    ],
+    "height": 1.0,
+    "weight": 25.0,
+    "description": "Heliodonte transforme la lumiere du soleil en energie pure.",
+    "habitat": "Sanctuaire Solaire"
+  },
+  {
+    "id": 63,
+    "name": "Radianox",
+    "types": [
+      11,
+      2
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 65,
+      "def": 84,
+      "spatk": 105,
+      "spdef": 108,
+      "speed": 50
+    },
+    "captureRate": 30,
+    "xpGroup": "medium",
+    "xpYield": 215,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 101
+      },
+      {
+        "level": 22,
+        "moveId": 103
+      },
+      {
+        "level": 28,
+        "moveId": 102
+      },
+      {
+        "level": 34,
+        "moveId": 23
+      },
+      {
+        "level": 38,
+        "moveId": 19
+      },
+      {
+        "level": 44,
+        "moveId": 22
+      },
+      {
+        "level": 50,
+        "moveId": 98
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Flamme Vive"
+    ],
+    "height": 2.5,
+    "weight": 95.0,
+    "description": "Radianox est venere comme l'incarnation du soleil. Sa lumiere peut guerir les blessures et purifier les zones corrompues.",
+    "habitat": "Temple de l'Aube"
+  },
+  {
+    "id": 64,
+    "name": "Relicor",
+    "types": [
+      13
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 40,
+      "def": 60,
+      "spatk": 45,
+      "spdef": 54,
+      "speed": 30
+    },
+    "captureRate": 75,
+    "xpGroup": "slow",
+    "xpYield": 60,
+    "evolution": {
+      "to": 65,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 113
+      },
+      {
+        "level": 9,
+        "moveId": 118
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 114
+      },
+      {
+        "level": 14,
+        "moveId": 115
+      },
+      {
+        "level": 18,
+        "moveId": 120
+      },
+      {
+        "level": 22,
+        "moveId": 116
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Carapace"
+    ],
+    "height": 0.4,
+    "weight": 6.0,
+    "description": "Relicor est un vestige vivant d'une ere reculee.",
+    "habitat": "Site de Fouilles"
+  },
+  {
+    "id": 65,
+    "name": "Archeon",
+    "types": [
+      13
+    ],
+    "baseStats": {
+      "hp": 91,
+      "atk": 55,
+      "def": 84,
+      "spatk": 60,
+      "spdef": 78,
+      "speed": 35
+    },
+    "captureRate": 45,
+    "xpGroup": "slow",
+    "xpYield": 130,
+    "evolution": {
+      "to": 66,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 113
+      },
+      {
+        "level": 9,
+        "moveId": 118
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 114
+      },
+      {
+        "level": 14,
+        "moveId": 115
+      },
+      {
+        "level": 18,
+        "moveId": 120
+      },
+      {
+        "level": 22,
+        "moveId": 116
+      },
+      {
+        "level": 28,
+        "moveId": 117
+      },
+      {
+        "level": 34,
+        "moveId": 60
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Carapace"
+    ],
+    "height": 1.2,
+    "weight": 35.0,
+    "description": "Archeon porte l'histoire de la vie elle-meme sur sa carapace.",
+    "habitat": "Strates Anciennes"
+  },
+  {
+    "id": 66,
+    "name": "Primordax",
+    "types": [
+      13,
+      6
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 70,
+      "def": 114,
+      "spatk": 80,
+      "spdef": 102,
+      "speed": 30
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 210,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 113
+      },
+      {
+        "level": 9,
+        "moveId": 118
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 114
+      },
+      {
+        "level": 14,
+        "moveId": 115
+      },
+      {
+        "level": 18,
+        "moveId": 120
+      },
+      {
+        "level": 22,
+        "moveId": 116
+      },
+      {
+        "level": 28,
+        "moveId": 117
+      },
+      {
+        "level": 34,
+        "moveId": 60
+      },
+      {
+        "level": 38,
+        "moveId": 53
+      },
+      {
+        "level": 44,
+        "moveId": 55
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Armure Naturelle"
+    ],
+    "height": 4.0,
+    "weight": 350.0,
+    "description": "Primordax est le gardien des archives de la Terre.",
+    "habitat": "Falaise du Cambrien"
+  },
+  {
+    "id": 67,
+    "name": "Sahlix",
+    "types": [
+      12
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 50,
+      "def": 42,
+      "spatk": 40,
+      "spdef": 36,
+      "speed": 55
+    },
+    "captureRate": 150,
+    "xpGroup": "fast",
+    "xpYield": 58,
+    "evolution": {
+      "to": 68,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 104
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 105
+      },
+      {
+        "level": 12,
+        "moveId": 107
+      },
+      {
+        "level": 14,
+        "moveId": 109
+      },
+      {
+        "level": 18,
+        "moveId": 111
+      },
+      {
+        "level": 22,
+        "moveId": 106
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Griffe Aceree"
+    ],
+    "height": 0.6,
+    "weight": 7.0,
+    "description": "Sahlix s'enterre dans le sable pour surprendre ses proies.",
+    "habitat": "Desert du Permien"
+  },
+  {
+    "id": 68,
+    "name": "Erosirex",
+    "types": [
+      12,
+      0
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 70,
+      "def": 66,
+      "spatk": 55,
+      "spdef": 54,
+      "speed": 60
+    },
+    "captureRate": 90,
+    "xpGroup": "fast",
+    "xpYield": 125,
+    "evolution": {
+      "to": 69,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 104
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 105
+      },
+      {
+        "level": 12,
+        "moveId": 107
+      },
+      {
+        "level": 14,
+        "moveId": 109
+      },
+      {
+        "level": 18,
+        "moveId": 111
+      },
+      {
+        "level": 22,
+        "moveId": 106
+      },
+      {
+        "level": 28,
+        "moveId": 1
+      },
+      {
+        "level": 34,
+        "moveId": 2
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Griffe Aceree"
+    ],
+    "height": 1.5,
+    "weight": 38.0,
+    "description": "Erosirex sculpte le paysage avec ses griffes.",
+    "habitat": "Oasis Cachee"
+  },
+  {
+    "id": 69,
+    "name": "Khamsinyx",
+    "types": [
+      12,
+      0
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 95,
+      "def": 84,
+      "spatk": 70,
+      "spdef": 66,
+      "speed": 75
+    },
+    "captureRate": 45,
+    "xpGroup": "fast",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 104
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 105
+      },
+      {
+        "level": 12,
+        "moveId": 107
+      },
+      {
+        "level": 14,
+        "moveId": 109
+      },
+      {
+        "level": 18,
+        "moveId": 111
+      },
+      {
+        "level": 22,
+        "moveId": 106
+      },
+      {
+        "level": 28,
+        "moveId": 1
+      },
+      {
+        "level": 34,
+        "moveId": 2
+      },
+      {
+        "level": 36,
+        "moveId": 108
+      },
+      {
+        "level": 42,
+        "moveId": 3
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Instinct Predateur"
+    ],
+    "height": 3.5,
+    "weight": 180.0,
+    "description": "Khamsinyx est nomme d'apres le vent brulant du desert.",
+    "habitat": "Canyon Ecarlate"
+  },
+  {
+    "id": 70,
+    "name": "Aquathorn",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 45,
+      "def": 60,
+      "spatk": 40,
+      "spdef": 48,
+      "speed": 30
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 71,
+      "level": 20
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 13
+      },
+      {
+        "level": 14,
+        "moveId": 18
+      },
+      {
+        "level": 18,
+        "moveId": 15
+      },
+      {
+        "level": 22,
+        "moveId": 17
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Peau Dure"
+    ],
+    "height": 0.7,
+    "weight": 12.0,
+    "description": "Aquathorn utilise sa voile dorsale comme un filet de peche naturel.",
+    "habitat": "Riviere Azur"
+  },
+  {
+    "id": 71,
+    "name": "Marevore",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 65,
+      "def": 78,
+      "spatk": 55,
+      "spdef": 66,
+      "speed": 35
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 125,
+    "evolution": {
+      "to": 72,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 13
+      },
+      {
+        "level": 14,
+        "moveId": 18
+      },
+      {
+        "level": 18,
+        "moveId": 15
+      },
+      {
+        "level": 22,
+        "moveId": 17
+      },
+      {
+        "level": 28,
+        "moveId": 14
+      },
+      {
+        "level": 34,
+        "moveId": 12
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Peau Dure"
+    ],
+    "height": 3.0,
+    "weight": 120.0,
+    "description": "Marevore est un predateur semi-aquatique redoutable.",
+    "habitat": "Mangrove Ancestrale"
+  },
+  {
+    "id": 72,
+    "name": "Leviaspine",
+    "types": [
+      1,
+      8
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 90,
+      "def": 96,
+      "spatk": 70,
+      "spdef": 78,
+      "speed": 40
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 13
+      },
+      {
+        "level": 14,
+        "moveId": 18
+      },
+      {
+        "level": 18,
+        "moveId": 15
+      },
+      {
+        "level": 22,
+        "moveId": 17
+      },
+      {
+        "level": 28,
+        "moveId": 14
+      },
+      {
+        "level": 34,
+        "moveId": 12
+      },
+      {
+        "level": 36,
+        "moveId": 70
+      },
+      {
+        "level": 42,
+        "moveId": 73
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Venin"
+    ],
+    "height": 6.0,
+    "weight": 400.0,
+    "description": "Leviaspine est le predateur supreme des eaux profondes.",
+    "habitat": "Estuaire du Trias"
+  },
+  {
+    "id": 73,
+    "name": "Luminex",
+    "types": [
+      11
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 40,
+      "def": 48,
+      "spatk": 65,
+      "spdef": 66,
+      "speed": 55
+    },
+    "captureRate": 75,
+    "xpGroup": "medium",
+    "xpYield": 85,
+    "evolution": {
+      "to": 74,
+      "level": 30
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 101
+      },
+      {
+        "level": 22,
+        "moveId": 103
+      },
+      {
+        "level": 28,
+        "moveId": 102
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Photosynthese"
+    ],
+    "height": 0.5,
+    "weight": 6.0,
+    "description": "Luminex est si brillant qu'il sert de phare naturel dans les grottes.",
+    "habitat": "Temple de l'Aube"
+  },
+  {
+    "id": 74,
+    "name": "Aurorex",
+    "types": [
+      11,
+      4
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 55,
+      "def": 72,
+      "spatk": 100,
+      "spdef": 102,
+      "speed": 70
+    },
+    "captureRate": 30,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 101
+      },
+      {
+        "level": 22,
+        "moveId": 103
+      },
+      {
+        "level": 28,
+        "moveId": 102
+      },
+      {
+        "level": 30,
+        "moveId": 37
+      },
+      {
+        "level": 36,
+        "moveId": 42
+      },
+      {
+        "level": 42,
+        "moveId": 39
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Gel Eternel"
+    ],
+    "height": 1.5,
+    "weight": 40.0,
+    "description": "Aurorex n'apparait que dans les regions polaires, pendant les nuits les plus froides.",
+    "habitat": "Toundra Eternelle"
+  },
+  {
+    "id": 75,
+    "name": "Embrasaure",
+    "types": [
+      2
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 60,
+      "def": 48,
+      "spatk": 55,
+      "spdef": 42,
+      "speed": 55
+    },
+    "captureRate": 75,
+    "xpGroup": "slow",
+    "xpYield": 80,
+    "evolution": {
+      "to": 76,
+      "level": 32
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 20
+      },
+      {
+        "level": 12,
+        "moveId": 27
+      },
+      {
+        "level": 14,
+        "moveId": 24
+      },
+      {
+        "level": 18,
+        "moveId": 25
+      },
+      {
+        "level": 22,
+        "moveId": 22
+      },
+      {
+        "level": 28,
+        "moveId": 26
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Intimidation"
+    ],
+    "height": 0.9,
+    "weight": 18.0,
+    "description": "Embrasaure possede des flammes si chaudes qu'elles sont bleues.",
+    "habitat": "Caldeira Ardente"
+  },
+  {
+    "id": 76,
+    "name": "Infernadon",
+    "types": [
+      2,
+      10
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 100,
+      "def": 78,
+      "spatk": 90,
+      "spdef": 66,
+      "speed": 70
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 215,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 20
+      },
+      {
+        "level": 12,
+        "moveId": 27
+      },
+      {
+        "level": 14,
+        "moveId": 24
+      },
+      {
+        "level": 18,
+        "moveId": 25
+      },
+      {
+        "level": 22,
+        "moveId": 22
+      },
+      {
+        "level": 28,
+        "moveId": 26
+      },
+      {
+        "level": 32,
+        "moveId": 87
+      },
+      {
+        "level": 38,
+        "moveId": 89
+      },
+      {
+        "level": 44,
+        "moveId": 90
+      },
+      {
+        "level": 50,
+        "moveId": 21
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Instinct Predateur"
+    ],
+    "height": 3.0,
+    "weight": 160.0,
+    "description": "Infernadon brule d'un feu si sombre qu'il semble venir des profondeurs de la terre.",
+    "habitat": "Cratere du Jurassique"
+  },
+  {
+    "id": 77,
+    "name": "Glaciaire",
+    "types": [
+      4
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 35,
+      "def": 60,
+      "spatk": 50,
+      "spdef": 66,
+      "speed": 25
+    },
+    "captureRate": 150,
+    "xpGroup": "slow",
+    "xpYield": 60,
+    "evolution": {
+      "to": 78,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 37
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 41
+      },
+      {
+        "level": 12,
+        "moveId": 38
+      },
+      {
+        "level": 14,
+        "moveId": 40
+      },
+      {
+        "level": 18,
+        "moveId": 42
+      },
+      {
+        "level": 22,
+        "moveId": 43
+      }
+    ],
+    "abilities": [
+      "Gel Eternel",
+      "Ecailles Epaisses"
+    ],
+    "height": 0.6,
+    "weight": 14.0,
+    "description": "Glaciaire dort dans la neige, invisible sous une couverture de givre.",
+    "habitat": "Vallee Givree"
+  },
+  {
+    "id": 78,
+    "name": "Frosthorn",
+    "types": [
+      4
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 50,
+      "def": 84,
+      "spatk": 65,
+      "spdef": 90,
+      "speed": 25
+    },
+    "captureRate": 90,
+    "xpGroup": "slow",
+    "xpYield": 130,
+    "evolution": {
+      "to": 79,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 37
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 41
+      },
+      {
+        "level": 12,
+        "moveId": 38
+      },
+      {
+        "level": 14,
+        "moveId": 40
+      },
+      {
+        "level": 18,
+        "moveId": 42
+      },
+      {
+        "level": 22,
+        "moveId": 43
+      },
+      {
+        "level": 28,
+        "moveId": 44
+      },
+      {
+        "level": 34,
+        "moveId": 39
+      }
+    ],
+    "abilities": [
+      "Gel Eternel",
+      "Ecailles Epaisses"
+    ],
+    "height": 1.5,
+    "weight": 65.0,
+    "description": "Frosthorn peut survivre dans des temperatures de -60 degres.",
+    "habitat": "Glacier Ancien"
+  },
+  {
+    "id": 79,
+    "name": "Cryotitan",
+    "types": [
+      4,
+      9
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 65,
+      "def": 120,
+      "spatk": 80,
+      "spdef": 114,
+      "speed": 20
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 215,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 37
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 41
+      },
+      {
+        "level": 12,
+        "moveId": 38
+      },
+      {
+        "level": 14,
+        "moveId": 40
+      },
+      {
+        "level": 18,
+        "moveId": 42
+      },
+      {
+        "level": 22,
+        "moveId": 43
+      },
+      {
+        "level": 28,
+        "moveId": 44
+      },
+      {
+        "level": 34,
+        "moveId": 39
+      },
+      {
+        "level": 38,
+        "moveId": 78
+      },
+      {
+        "level": 44,
+        "moveId": 80
+      },
+      {
+        "level": 50,
+        "moveId": 84
+      }
+    ],
+    "abilities": [
+      "Gel Eternel",
+      "Cuirasse"
+    ],
+    "height": 4.0,
+    "weight": 450.0,
+    "description": "Cryotitan est une forteresse ambulante de glace et d'acier.",
+    "habitat": "Toundra Eternelle"
+  },
+  {
+    "id": 80,
+    "name": "Ombrasaure",
+    "types": [
+      10
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 35,
+      "def": 42,
+      "spatk": 55,
+      "spdef": 60,
+      "speed": 50
+    },
+    "captureRate": 75,
+    "xpGroup": "medium",
+    "xpYield": 60,
+    "evolution": {
+      "to": 81,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 87
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 88
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 92
+      },
+      {
+        "level": 22,
+        "moveId": 93
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Ecailles Epaisses"
+    ],
+    "height": 0.5,
+    "weight": 5.0,
+    "description": "Ombrasaure porte la nuit etoilee sur son dos.",
+    "habitat": "Foret Obscure"
+  },
+  {
+    "id": 81,
+    "name": "Crepuscor",
+    "types": [
+      10
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 50,
+      "def": 60,
+      "spatk": 75,
+      "spdef": 78,
+      "speed": 60
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 130,
+    "evolution": {
+      "to": 82,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 87
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 88
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 92
+      },
+      {
+        "level": 22,
+        "moveId": 93
+      },
+      {
+        "level": 28,
+        "moveId": 90
+      },
+      {
+        "level": 34,
+        "moveId": 95
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Ecailles Epaisses"
+    ],
+    "height": 1.2,
+    "weight": 18.0,
+    "description": "Crepuscor n'apparait qu'au crepuscule.",
+    "habitat": "Clairiere Lunaire"
+  },
+  {
+    "id": 82,
+    "name": "Eclipsadon",
+    "types": [
+      10,
+      11
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 65,
+      "def": 78,
+      "spatk": 100,
+      "spdef": 102,
+      "speed": 70
+    },
+    "captureRate": 30,
+    "xpGroup": "medium",
+    "xpYield": 215,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 87
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 88
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 92
+      },
+      {
+        "level": 22,
+        "moveId": 93
+      },
+      {
+        "level": 28,
+        "moveId": 90
+      },
+      {
+        "level": 34,
+        "moveId": 95
+      },
+      {
+        "level": 38,
+        "moveId": 96
+      },
+      {
+        "level": 44,
+        "moveId": 101
+      },
+      {
+        "level": 50,
+        "moveId": 91
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Aura Lumineuse"
+    ],
+    "height": 2.5,
+    "weight": 60.0,
+    "description": "Eclipsadon incarne l'equilibre entre lumiere et tenebres.",
+    "habitat": "Neant Obscur"
+  },
+  {
+    "id": 83,
+    "name": "Fulgorex",
+    "types": [
+      7
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 45,
+      "def": 42,
+      "spatk": 55,
+      "spdef": 48,
+      "speed": 55
+    },
+    "captureRate": 75,
+    "xpGroup": "fast",
+    "xpYield": 62,
+    "evolution": {
+      "to": 84,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 63
+      },
+      {
+        "level": 12,
+        "moveId": 69
+      },
+      {
+        "level": 14,
+        "moveId": 67
+      },
+      {
+        "level": 18,
+        "moveId": 68
+      },
+      {
+        "level": 22,
+        "moveId": 65
+      }
+    ],
+    "abilities": [
+      "Charge Statique",
+      "Velocite"
+    ],
+    "height": 0.5,
+    "weight": 5.5,
+    "description": "Fulgorex genere tellement d'electricite qu'il ne peut pas rester immobile.",
+    "habitat": "Plaines Orageuses"
+  },
+  {
+    "id": 84,
+    "name": "Electrodonte",
+    "types": [
+      7
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 60,
+      "def": 60,
+      "spatk": 75,
+      "spdef": 66,
+      "speed": 70
+    },
+    "captureRate": 45,
+    "xpGroup": "fast",
+    "xpYield": 135,
+    "evolution": {
+      "to": 85,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 63
+      },
+      {
+        "level": 12,
+        "moveId": 69
+      },
+      {
+        "level": 14,
+        "moveId": 67
+      },
+      {
+        "level": 18,
+        "moveId": 68
+      },
+      {
+        "level": 22,
+        "moveId": 65
+      },
+      {
+        "level": 28,
+        "moveId": 66
+      },
+      {
+        "level": 34,
+        "moveId": 64
+      }
+    ],
+    "abilities": [
+      "Charge Statique",
+      "Velocite"
+    ],
+    "height": 1.2,
+    "weight": 22.0,
+    "description": "Electrodonte peut alimenter un village entier en electricite.",
+    "habitat": "Steppe Electrique"
+  },
+  {
+    "id": 85,
+    "name": "Megavolt",
+    "types": [
+      7,
+      5
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 80,
+      "def": 72,
+      "spatk": 105,
+      "spdef": 78,
+      "speed": 85
+    },
+    "captureRate": 30,
+    "xpGroup": "fast",
+    "xpYield": 220,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 63
+      },
+      {
+        "level": 12,
+        "moveId": 69
+      },
+      {
+        "level": 14,
+        "moveId": 67
+      },
+      {
+        "level": 18,
+        "moveId": 68
+      },
+      {
+        "level": 22,
+        "moveId": 65
+      },
+      {
+        "level": 28,
+        "moveId": 66
+      },
+      {
+        "level": 34,
+        "moveId": 64
+      },
+      {
+        "level": 38,
+        "moveId": 45
+      },
+      {
+        "level": 44,
+        "moveId": 47
+      },
+      {
+        "level": 50,
+        "moveId": 48
+      }
+    ],
+    "abilities": [
+      "Charge Statique",
+      "Ailes Coupantes"
+    ],
+    "height": 3.0,
+    "weight": 65.0,
+    "description": "Megavolt est une tempete vivante. Son vol genere des eclairs qui illuminent le ciel nocturne.",
+    "habitat": "Sommet de l'Orage"
+  },
+  {
+    "id": 86,
+    "name": "Coralox",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 35,
+      "def": 72,
+      "spatk": 55,
+      "spdef": 66,
+      "speed": 30
+    },
+    "captureRate": 75,
+    "xpGroup": "slow",
+    "xpYield": 80,
+    "evolution": {
+      "to": 87,
+      "level": 30
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 16
+      },
+      {
+        "level": 14,
+        "moveId": 99
+      },
+      {
+        "level": 18,
+        "moveId": 15
+      },
+      {
+        "level": 22,
+        "moveId": 14
+      },
+      {
+        "level": 28,
+        "moveId": 96
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Regeneration"
+    ],
+    "height": 0.6,
+    "weight": 10.0,
+    "description": "Coralox porte un ecosysteme entier sur son dos.",
+    "habitat": "Ocean Primordial"
+  },
+  {
+    "id": 87,
+    "name": "Recifadon",
+    "types": [
+      1,
+      11
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 50,
+      "def": 108,
+      "spatk": 85,
+      "spdef": 102,
+      "speed": 35
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 16
+      },
+      {
+        "level": 14,
+        "moveId": 99
+      },
+      {
+        "level": 18,
+        "moveId": 15
+      },
+      {
+        "level": 22,
+        "moveId": 14
+      },
+      {
+        "level": 28,
+        "moveId": 96
+      },
+      {
+        "level": 30,
+        "moveId": 97
+      },
+      {
+        "level": 36,
+        "moveId": 101
+      },
+      {
+        "level": 42,
+        "moveId": 12
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Aura Lumineuse"
+    ],
+    "height": 4.0,
+    "weight": 220.0,
+    "description": "Recifadon est un sanctuaire marin vivant.",
+    "habitat": "Recif Arc-en-Ciel"
+  },
+  {
+    "id": 88,
+    "name": "Epinox",
+    "types": [
+      3,
+      8
+    ],
+    "baseStats": {
+      "hp": 118,
+      "atk": 50,
+      "def": 102,
+      "spatk": 90,
+      "spdef": 96,
+      "speed": 40
+    },
+    "captureRate": 60,
+    "xpGroup": "medium",
+    "xpYield": 195,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 70
+      },
+      {
+        "level": 10,
+        "moveId": 29
+      },
+      {
+        "level": 12,
+        "moveId": 32
+      },
+      {
+        "level": 14,
+        "moveId": 71
+      },
+      {
+        "level": 18,
+        "moveId": 35
+      },
+      {
+        "level": 22,
+        "moveId": 34
+      },
+      {
+        "level": 28,
+        "moveId": 73
+      },
+      {
+        "level": 34,
+        "moveId": 30
+      },
+      {
+        "level": 40,
+        "moveId": 77
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Venin"
+    ],
+    "height": 2.0,
+    "weight": 85.0,
+    "description": "Epinox est un piege vivant. Ses fleurs attirent et ses epines punissent.",
+    "habitat": "Desert du Permien"
+  },
+  {
+    "id": 89,
+    "name": "Mythorex",
+    "types": [
+      13,
+      10
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 85,
+      "def": 84,
+      "spatk": 80,
+      "spdef": 90,
+      "speed": 50
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 87
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 89
+      },
+      {
+        "level": 12,
+        "moveId": 114
+      },
+      {
+        "level": 14,
+        "moveId": 115
+      },
+      {
+        "level": 18,
+        "moveId": 118
+      },
+      {
+        "level": 22,
+        "moveId": 90
+      },
+      {
+        "level": 28,
+        "moveId": 119
+      },
+      {
+        "level": 34,
+        "moveId": 93
+      },
+      {
+        "level": 40,
+        "moveId": 116
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Ombre Furtive"
+    ],
+    "height": 3.5,
+    "weight": 250.0,
+    "description": "Mythorex est un survivant d'une ere oubliee. Il hante les eaux profondes comme un fantome.",
+    "habitat": "Abysses du Devonien"
+  },
+  {
+    "id": 90,
+    "name": "Voltaile",
+    "types": [
+      7,
+      5
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 75,
+      "def": 66,
+      "spatk": 90,
+      "spdef": 72,
+      "speed": 95
+    },
+    "captureRate": 30,
+    "xpGroup": "fast",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 62
+      },
+      {
+        "level": 10,
+        "moveId": 49
+      },
+      {
+        "level": 12,
+        "moveId": 69
+      },
+      {
+        "level": 14,
+        "moveId": 63
+      },
+      {
+        "level": 18,
+        "moveId": 46
+      },
+      {
+        "level": 22,
+        "moveId": 65
+      },
+      {
+        "level": 28,
+        "moveId": 47
+      },
+      {
+        "level": 34,
+        "moveId": 64
+      },
+      {
+        "level": 40,
+        "moveId": 48
+      }
+    ],
+    "abilities": [
+      "Charge Statique",
+      "Ailes Coupantes"
+    ],
+    "height": 1.5,
+    "weight": 20.0,
+    "description": "Voltaile est plus rapide que la foudre qu'il genere.",
+    "habitat": "Sommet de l'Orage"
+  },
+  {
+    "id": 91,
+    "name": "Racivore",
+    "types": [
+      3
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 40,
+      "def": 66,
+      "spatk": 50,
+      "spdef": 60,
+      "speed": 35
+    },
+    "captureRate": 75,
+    "xpGroup": "slow",
+    "xpYield": 80,
+    "evolution": {
+      "to": 92,
+      "level": 35
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 29
+      },
+      {
+        "level": 12,
+        "moveId": 35
+      },
+      {
+        "level": 14,
+        "moveId": 33
+      },
+      {
+        "level": 18,
+        "moveId": 31
+      },
+      {
+        "level": 22,
+        "moveId": 34
+      },
+      {
+        "level": 28,
+        "moveId": 32
+      },
+      {
+        "level": 34,
+        "moveId": 36
+      }
+    ],
+    "abilities": [
+      "Photosynthese",
+      "Regeneration"
+    ],
+    "height": 0.8,
+    "weight": 15.0,
+    "description": "Racivore s'enracine la ou il dort.",
+    "habitat": "Jungle Primordiale"
+  },
+  {
+    "id": 92,
+    "name": "Sequoiax",
+    "types": [
+      3,
+      0
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 60,
+      "def": 108,
+      "spatk": 75,
+      "spdef": 96,
+      "speed": 30
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 29
+      },
+      {
+        "level": 12,
+        "moveId": 35
+      },
+      {
+        "level": 14,
+        "moveId": 33
+      },
+      {
+        "level": 18,
+        "moveId": 31
+      },
+      {
+        "level": 22,
+        "moveId": 34
+      },
+      {
+        "level": 28,
+        "moveId": 32
+      },
+      {
+        "level": 34,
+        "moveId": 36
+      },
+      {
+        "level": 35,
+        "moveId": 1
+      },
+      {
+        "level": 42,
+        "moveId": 30
+      }
+    ],
+    "abilities": [
+      "Photosynthese",
+      "Armure Naturelle"
+    ],
+    "height": 8.0,
+    "weight": 600.0,
+    "description": "Sequoiax vit depuis si longtemps que personne ne connait son age exact.",
+    "habitat": "Foret Ancestrale"
+  },
+  {
+    "id": 93,
+    "name": "Sablonix",
+    "types": [
+      12
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 40,
+      "def": 54,
+      "spatk": 50,
+      "spdef": 60,
+      "speed": 40
+    },
+    "captureRate": 75,
+    "xpGroup": "medium",
+    "xpYield": 65,
+    "evolution": {
+      "to": 94,
+      "level": 34
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 104
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 105
+      },
+      {
+        "level": 14,
+        "moveId": 109
+      },
+      {
+        "level": 18,
+        "moveId": 112
+      },
+      {
+        "level": 22,
+        "moveId": 110
+      },
+      {
+        "level": 28,
+        "moveId": 106
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Fossile Ancien"
+    ],
+    "height": 0.5,
+    "weight": 8.0,
+    "description": "Sablonix porte des motifs mysterieux que personne n'a jamais pu dechiffrer.",
+    "habitat": "Desert du Permien"
+  },
+  {
+    "id": 94,
+    "name": "Sphinx",
+    "types": [
+      12,
+      13
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 60,
+      "def": 90,
+      "spatk": 85,
+      "spdef": 96,
+      "speed": 55
+    },
+    "captureRate": 30,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 104
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 105
+      },
+      {
+        "level": 14,
+        "moveId": 109
+      },
+      {
+        "level": 18,
+        "moveId": 112
+      },
+      {
+        "level": 22,
+        "moveId": 110
+      },
+      {
+        "level": 28,
+        "moveId": 106
+      },
+      {
+        "level": 34,
+        "moveId": 114
+      },
+      {
+        "level": 40,
+        "moveId": 115
+      },
+      {
+        "level": 46,
+        "moveId": 108
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Fossile Ancien"
+    ],
+    "height": 2.5,
+    "weight": 130.0,
+    "description": "Sphinx garde les secrets du desert depuis des millenaires.",
+    "habitat": "Ruines Englouties"
+  },
+  {
+    "id": 95,
+    "name": "Verdox",
+    "types": [
+      3
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 40,
+      "def": 54,
+      "spatk": 50,
+      "spdef": 54,
+      "speed": 30
+    },
+    "captureRate": 200,
+    "xpGroup": "medium",
+    "xpYield": 55,
+    "evolution": {
+      "to": 96,
+      "level": 20
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 33
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 35
+      },
+      {
+        "level": 22,
+        "moveId": 34
+      }
+    ],
+    "abilities": [
+      "Photosynthese",
+      "Vegetal"
+    ],
+    "height": 0.6,
+    "weight": 10.0,
+    "description": "Verdox plante des graines partout ou il passe.",
+    "habitat": "Prairie Lumineuse"
+  },
+  {
+    "id": 96,
+    "name": "Chlorodon",
+    "types": [
+      3
+    ],
+    "baseStats": {
+      "hp": 91,
+      "atk": 55,
+      "def": 72,
+      "spatk": 70,
+      "spdef": 72,
+      "speed": 35
+    },
+    "captureRate": 120,
+    "xpGroup": "medium",
+    "xpYield": 125,
+    "evolution": {
+      "to": 97,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 33
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 35
+      },
+      {
+        "level": 22,
+        "moveId": 34
+      },
+      {
+        "level": 28,
+        "moveId": 32
+      },
+      {
+        "level": 34,
+        "moveId": 36
+      }
+    ],
+    "abilities": [
+      "Photosynthese",
+      "Vegetal"
+    ],
+    "height": 1.5,
+    "weight": 45.0,
+    "description": "Chlorodon convertit la lumiere du soleil en energie avec une efficacite remarquable.",
+    "habitat": "Vallee des Fougeres"
+  },
+  {
+    "id": 97,
+    "name": "Gaiasaure",
+    "types": [
+      3,
+      11
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 70,
+      "def": 96,
+      "spatk": 90,
+      "spdef": 96,
+      "speed": 30
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 28
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 33
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 35
+      },
+      {
+        "level": 22,
+        "moveId": 34
+      },
+      {
+        "level": 28,
+        "moveId": 32
+      },
+      {
+        "level": 34,
+        "moveId": 36
+      },
+      {
+        "level": 36,
+        "moveId": 96
+      },
+      {
+        "level": 42,
+        "moveId": 30
+      },
+      {
+        "level": 48,
+        "moveId": 99
+      }
+    ],
+    "abilities": [
+      "Photosynthese",
+      "Aura Lumineuse"
+    ],
+    "height": 3.5,
+    "weight": 200.0,
+    "description": "Gaiasaure est le gardien des forets sacrees.",
+    "habitat": "Jungle Primordiale"
+  },
+  {
+    "id": 98,
+    "name": "Magmax",
+    "types": [
+      2
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 55,
+      "def": 42,
+      "spatk": 45,
+      "spdef": 36,
+      "speed": 50
+    },
+    "captureRate": 150,
+    "xpGroup": "fast",
+    "xpYield": 58,
+    "evolution": {
+      "to": 99,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 20
+      },
+      {
+        "level": 12,
+        "moveId": 27
+      },
+      {
+        "level": 14,
+        "moveId": 24
+      },
+      {
+        "level": 18,
+        "moveId": 25
+      },
+      {
+        "level": 22,
+        "moveId": 22
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Griffe Aceree"
+    ],
+    "height": 0.6,
+    "weight": 7.0,
+    "description": "Magmax est si chaud qu'il fait fondre la neige dans un rayon de deux metres.",
+    "habitat": "Caldeira Ardente"
+  },
+  {
+    "id": 99,
+    "name": "Pyroclade",
+    "types": [
+      2
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 75,
+      "def": 60,
+      "spatk": 60,
+      "spdef": 54,
+      "speed": 55
+    },
+    "captureRate": 90,
+    "xpGroup": "fast",
+    "xpYield": 125,
+    "evolution": {
+      "to": 100,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 20
+      },
+      {
+        "level": 12,
+        "moveId": 27
+      },
+      {
+        "level": 14,
+        "moveId": 24
+      },
+      {
+        "level": 18,
+        "moveId": 25
+      },
+      {
+        "level": 22,
+        "moveId": 22
+      },
+      {
+        "level": 28,
+        "moveId": 26
+      },
+      {
+        "level": 34,
+        "moveId": 21
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Griffe Aceree"
+    ],
+    "height": 1.4,
+    "weight": 32.0,
+    "description": "Pyroclade est aussi dangereux et imprevisible qu'une eruption volcanique.",
+    "habitat": "Champs de Lave"
+  },
+  {
+    "id": 100,
+    "name": "Erupsion",
+    "types": [
+      2,
+      6
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 100,
+      "def": 78,
+      "spatk": 75,
+      "spdef": 66,
+      "speed": 60
+    },
+    "captureRate": 45,
+    "xpGroup": "fast",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 20
+      },
+      {
+        "level": 12,
+        "moveId": 27
+      },
+      {
+        "level": 14,
+        "moveId": 24
+      },
+      {
+        "level": 18,
+        "moveId": 25
+      },
+      {
+        "level": 22,
+        "moveId": 22
+      },
+      {
+        "level": 28,
+        "moveId": 26
+      },
+      {
+        "level": 34,
+        "moveId": 21
+      },
+      {
+        "level": 36,
+        "moveId": 53
+      },
+      {
+        "level": 42,
+        "moveId": 55
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Intimidation"
+    ],
+    "height": 3.0,
+    "weight": 180.0,
+    "description": "Erupsion est une catastrophe naturelle sur pattes.",
+    "habitat": "Cratere du Jurassique"
+  },
+  {
+    "id": 101,
+    "name": "Blindosaure",
+    "types": [
+      9
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 40,
+      "def": 72,
+      "spatk": 30,
+      "spdef": 60,
+      "speed": 25
+    },
+    "captureRate": 75,
+    "xpGroup": "slow",
+    "xpYield": 58,
+    "evolution": {
+      "to": 102,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 78
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 79
+      },
+      {
+        "level": 12,
+        "moveId": 82
+      },
+      {
+        "level": 14,
+        "moveId": 84
+      },
+      {
+        "level": 18,
+        "moveId": 83
+      },
+      {
+        "level": 22,
+        "moveId": 85
+      }
+    ],
+    "abilities": [
+      "Cuirasse",
+      "Armure Naturelle"
+    ],
+    "height": 0.6,
+    "weight": 20.0,
+    "description": "Blindosaure est si bien protege qu'il dort a decouvert sans crainte.",
+    "habitat": "Mine Abandonnee"
+  },
+  {
+    "id": 102,
+    "name": "Cuiravore",
+    "types": [
+      9
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 55,
+      "def": 102,
+      "spatk": 40,
+      "spdef": 84,
+      "speed": 25
+    },
+    "captureRate": 45,
+    "xpGroup": "slow",
+    "xpYield": 130,
+    "evolution": {
+      "to": 103,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 78
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 79
+      },
+      {
+        "level": 12,
+        "moveId": 82
+      },
+      {
+        "level": 14,
+        "moveId": 84
+      },
+      {
+        "level": 18,
+        "moveId": 83
+      },
+      {
+        "level": 22,
+        "moveId": 85
+      },
+      {
+        "level": 28,
+        "moveId": 80
+      },
+      {
+        "level": 34,
+        "moveId": 86
+      }
+    ],
+    "abilities": [
+      "Cuirasse",
+      "Armure Naturelle"
+    ],
+    "height": 1.8,
+    "weight": 100.0,
+    "description": "Cuiravore est un tank vivant.",
+    "habitat": "Forge Naturelle"
+  },
+  {
+    "id": 103,
+    "name": "Bastiosaure",
+    "types": [
+      9,
+      6
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 70,
+      "def": 150,
+      "spatk": 50,
+      "spdef": 108,
+      "speed": 20
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 215,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 78
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 79
+      },
+      {
+        "level": 12,
+        "moveId": 82
+      },
+      {
+        "level": 14,
+        "moveId": 84
+      },
+      {
+        "level": 18,
+        "moveId": 83
+      },
+      {
+        "level": 22,
+        "moveId": 85
+      },
+      {
+        "level": 28,
+        "moveId": 80
+      },
+      {
+        "level": 34,
+        "moveId": 86
+      },
+      {
+        "level": 38,
+        "moveId": 53
+      },
+      {
+        "level": 44,
+        "moveId": 55
+      },
+      {
+        "level": 50,
+        "moveId": 81
+      }
+    ],
+    "abilities": [
+      "Cuirasse",
+      "Peau Dure"
+    ],
+    "height": 4.5,
+    "weight": 500.0,
+    "description": "Bastiosaure est la defense ultime. Rien ne peut percer sa cuirasse.",
+    "habitat": "Coeur de la Montagne"
+  },
+  {
+    "id": 104,
+    "name": "Borealis",
+    "types": [
+      11
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 35,
+      "def": 54,
+      "spatk": 60,
+      "spdef": 66,
+      "speed": 45
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 80,
+    "evolution": {
+      "to": 105,
+      "level": 35
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 37
+      },
+      {
+        "level": 22,
+        "moveId": 101
+      },
+      {
+        "level": 28,
+        "moveId": 102
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Gel Eternel"
+    ],
+    "height": 0.4,
+    "weight": 4.0,
+    "description": "Borealis vit dans les regions polaires. Sa lumiere guide les creatures perdues.",
+    "habitat": "Toundra Eternelle"
+  },
+  {
+    "id": 105,
+    "name": "Celestiax",
+    "types": [
+      11,
+      4
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 50,
+      "def": 78,
+      "spatk": 100,
+      "spdef": 108,
+      "speed": 60
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 37
+      },
+      {
+        "level": 22,
+        "moveId": 101
+      },
+      {
+        "level": 28,
+        "moveId": 102
+      },
+      {
+        "level": 35,
+        "moveId": 42
+      },
+      {
+        "level": 40,
+        "moveId": 39
+      },
+      {
+        "level": 46,
+        "moveId": 98
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Gel Eternel"
+    ],
+    "height": 1.5,
+    "weight": 28.0,
+    "description": "Celestiax est considere comme l'esprit de l'hiver.",
+    "habitat": "Grotte de l'Aurore"
+  },
+  {
+    "id": 106,
+    "name": "Corrodex",
+    "types": [
+      8
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 40,
+      "def": 48,
+      "spatk": 50,
+      "spdef": 54,
+      "speed": 40
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 107,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 71
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 73
+      },
+      {
+        "level": 18,
+        "moveId": 74
+      },
+      {
+        "level": 22,
+        "moveId": 72
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Sang Froid"
+    ],
+    "height": 0.4,
+    "weight": 5.0,
+    "description": "Corrodex dissout sa nourriture avant meme de la manger.",
+    "habitat": "Marais Toxiques"
+  },
+  {
+    "id": 107,
+    "name": "Acidonte",
+    "types": [
+      8
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 55,
+      "def": 66,
+      "spatk": 70,
+      "spdef": 72,
+      "speed": 50
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 130,
+    "evolution": {
+      "to": 108,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 71
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 73
+      },
+      {
+        "level": 18,
+        "moveId": 74
+      },
+      {
+        "level": 22,
+        "moveId": 72
+      },
+      {
+        "level": 28,
+        "moveId": 76
+      },
+      {
+        "level": 34,
+        "moveId": 77
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Sang Froid"
+    ],
+    "height": 1.5,
+    "weight": 38.0,
+    "description": "Acidonte peut dissoudre la roche en quelques minutes.",
+    "habitat": "Bassin Acide"
+  },
+  {
+    "id": 108,
+    "name": "Dissolvor",
+    "types": [
+      8,
+      1
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 70,
+      "def": 78,
+      "spatk": 95,
+      "spdef": 90,
+      "speed": 55
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 70
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 71
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 73
+      },
+      {
+        "level": 18,
+        "moveId": 74
+      },
+      {
+        "level": 22,
+        "moveId": 72
+      },
+      {
+        "level": 28,
+        "moveId": 76
+      },
+      {
+        "level": 34,
+        "moveId": 77
+      },
+      {
+        "level": 36,
+        "moveId": 10
+      },
+      {
+        "level": 42,
+        "moveId": 11
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Nage Rapide"
+    ],
+    "height": 2.5,
+    "weight": 95.0,
+    "description": "Dissolvor transforme les lacs en bassins d'acide.",
+    "habitat": "Abime Corrompue"
+  },
+  {
+    "id": 109,
+    "name": "Terrops",
+    "types": [
+      6
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 55,
+      "def": 48,
+      "spatk": 30,
+      "spdef": 42,
+      "speed": 45
+    },
+    "captureRate": 200,
+    "xpGroup": "fast",
+    "xpYield": 55,
+    "evolution": {
+      "to": 110,
+      "level": 20
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 59
+      },
+      {
+        "level": 12,
+        "moveId": 54
+      },
+      {
+        "level": 14,
+        "moveId": 57
+      },
+      {
+        "level": 18,
+        "moveId": 56
+      },
+      {
+        "level": 22,
+        "moveId": 55
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Machoire"
+    ],
+    "height": 0.5,
+    "weight": 10.0,
+    "description": "Terrops teste la durete de tout en se cognant la tete dessus.",
+    "habitat": "Plaines de Boue"
+  },
+  {
+    "id": 110,
+    "name": "Lithocrane",
+    "types": [
+      6
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 75,
+      "def": 66,
+      "spatk": 40,
+      "spdef": 54,
+      "speed": 50
+    },
+    "captureRate": 120,
+    "xpGroup": "fast",
+    "xpYield": 115,
+    "evolution": {
+      "to": 111,
+      "level": 34
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 59
+      },
+      {
+        "level": 12,
+        "moveId": 54
+      },
+      {
+        "level": 14,
+        "moveId": 57
+      },
+      {
+        "level": 18,
+        "moveId": 56
+      },
+      {
+        "level": 22,
+        "moveId": 55
+      },
+      {
+        "level": 28,
+        "moveId": 58
+      },
+      {
+        "level": 32,
+        "moveId": 60
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Machoire"
+    ],
+    "height": 1.3,
+    "weight": 42.0,
+    "description": "Lithocrane peut briser un mur de pierre d'un seul coup de tete.",
+    "habitat": "Gorge Tectonique"
+  },
+  {
+    "id": 111,
+    "name": "Seismocrane",
+    "types": [
+      6,
+      7
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 100,
+      "def": 84,
+      "spatk": 55,
+      "spdef": 66,
+      "speed": 65
+    },
+    "captureRate": 60,
+    "xpGroup": "fast",
+    "xpYield": 195,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 59
+      },
+      {
+        "level": 12,
+        "moveId": 54
+      },
+      {
+        "level": 14,
+        "moveId": 57
+      },
+      {
+        "level": 18,
+        "moveId": 56
+      },
+      {
+        "level": 22,
+        "moveId": 55
+      },
+      {
+        "level": 28,
+        "moveId": 58
+      },
+      {
+        "level": 32,
+        "moveId": 60
+      },
+      {
+        "level": 34,
+        "moveId": 62
+      },
+      {
+        "level": 40,
+        "moveId": 65
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Charge Statique"
+    ],
+    "height": 2.5,
+    "weight": 115.0,
+    "description": "Seismocrane combine la force brute de la terre avec la puissance de la foudre.",
+    "habitat": "Plateau Brise"
+  },
+  {
+    "id": 112,
+    "name": "Crestail",
+    "types": [
+      5
+    ],
+    "baseStats": {
+      "hp": 49,
+      "atk": 35,
+      "def": 36,
+      "spatk": 50,
+      "spdef": 48,
+      "speed": 65
+    },
+    "captureRate": 150,
+    "xpGroup": "fast",
+    "xpYield": 55,
+    "evolution": {
+      "to": 113,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 50
+      },
+      {
+        "level": 18,
+        "moveId": 51
+      },
+      {
+        "level": 22,
+        "moveId": 52
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Velocite"
+    ],
+    "height": 0.3,
+    "weight": 2.5,
+    "description": "Crestail utilise sa crete coloree pour impressionner les autres.",
+    "habitat": "Falaises Venteuses"
+  },
+  {
+    "id": 113,
+    "name": "Aerocrete",
+    "types": [
+      5
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 50,
+      "def": 48,
+      "spatk": 65,
+      "spdef": 66,
+      "speed": 80
+    },
+    "captureRate": 90,
+    "xpGroup": "fast",
+    "xpYield": 120,
+    "evolution": {
+      "to": 114,
+      "level": 36
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 50
+      },
+      {
+        "level": 18,
+        "moveId": 51
+      },
+      {
+        "level": 22,
+        "moveId": 52
+      },
+      {
+        "level": 28,
+        "moveId": 47
+      },
+      {
+        "level": 34,
+        "moveId": 48
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Velocite"
+    ],
+    "height": 1.0,
+    "weight": 12.0,
+    "description": "Aerocrete execute des acrobaties aeriennes complexes.",
+    "habitat": "Nid des Vents"
+  },
+  {
+    "id": 114,
+    "name": "Panachex",
+    "types": [
+      5,
+      11
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 65,
+      "def": 66,
+      "spatk": 85,
+      "spdef": 84,
+      "speed": 100
+    },
+    "captureRate": 45,
+    "xpGroup": "fast",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 45
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 46
+      },
+      {
+        "level": 12,
+        "moveId": 49
+      },
+      {
+        "level": 14,
+        "moveId": 50
+      },
+      {
+        "level": 18,
+        "moveId": 51
+      },
+      {
+        "level": 22,
+        "moveId": 52
+      },
+      {
+        "level": 28,
+        "moveId": 47
+      },
+      {
+        "level": 34,
+        "moveId": 48
+      },
+      {
+        "level": 36,
+        "moveId": 96
+      },
+      {
+        "level": 42,
+        "moveId": 97
+      },
+      {
+        "level": 48,
+        "moveId": 101
+      }
+    ],
+    "abilities": [
+      "Ailes Coupantes",
+      "Aura Lumineuse"
+    ],
+    "height": 2.5,
+    "weight": 35.0,
+    "description": "Panachex est considere comme le plus beau dinosaure du monde.",
+    "habitat": "Col des Vents"
+  },
+  {
+    "id": 115,
+    "name": "Rocalve",
+    "types": [
+      0
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 50,
+      "def": 66,
+      "spatk": 30,
+      "spdef": 48,
+      "speed": 25
+    },
+    "captureRate": 150,
+    "xpGroup": "slow",
+    "xpYield": 58,
+    "evolution": {
+      "to": 116,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 8
+      },
+      {
+        "level": 18,
+        "moveId": 6
+      },
+      {
+        "level": 22,
+        "moveId": 9
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Carapace"
+    ],
+    "height": 0.4,
+    "weight": 12.0,
+    "description": "Rocalve adore se chauffer au soleil sur les rochers volcaniques.",
+    "habitat": "Mont Ardoise"
+  },
+  {
+    "id": 116,
+    "name": "Basaltex",
+    "types": [
+      0
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 70,
+      "def": 90,
+      "spatk": 40,
+      "spdef": 66,
+      "speed": 25
+    },
+    "captureRate": 90,
+    "xpGroup": "slow",
+    "xpYield": 120,
+    "evolution": {
+      "to": 117,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 8
+      },
+      {
+        "level": 18,
+        "moveId": 6
+      },
+      {
+        "level": 22,
+        "moveId": 9
+      },
+      {
+        "level": 28,
+        "moveId": 3
+      },
+      {
+        "level": 34,
+        "moveId": 7
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Carapace"
+    ],
+    "height": 1.5,
+    "weight": 65.0,
+    "description": "Basaltex est un geologue ne.",
+    "habitat": "Champs de Lave"
+  },
+  {
+    "id": 117,
+    "name": "Obsidianyx",
+    "types": [
+      0,
+      10
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 95,
+      "def": 120,
+      "spatk": 50,
+      "spdef": 78,
+      "speed": 25
+    },
+    "captureRate": 45,
+    "xpGroup": "slow",
+    "xpYield": 195,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 8
+      },
+      {
+        "level": 18,
+        "moveId": 6
+      },
+      {
+        "level": 22,
+        "moveId": 9
+      },
+      {
+        "level": 28,
+        "moveId": 3
+      },
+      {
+        "level": 34,
+        "moveId": 7
+      },
+      {
+        "level": 38,
+        "moveId": 87
+      },
+      {
+        "level": 44,
+        "moveId": 89
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Ombre Furtive"
+    ],
+    "height": 3.0,
+    "weight": 280.0,
+    "description": "Obsidianyx est un predateur embusque dont le corps d'obsidienne reflete son environnement.",
+    "habitat": "Colonne de Basalte"
+  },
+  {
+    "id": 118,
+    "name": "Mossaure",
+    "types": [
+      3
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 35,
+      "def": 54,
+      "spatk": 50,
+      "spdef": 54,
+      "speed": 30
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 119,
+      "level": 20
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 28
+      },
+      {
+        "level": 10,
+        "moveId": 35
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 33
+      },
+      {
+        "level": 22,
+        "moveId": 11
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Nage Rapide"
+    ],
+    "height": 0.6,
+    "weight": 10.0,
+    "description": "Mossaure vit a moitie dans l'eau, a moitie sur terre.",
+    "habitat": "Marais du Jurassique"
+  },
+  {
+    "id": 119,
+    "name": "Limnofern",
+    "types": [
+      3,
+      1
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 50,
+      "def": 72,
+      "spatk": 65,
+      "spdef": 72,
+      "speed": 35
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 120,
+    "evolution": {
+      "to": 120,
+      "level": 34
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 28
+      },
+      {
+        "level": 10,
+        "moveId": 35
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 33
+      },
+      {
+        "level": 22,
+        "moveId": 11
+      },
+      {
+        "level": 28,
+        "moveId": 14
+      },
+      {
+        "level": 32,
+        "moveId": 34
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Nage Rapide"
+    ],
+    "height": 2.0,
+    "weight": 55.0,
+    "description": "Limnofern est l'ecosysteme ambulant des marais.",
+    "habitat": "Mangrove Ancestrale"
+  },
+  {
+    "id": 120,
+    "name": "Paludex",
+    "types": [
+      3,
+      1
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 65,
+      "def": 96,
+      "spatk": 80,
+      "spdef": 90,
+      "speed": 30
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 195,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 28
+      },
+      {
+        "level": 10,
+        "moveId": 35
+      },
+      {
+        "level": 12,
+        "moveId": 29
+      },
+      {
+        "level": 14,
+        "moveId": 31
+      },
+      {
+        "level": 18,
+        "moveId": 33
+      },
+      {
+        "level": 22,
+        "moveId": 11
+      },
+      {
+        "level": 28,
+        "moveId": 14
+      },
+      {
+        "level": 32,
+        "moveId": 34
+      },
+      {
+        "level": 34,
+        "moveId": 30
+      },
+      {
+        "level": 40,
+        "moveId": 12
+      }
+    ],
+    "abilities": [
+      "Vegetal",
+      "Regeneration"
+    ],
+    "height": 5.0,
+    "weight": 320.0,
+    "description": "Paludex est un marais ambulant.",
+    "habitat": "Delta Boueux"
+  },
+  {
+    "id": 121,
+    "name": "Ossarex",
+    "types": [
+      13
+    ],
+    "baseStats": {
+      "hp": 62,
+      "atk": 55,
+      "def": 54,
+      "spatk": 40,
+      "spdef": 42,
+      "speed": 35
+    },
+    "captureRate": 75,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 122,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 113
+      },
+      {
+        "level": 9,
+        "moveId": 118
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 114
+      },
+      {
+        "level": 14,
+        "moveId": 1
+      },
+      {
+        "level": 18,
+        "moveId": 115
+      },
+      {
+        "level": 22,
+        "moveId": 120
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Machoire"
+    ],
+    "height": 0.5,
+    "weight": 8.0,
+    "description": "Ossarex est un puzzle vivant de fossiles.",
+    "habitat": "Site de Fouilles"
+  },
+  {
+    "id": 122,
+    "name": "Necrodonte",
+    "types": [
+      13
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 75,
+      "def": 72,
+      "spatk": 55,
+      "spdef": 60,
+      "speed": 40
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 125,
+    "evolution": {
+      "to": 123,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 113
+      },
+      {
+        "level": 9,
+        "moveId": 118
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 114
+      },
+      {
+        "level": 14,
+        "moveId": 1
+      },
+      {
+        "level": 18,
+        "moveId": 115
+      },
+      {
+        "level": 22,
+        "moveId": 120
+      },
+      {
+        "level": 28,
+        "moveId": 117
+      },
+      {
+        "level": 34,
+        "moveId": 116
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Machoire"
+    ],
+    "height": 1.5,
+    "weight": 40.0,
+    "description": "Necrodonte est un pont entre les vivants et les fossiles.",
+    "habitat": "Cimetiere des Titans"
+  },
+  {
+    "id": 123,
+    "name": "Paleorex",
+    "types": [
+      13,
+      0
+    ],
+    "baseStats": {
+      "hp": 118,
+      "atk": 100,
+      "def": 96,
+      "spatk": 65,
+      "spdef": 72,
+      "speed": 50
+    },
+    "captureRate": 30,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 113
+      },
+      {
+        "level": 9,
+        "moveId": 118
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 114
+      },
+      {
+        "level": 14,
+        "moveId": 1
+      },
+      {
+        "level": 18,
+        "moveId": 115
+      },
+      {
+        "level": 22,
+        "moveId": 120
+      },
+      {
+        "level": 28,
+        "moveId": 117
+      },
+      {
+        "level": 34,
+        "moveId": 116
+      },
+      {
+        "level": 38,
+        "moveId": 2
+      },
+      {
+        "level": 44,
+        "moveId": 3
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Intimidation"
+    ],
+    "height": 4.0,
+    "weight": 300.0,
+    "description": "Paleorex est l'archive vivante de toute la prehistoire.",
+    "habitat": "Strates Anciennes"
+  },
+  {
+    "id": 124,
+    "name": "Siffleur",
+    "types": [
+      12,
+      10
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 80,
+      "def": 66,
+      "spatk": 75,
+      "spdef": 66,
+      "speed": 100
+    },
+    "captureRate": 30,
+    "xpGroup": "fast",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 87
+      },
+      {
+        "level": 9,
+        "moveId": 104
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 105
+      },
+      {
+        "level": 18,
+        "moveId": 89
+      },
+      {
+        "level": 22,
+        "moveId": 109
+      },
+      {
+        "level": 28,
+        "moveId": 112
+      },
+      {
+        "level": 34,
+        "moveId": 108
+      },
+      {
+        "level": 40,
+        "moveId": 90
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Ombre Furtive"
+    ],
+    "height": 1.8,
+    "weight": 30.0,
+    "description": "Siffleur est un mirage vivant du desert.",
+    "habitat": "Vortex du Desert"
+  },
+  {
+    "id": 125,
+    "name": "Titanox",
+    "types": [
+      0
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 50,
+      "def": 72,
+      "spatk": 30,
+      "spdef": 54,
+      "speed": 20
+    },
+    "captureRate": 75,
+    "xpGroup": "slow",
+    "xpYield": 60,
+    "evolution": {
+      "to": 126,
+      "level": 28
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 53
+      },
+      {
+        "level": 18,
+        "moveId": 8
+      },
+      {
+        "level": 22,
+        "moveId": 6
+      },
+      {
+        "level": 28,
+        "moveId": 3
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Armure Naturelle"
+    ],
+    "height": 1.0,
+    "weight": 40.0,
+    "description": "Titanox est si lourd pour sa taille que les balances ordinaires se cassent.",
+    "habitat": "Mont Ardoise"
+  },
+  {
+    "id": 126,
+    "name": "Colossaure",
+    "types": [
+      0,
+      6
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 70,
+      "def": 102,
+      "spatk": 40,
+      "spdef": 72,
+      "speed": 20
+    },
+    "captureRate": 45,
+    "xpGroup": "slow",
+    "xpYield": 135,
+    "evolution": {
+      "to": 127,
+      "level": 40
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 53
+      },
+      {
+        "level": 18,
+        "moveId": 8
+      },
+      {
+        "level": 22,
+        "moveId": 6
+      },
+      {
+        "level": 28,
+        "moveId": 3
+      },
+      {
+        "level": 34,
+        "moveId": 55
+      },
+      {
+        "level": 38,
+        "moveId": 7
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Armure Naturelle"
+    ],
+    "height": 5.0,
+    "weight": 350.0,
+    "description": "Colossaure grandit extremement lentement mais sans jamais s'arreter.",
+    "habitat": "Citadelle Fossile"
+  },
+  {
+    "id": 127,
+    "name": "Megalithon",
+    "types": [
+      0,
+      6
+    ],
+    "baseStats": {
+      "hp": 168,
+      "atk": 90,
+      "def": 132,
+      "spatk": 50,
+      "spdef": 90,
+      "speed": 20
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 220,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 1
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 2
+      },
+      {
+        "level": 12,
+        "moveId": 5
+      },
+      {
+        "level": 14,
+        "moveId": 53
+      },
+      {
+        "level": 18,
+        "moveId": 8
+      },
+      {
+        "level": 22,
+        "moveId": 6
+      },
+      {
+        "level": 28,
+        "moveId": 3
+      },
+      {
+        "level": 34,
+        "moveId": 55
+      },
+      {
+        "level": 38,
+        "moveId": 7
+      },
+      {
+        "level": 40,
+        "moveId": 58
+      },
+      {
+        "level": 46,
+        "moveId": 4
+      }
+    ],
+    "abilities": [
+      "Peau Dure",
+      "Cuirasse"
+    ],
+    "height": 15.0,
+    "weight": 2000.0,
+    "description": "Megalithon est la creature la plus massive jamais observee.",
+    "habitat": "Sanctuaire des Origines"
+  },
+  {
+    "id": 128,
+    "name": "Chronox",
+    "types": [
+      13
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 45,
+      "def": 60,
+      "spatk": 55,
+      "spdef": 60,
+      "speed": 50
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 80,
+    "evolution": {
+      "to": 129,
+      "level": 30
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 118
+      },
+      {
+        "level": 14,
+        "moveId": 63
+      },
+      {
+        "level": 18,
+        "moveId": 114
+      },
+      {
+        "level": 22,
+        "moveId": 115
+      },
+      {
+        "level": 28,
+        "moveId": 67
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Velocite"
+    ],
+    "height": 0.4,
+    "weight": 5.0,
+    "description": "Chronox existe a la frontiere entre le passe et le present.",
+    "habitat": "Faille Temporelle"
+  },
+  {
+    "id": 129,
+    "name": "Temporex",
+    "types": [
+      13,
+      7
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 60,
+      "def": 78,
+      "spatk": 80,
+      "spdef": 84,
+      "speed": 65
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 155,
+    "evolution": {
+      "to": 130,
+      "level": 50
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 118
+      },
+      {
+        "level": 14,
+        "moveId": 63
+      },
+      {
+        "level": 18,
+        "moveId": 114
+      },
+      {
+        "level": 22,
+        "moveId": 115
+      },
+      {
+        "level": 28,
+        "moveId": 67
+      },
+      {
+        "level": 30,
+        "moveId": 65
+      },
+      {
+        "level": 36,
+        "moveId": 64
+      },
+      {
+        "level": 42,
+        "moveId": 117
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Velocite"
+    ],
+    "height": 1.5,
+    "weight": 30.0,
+    "description": "Temporex manipule le flux du temps a une echelle locale.",
+    "habitat": "Faille Temporelle"
+  },
+  {
+    "id": 130,
+    "name": "Eternadon",
+    "types": [
+      13,
+      7
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 75,
+      "def": 96,
+      "spatk": 110,
+      "spdef": 102,
+      "speed": 85
+    },
+    "captureRate": 3,
+    "xpGroup": "slow",
+    "xpYield": 270,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 12,
+        "moveId": 118
+      },
+      {
+        "level": 14,
+        "moveId": 63
+      },
+      {
+        "level": 18,
+        "moveId": 114
+      },
+      {
+        "level": 22,
+        "moveId": 115
+      },
+      {
+        "level": 28,
+        "moveId": 67
+      },
+      {
+        "level": 30,
+        "moveId": 65
+      },
+      {
+        "level": 36,
+        "moveId": 64
+      },
+      {
+        "level": 42,
+        "moveId": 117
+      },
+      {
+        "level": 50,
+        "moveId": 116
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Velocite"
+    ],
+    "height": 3.5,
+    "weight": 100.0,
+    "description": "Eternadon transcende le temps lui-meme.",
+    "habitat": "Faille Temporelle"
+  },
+  {
+    "id": 131,
+    "name": "Pyronyx",
+    "types": [
+      2,
+      13
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 105,
+      "def": 96,
+      "spatk": 95,
+      "spdef": 90,
+      "speed": 55
+    },
+    "captureRate": 3,
+    "xpGroup": "slow",
+    "xpYield": 270,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 24
+      },
+      {
+        "level": 20,
+        "moveId": 22
+      },
+      {
+        "level": 30,
+        "moveId": 115
+      },
+      {
+        "level": 40,
+        "moveId": 21
+      },
+      {
+        "level": 50,
+        "moveId": 116
+      },
+      {
+        "level": 60,
+        "moveId": 26
+      }
+    ],
+    "abilities": [
+      "Flamme Vive",
+      "Fossile Ancien"
+    ],
+    "height": 5.0,
+    "weight": 280.0,
+    "description": "Pyronyx est le Gardien du Feu Primordial, la premiere flamme qui a jailli de la Terre.",
+    "habitat": "Sanctuaire du Feu"
+  },
+  {
+    "id": 132,
+    "name": "Glaciornyx",
+    "types": [
+      4,
+      13
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 75,
+      "def": 114,
+      "spatk": 105,
+      "spdef": 108,
+      "speed": 45
+    },
+    "captureRate": 3,
+    "xpGroup": "slow",
+    "xpYield": 270,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 37
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 42
+      },
+      {
+        "level": 20,
+        "moveId": 40
+      },
+      {
+        "level": 30,
+        "moveId": 115
+      },
+      {
+        "level": 40,
+        "moveId": 39
+      },
+      {
+        "level": 50,
+        "moveId": 116
+      },
+      {
+        "level": 60,
+        "moveId": 43
+      }
+    ],
+    "abilities": [
+      "Gel Eternel",
+      "Fossile Ancien"
+    ],
+    "height": 7.0,
+    "weight": 500.0,
+    "description": "Glaciornyx est le Gardien du Froid Primordial.",
+    "habitat": "Sanctuaire de Glace"
+  },
+  {
+    "id": 133,
+    "name": "Galvornyx",
+    "types": [
+      7,
+      13
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 80,
+      "def": 90,
+      "spatk": 100,
+      "spdef": 96,
+      "speed": 75
+    },
+    "captureRate": 3,
+    "xpGroup": "slow",
+    "xpYield": 270,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 65
+      },
+      {
+        "level": 20,
+        "moveId": 63
+      },
+      {
+        "level": 30,
+        "moveId": 115
+      },
+      {
+        "level": 40,
+        "moveId": 64
+      },
+      {
+        "level": 50,
+        "moveId": 116
+      },
+      {
+        "level": 60,
+        "moveId": 117
+      }
+    ],
+    "abilities": [
+      "Charge Statique",
+      "Fossile Ancien"
+    ],
+    "height": 3.5,
+    "weight": 90.0,
+    "description": "Galvornyx est le Gardien de la Foudre Primordiale.",
+    "habitat": "Sanctuaire de la Foudre"
+  },
+  {
+    "id": 134,
+    "name": "Aquaveil",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 40,
+      "def": 48,
+      "spatk": 50,
+      "spdef": 54,
+      "speed": 40
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 60,
+    "evolution": {
+      "to": 135,
+      "level": 18
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 18
+      },
+      {
+        "level": 14,
+        "moveId": 16
+      },
+      {
+        "level": 18,
+        "moveId": 13
+      },
+      {
+        "level": 22,
+        "moveId": 15
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Ecailles Epaisses"
+    ],
+    "height": 0.7,
+    "weight": 9.0,
+    "description": "Aquaveil se cache sous un voile d'eau qui le rend presque invisible.",
+    "habitat": "Lac du Cretace"
+  },
+  {
+    "id": 135,
+    "name": "Tidalos",
+    "types": [
+      1
+    ],
+    "baseStats": {
+      "hp": 91,
+      "atk": 55,
+      "def": 66,
+      "spatk": 70,
+      "spdef": 72,
+      "speed": 50
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 130,
+    "evolution": {
+      "to": 136,
+      "level": 34
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 18
+      },
+      {
+        "level": 14,
+        "moveId": 16
+      },
+      {
+        "level": 18,
+        "moveId": 13
+      },
+      {
+        "level": 22,
+        "moveId": 15
+      },
+      {
+        "level": 28,
+        "moveId": 17
+      },
+      {
+        "level": 32,
+        "moveId": 14
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Ecailles Epaisses"
+    ],
+    "height": 3.0,
+    "weight": 80.0,
+    "description": "Tidalos controle les marees avec les mouvements de ses nageoires.",
+    "habitat": "Riviere Azur"
+  },
+  {
+    "id": 136,
+    "name": "Tsunamex",
+    "types": [
+      1,
+      6
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 70,
+      "def": 90,
+      "spatk": 90,
+      "spdef": 90,
+      "speed": 40
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 200,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 10
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 11
+      },
+      {
+        "level": 12,
+        "moveId": 18
+      },
+      {
+        "level": 14,
+        "moveId": 16
+      },
+      {
+        "level": 18,
+        "moveId": 13
+      },
+      {
+        "level": 22,
+        "moveId": 15
+      },
+      {
+        "level": 28,
+        "moveId": 17
+      },
+      {
+        "level": 32,
+        "moveId": 14
+      },
+      {
+        "level": 34,
+        "moveId": 53
+      },
+      {
+        "level": 40,
+        "moveId": 55
+      },
+      {
+        "level": 46,
+        "moveId": 12
+      }
+    ],
+    "abilities": [
+      "Torrent",
+      "Peau Dure"
+    ],
+    "height": 8.0,
+    "weight": 550.0,
+    "description": "Tsunamex est la force des oceans incarnee.",
+    "habitat": "Ocean Primordial"
+  },
+  {
+    "id": 137,
+    "name": "Lumivore",
+    "types": [
+      11
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 35,
+      "def": 42,
+      "spatk": 55,
+      "spdef": 60,
+      "speed": 50
+    },
+    "captureRate": 150,
+    "xpGroup": "medium",
+    "xpYield": 60,
+    "evolution": {
+      "to": 138,
+      "level": 22
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 101
+      },
+      {
+        "level": 22,
+        "moveId": 102
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Regeneration"
+    ],
+    "height": 0.4,
+    "weight": 4.0,
+    "description": "Lumivore mange la lumiere du soleil pour grandir.",
+    "habitat": "Prairie Lumineuse"
+  },
+  {
+    "id": 138,
+    "name": "Solardonte",
+    "types": [
+      11
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 50,
+      "def": 60,
+      "spatk": 75,
+      "spdef": 78,
+      "speed": 55
+    },
+    "captureRate": 90,
+    "xpGroup": "medium",
+    "xpYield": 130,
+    "evolution": {
+      "to": 139,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 101
+      },
+      {
+        "level": 22,
+        "moveId": 102
+      },
+      {
+        "level": 28,
+        "moveId": 103
+      },
+      {
+        "level": 34,
+        "moveId": 23
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Regeneration"
+    ],
+    "height": 1.0,
+    "weight": 18.0,
+    "description": "Solardonte stocke tellement de lumiere que meme la nuit, il brille.",
+    "habitat": "Sanctuaire Solaire"
+  },
+  {
+    "id": 139,
+    "name": "Novaflare",
+    "types": [
+      11,
+      2
+    ],
+    "baseStats": {
+      "hp": 112,
+      "atk": 65,
+      "def": 78,
+      "spatk": 105,
+      "spdef": 102,
+      "speed": 60
+    },
+    "captureRate": 30,
+    "xpGroup": "medium",
+    "xpYield": 215,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 99
+      },
+      {
+        "level": 12,
+        "moveId": 97
+      },
+      {
+        "level": 14,
+        "moveId": 100
+      },
+      {
+        "level": 18,
+        "moveId": 101
+      },
+      {
+        "level": 22,
+        "moveId": 102
+      },
+      {
+        "level": 28,
+        "moveId": 103
+      },
+      {
+        "level": 34,
+        "moveId": 23
+      },
+      {
+        "level": 38,
+        "moveId": 19
+      },
+      {
+        "level": 44,
+        "moveId": 22
+      },
+      {
+        "level": 50,
+        "moveId": 98
+      }
+    ],
+    "abilities": [
+      "Aura Lumineuse",
+      "Flamme Vive"
+    ],
+    "height": 2.5,
+    "weight": 80.0,
+    "description": "Novaflare est un soleil en miniature.",
+    "habitat": "Zenith Dore"
+  },
+  {
+    "id": 140,
+    "name": "Terradax",
+    "types": [
+      6,
+      12
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 50,
+      "def": 60,
+      "spatk": 35,
+      "spdef": 48,
+      "speed": 35
+    },
+    "captureRate": 200,
+    "xpGroup": "medium",
+    "xpYield": 58,
+    "evolution": {
+      "to": 141,
+      "level": 24
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 104
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 54
+      },
+      {
+        "level": 14,
+        "moveId": 59
+      },
+      {
+        "level": 18,
+        "moveId": 57
+      },
+      {
+        "level": 22,
+        "moveId": 106
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Peau Dure"
+    ],
+    "height": 0.5,
+    "weight": 9.0,
+    "description": "Terradax change de couleur selon le sol ou il vit.",
+    "habitat": "Desert du Permien"
+  },
+  {
+    "id": 141,
+    "name": "Erosidon",
+    "types": [
+      6,
+      12
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 70,
+      "def": 78,
+      "spatk": 50,
+      "spdef": 66,
+      "speed": 40
+    },
+    "captureRate": 120,
+    "xpGroup": "medium",
+    "xpYield": 130,
+    "evolution": {
+      "to": 142,
+      "level": 38
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 104
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 54
+      },
+      {
+        "level": 14,
+        "moveId": 59
+      },
+      {
+        "level": 18,
+        "moveId": 57
+      },
+      {
+        "level": 22,
+        "moveId": 106
+      },
+      {
+        "level": 28,
+        "moveId": 55
+      },
+      {
+        "level": 34,
+        "moveId": 108
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Peau Dure"
+    ],
+    "height": 1.5,
+    "weight": 50.0,
+    "description": "Erosidon sculpte le paysage malgre lui.",
+    "habitat": "Canyon Ecarlate"
+  },
+  {
+    "id": 142,
+    "name": "Geomantyx",
+    "types": [
+      6,
+      12
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 95,
+      "def": 102,
+      "spatk": 60,
+      "spdef": 84,
+      "speed": 45
+    },
+    "captureRate": 45,
+    "xpGroup": "medium",
+    "xpYield": 210,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 53
+      },
+      {
+        "level": 9,
+        "moveId": 104
+      },
+      {
+        "level": 10,
+        "moveId": 107
+      },
+      {
+        "level": 12,
+        "moveId": 54
+      },
+      {
+        "level": 14,
+        "moveId": 59
+      },
+      {
+        "level": 18,
+        "moveId": 57
+      },
+      {
+        "level": 22,
+        "moveId": 106
+      },
+      {
+        "level": 28,
+        "moveId": 55
+      },
+      {
+        "level": 34,
+        "moveId": 108
+      },
+      {
+        "level": 38,
+        "moveId": 58
+      },
+      {
+        "level": 44,
+        "moveId": 111
+      }
+    ],
+    "abilities": [
+      "Tempete de Sable",
+      "Intimidation"
+    ],
+    "height": 3.5,
+    "weight": 300.0,
+    "description": "Geomantyx est le maitre de la terre et du sable.",
+    "habitat": "Vortex du Desert"
+  },
+  {
+    "id": 143,
+    "name": "Venivolt",
+    "types": [
+      8,
+      7
+    ],
+    "baseStats": {
+      "hp": 56,
+      "atk": 45,
+      "def": 42,
+      "spatk": 55,
+      "spdef": 48,
+      "speed": 55
+    },
+    "captureRate": 75,
+    "xpGroup": "fast",
+    "xpYield": 62,
+    "evolution": {
+      "to": 144,
+      "level": 26
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 70
+      },
+      {
+        "level": 10,
+        "moveId": 69
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 71
+      },
+      {
+        "level": 18,
+        "moveId": 63
+      },
+      {
+        "level": 22,
+        "moveId": 68
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Charge Statique"
+    ],
+    "height": 0.4,
+    "weight": 4.0,
+    "description": "Venivolt est un danger ambulant : son venin est electrifie.",
+    "habitat": "Marais Toxiques"
+  },
+  {
+    "id": 144,
+    "name": "Toxeclair",
+    "types": [
+      8,
+      7
+    ],
+    "baseStats": {
+      "hp": 77,
+      "atk": 60,
+      "def": 60,
+      "spatk": 75,
+      "spdef": 66,
+      "speed": 70
+    },
+    "captureRate": 45,
+    "xpGroup": "fast",
+    "xpYield": 135,
+    "evolution": {
+      "to": 145,
+      "level": 40
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 70
+      },
+      {
+        "level": 10,
+        "moveId": 69
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 71
+      },
+      {
+        "level": 18,
+        "moveId": 63
+      },
+      {
+        "level": 22,
+        "moveId": 68
+      },
+      {
+        "level": 28,
+        "moveId": 73
+      },
+      {
+        "level": 34,
+        "moveId": 65
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Charge Statique"
+    ],
+    "height": 1.2,
+    "weight": 18.0,
+    "description": "Toxeclair combine la foudre et le poison dans des attaques devastatrices.",
+    "habitat": "Steppe Electrique"
+  },
+  {
+    "id": 145,
+    "name": "Fulguvenin",
+    "types": [
+      8,
+      7
+    ],
+    "baseStats": {
+      "hp": 105,
+      "atk": 80,
+      "def": 72,
+      "spatk": 100,
+      "spdef": 84,
+      "speed": 85
+    },
+    "captureRate": 30,
+    "xpGroup": "fast",
+    "xpYield": 220,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 62
+      },
+      {
+        "level": 9,
+        "moveId": 70
+      },
+      {
+        "level": 10,
+        "moveId": 69
+      },
+      {
+        "level": 12,
+        "moveId": 75
+      },
+      {
+        "level": 14,
+        "moveId": 71
+      },
+      {
+        "level": 18,
+        "moveId": 63
+      },
+      {
+        "level": 22,
+        "moveId": 68
+      },
+      {
+        "level": 28,
+        "moveId": 73
+      },
+      {
+        "level": 34,
+        "moveId": 65
+      },
+      {
+        "level": 40,
+        "moveId": 64
+      },
+      {
+        "level": 46,
+        "moveId": 77
+      }
+    ],
+    "abilities": [
+      "Venin",
+      "Velocite"
+    ],
+    "height": 2.5,
+    "weight": 60.0,
+    "description": "Fulguvenin est la fusion parfaite du poison et de la foudre.",
+    "habitat": "Sommet de l'Orage"
+  },
+  {
+    "id": 146,
+    "name": "Draconyx",
+    "types": [
+      10,
+      2
+    ],
+    "baseStats": {
+      "hp": 70,
+      "atk": 55,
+      "def": 54,
+      "spatk": 55,
+      "spdef": 54,
+      "speed": 50
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 80,
+    "evolution": {
+      "to": 147,
+      "level": 30
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 87
+      },
+      {
+        "level": 10,
+        "moveId": 27
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 20
+      },
+      {
+        "level": 22,
+        "moveId": 92
+      },
+      {
+        "level": 28,
+        "moveId": 24
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Flamme Vive"
+    ],
+    "height": 0.5,
+    "weight": 6.0,
+    "description": "Draconyx est le seul dinosaure qui ressemble a un dragon des legendes.",
+    "habitat": "Abime Corrompue"
+  },
+  {
+    "id": 147,
+    "name": "Wyverion",
+    "types": [
+      10,
+      2
+    ],
+    "baseStats": {
+      "hp": 98,
+      "atk": 75,
+      "def": 72,
+      "spatk": 80,
+      "spdef": 72,
+      "speed": 65
+    },
+    "captureRate": 30,
+    "xpGroup": "slow",
+    "xpYield": 155,
+    "evolution": {
+      "to": 148,
+      "level": 50
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 87
+      },
+      {
+        "level": 10,
+        "moveId": 27
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 20
+      },
+      {
+        "level": 22,
+        "moveId": 92
+      },
+      {
+        "level": 28,
+        "moveId": 24
+      },
+      {
+        "level": 30,
+        "moveId": 90
+      },
+      {
+        "level": 36,
+        "moveId": 22
+      },
+      {
+        "level": 42,
+        "moveId": 25
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Flamme Vive"
+    ],
+    "height": 2.0,
+    "weight": 45.0,
+    "description": "Wyverion chasse dans les cieux nocturnes, fondant sur ses proies comme une etoile filante sombre.",
+    "habitat": "Spire Draconique"
+  },
+  {
+    "id": 148,
+    "name": "Tyranombre",
+    "types": [
+      10,
+      2
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 100,
+      "def": 90,
+      "spatk": 105,
+      "spdef": 90,
+      "speed": 80
+    },
+    "captureRate": 3,
+    "xpGroup": "slow",
+    "xpYield": 270,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 19
+      },
+      {
+        "level": 9,
+        "moveId": 87
+      },
+      {
+        "level": 10,
+        "moveId": 27
+      },
+      {
+        "level": 12,
+        "moveId": 94
+      },
+      {
+        "level": 14,
+        "moveId": 89
+      },
+      {
+        "level": 18,
+        "moveId": 20
+      },
+      {
+        "level": 22,
+        "moveId": 92
+      },
+      {
+        "level": 28,
+        "moveId": 24
+      },
+      {
+        "level": 30,
+        "moveId": 90
+      },
+      {
+        "level": 36,
+        "moveId": 22
+      },
+      {
+        "level": 42,
+        "moveId": 25
+      },
+      {
+        "level": 50,
+        "moveId": 91
+      }
+    ],
+    "abilities": [
+      "Ombre Furtive",
+      "Instinct Predateur"
+    ],
+    "height": 5.0,
+    "weight": 250.0,
+    "description": "Tyranombre est la creature la plus redoutee du monde. Mi-ombre mi-flamme, il incarne la terreur primordiale.",
+    "habitat": "Spire Draconique"
+  },
+  {
+    "id": 149,
+    "name": "Protovie",
+    "types": [
+      13,
+      11
+    ],
+    "baseStats": {
+      "hp": 84,
+      "atk": 50,
+      "def": 66,
+      "spatk": 60,
+      "spdef": 66,
+      "speed": 50
+    },
+    "captureRate": 3,
+    "xpGroup": "slow",
+    "xpYield": 90,
+    "evolution": {
+      "to": 150,
+      "level": 50
+    },
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 20,
+        "moveId": 99
+      },
+      {
+        "level": 30,
+        "moveId": 115
+      },
+      {
+        "level": 40,
+        "moveId": 101
+      },
+      {
+        "level": 50,
+        "moveId": 117
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Aura Lumineuse"
+    ],
+    "height": 0.3,
+    "weight": 3.0,
+    "description": "Protovie est le germe de toute vie. Il contient en lui le potentiel de chaque creature.",
+    "habitat": "Sanctuaire des Origines"
+  },
+  {
+    "id": 150,
+    "name": "Pangaeon",
+    "types": [
+      13,
+      11
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 90,
+      "def": 108,
+      "spatk": 100,
+      "spdef": 108,
+      "speed": 80
+    },
+    "captureRate": 3,
+    "xpGroup": "slow",
+    "xpYield": 300,
+    "evolution": null,
+    "learnset": [
+      {
+        "level": 1,
+        "moveId": 121
+      },
+      {
+        "level": 1,
+        "moveId": 122
+      },
+      {
+        "level": 7,
+        "moveId": 96
+      },
+      {
+        "level": 9,
+        "moveId": 113
+      },
+      {
+        "level": 10,
+        "moveId": 119
+      },
+      {
+        "level": 20,
+        "moveId": 99
+      },
+      {
+        "level": 30,
+        "moveId": 115
+      },
+      {
+        "level": 40,
+        "moveId": 101
+      },
+      {
+        "level": 50,
+        "moveId": 116
+      },
+      {
+        "level": 52,
+        "moveId": 117
+      },
+      {
+        "level": 55,
+        "moveId": 98
+      },
+      {
+        "level": 60,
+        "moveId": 102
+      }
+    ],
+    "abilities": [
+      "Fossile Ancien",
+      "Aura Lumineuse"
+    ],
+    "height": 6.0,
+    "weight": 400.0,
+    "description": "Pangaeon est l'incarnation de la Terre primordiale, la Pangee vivante.",
+    "habitat": "Sommet du Monde"
+  }
+]
