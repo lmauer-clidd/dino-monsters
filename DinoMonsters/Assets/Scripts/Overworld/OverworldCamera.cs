@@ -11,8 +11,8 @@ public class OverworldCamera : MonoBehaviour
     public Transform target;
 
     [Header("Camera Settings")]
-    public float distance = 8f;
-    public float pitch = 50f;        // vertical angle (degrees)
+    public float distance = 14f;
+    public float pitch = 55f;        // vertical angle (degrees)
     public float yaw = 0f;           // horizontal orbit angle
     public float smoothSpeed = 10f;
 
@@ -125,7 +125,7 @@ public class OverworldCamera : MonoBehaviour
 
     public void ZoomOut()
     {
-        distance = 8f;
+        distance = 14f;
     }
 
     public void ResetOrbit()
