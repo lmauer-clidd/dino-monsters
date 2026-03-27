@@ -19,6 +19,9 @@ public static class BuildingRenderer
         float wallHeight = stories * 1.2f;
         float halfWidth = width * 0.5f;
         float halfDepth = depth * 0.5f;
+        // Door X in local coords: matches the door tile offset used in OverworldManager
+        // Pattern: (width-1)/2 gives 1 for w=3,4 and 2 for w=5,6
+        float doorX = (width - 1) / 2;
 
         var root = new GameObject($"Building_{position.x}_{position.z}");
         root.transform.SetParent(parent);
@@ -54,10 +57,10 @@ public static class BuildingRenderer
             CreateChimney(root.transform, halfWidth, halfDepth, wallHeight);
 
         // ----- Door -----
-        CreateDoor(root.transform, halfWidth, depth, wallHeight);
+        CreateDoor(root.transform, doorX, depth, wallHeight);
 
         // ----- Porch / step in front of door -----
-        CreatePorch(root.transform, halfWidth, depth);
+        CreatePorch(root.transform, doorX, depth);
 
         // ----- Windows -----
         CreateWindows(root.transform, width, depth, wallHeight, stories);
