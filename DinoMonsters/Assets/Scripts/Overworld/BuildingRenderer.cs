@@ -59,9 +59,6 @@ public static class BuildingRenderer
         // ----- Door -----
         CreateDoor(root.transform, doorX, depth, wallHeight);
 
-        // ----- Porch / step in front of door -----
-        CreatePorch(root.transform, doorX, depth);
-
         // ----- Windows -----
         CreateWindows(root.transform, width, depth, wallHeight, stories);
 
@@ -208,63 +205,60 @@ public static class BuildingRenderer
     // Door
     // ================================================================
 
-    static void CreateDoor(Transform parent, float halfWidth, int depth, float wallHeight)
+    static void CreateDoor(Transform parent, float doorLocalX, int depth, float wallHeight)
     {
-        float doorWidth = 0.6f;
-        float doorHeight = Mathf.Min(1.0f, wallHeight * 0.7f);
+        float doorWidth = 0.7f;
+        float doorHeight = Mathf.Min(1.1f, wallHeight * 0.75f);
 
-        // Door frame -- outer frame, lighter wood color
-        var frame = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        // Door frame -- thin CUBE (visible from all angles unlike Quad)
+        var frame = GameObject.CreatePrimitive(PrimitiveType.Cube);
         frame.transform.SetParent(parent);
-        frame.transform.localPosition = new Vector3(halfWidth, doorHeight * 0.5f, -0.005f);
-        frame.transform.localScale = new Vector3(doorWidth + 0.12f, doorHeight + 0.08f, 1f);
-        frame.transform.localRotation = Quaternion.Euler(0, 180, 0);
+        frame.transform.localPosition = new Vector3(doorLocalX, doorHeight * 0.5f, -0.01f);
+        frame.transform.localScale = new Vector3(doorWidth + 0.14f, doorHeight + 0.10f, 0.04f);
         frame.name = "DoorFrame";
-        var frameR = frame.GetComponent<Renderer>();
-        frameR.sharedMaterial = MaterialManager.GetSolidColor(new Color(0.70f, 0.55f, 0.35f));
+        frame.GetComponent<Renderer>().sharedMaterial =
+            MaterialManager.GetSolidColor(new Color(0.70f, 0.55f, 0.35f));
         Object.Destroy(frame.GetComponent<Collider>());
 
-        // Door -- warm brown rectangle on the front face (Z = 0 side)
-        var door = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        // Door panel -- darker brown, slightly in front of frame
+        var door = GameObject.CreatePrimitive(PrimitiveType.Cube);
         door.transform.SetParent(parent);
-        door.transform.localPosition = new Vector3(halfWidth, doorHeight * 0.5f, -0.01f);
-        door.transform.localScale = new Vector3(doorWidth, doorHeight, 1f);
-        door.transform.localRotation = Quaternion.Euler(0, 180, 0);
+        door.transform.localPosition = new Vector3(doorLocalX, doorHeight * 0.5f, -0.03f);
+        door.transform.localScale = new Vector3(doorWidth, doorHeight, 0.04f);
         door.name = "Door";
-        var doorR = door.GetComponent<Renderer>();
-        doorR.sharedMaterial = MaterialManager.GetSolidColor(new Color(0.55f, 0.35f, 0.20f));
+        door.GetComponent<Renderer>().sharedMaterial =
+            MaterialManager.GetSolidColor(new Color(0.45f, 0.28f, 0.15f));
         Object.Destroy(door.GetComponent<Collider>());
 
-        // Door knob (larger, gold colored)
+        // Door knob -- gold sphere
         var knob = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         knob.transform.SetParent(parent);
-        knob.transform.localPosition = new Vector3(halfWidth + doorWidth * 0.3f, doorHeight * 0.45f, -0.02f);
-        knob.transform.localScale = Vector3.one * 0.06f;
+        knob.transform.localPosition = new Vector3(doorLocalX + doorWidth * 0.3f, doorHeight * 0.45f, -0.06f);
+        knob.transform.localScale = Vector3.one * 0.07f;
         knob.name = "DoorKnob";
-        var knobR = knob.GetComponent<Renderer>();
-        knobR.sharedMaterial = MaterialManager.GetSolidColor(new Color(0.90f, 0.75f, 0.25f));
+        knob.GetComponent<Renderer>().sharedMaterial =
+            MaterialManager.GetSolidColor(new Color(0.90f, 0.75f, 0.25f));
         Object.Destroy(knob.GetComponent<Collider>());
 
-        // Door light -- small emissive yellow sphere above door
+        // Door light -- yellow sphere above door
         var light = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         light.transform.SetParent(parent);
-        light.transform.localPosition = new Vector3(halfWidth, doorHeight + 0.08f, -0.02f);
-        light.transform.localScale = Vector3.one * 0.08f;
+        light.transform.localPosition = new Vector3(doorLocalX, doorHeight + 0.10f, -0.05f);
+        light.transform.localScale = Vector3.one * 0.10f;
         light.name = "DoorLight";
-        var lightR = light.GetComponent<Renderer>();
-        lightR.sharedMaterial = MaterialManager.GetSolidColor(new Color(1.0f, 0.92f, 0.50f));
+        light.GetComponent<Renderer>().sharedMaterial =
+            MaterialManager.GetSolidColor(new Color(1.0f, 0.92f, 0.50f));
         Object.Destroy(light.GetComponent<Collider>());
 
-        // Welcome mat -- flat colored quad on the ground in front of the door
-        var mat = GameObject.CreatePrimitive(PrimitiveType.Quad);
-        mat.transform.SetParent(parent);
-        mat.transform.localPosition = new Vector3(halfWidth, 0.02f, -0.35f);
-        mat.transform.localRotation = Quaternion.Euler(90, 0, 0);
-        mat.transform.localScale = new Vector3(0.5f, 0.3f, 1f);
-        mat.name = "WelcomeMat";
-        var matR = mat.GetComponent<Renderer>();
-        matR.sharedMaterial = MaterialManager.GetSolidColor(new Color(0.60f, 0.35f, 0.20f));
-        Object.Destroy(mat.GetComponent<Collider>());
+        // Porch / welcome step -- flat box in front of door
+        var porch = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        porch.transform.SetParent(parent);
+        porch.transform.localPosition = new Vector3(doorLocalX, 0.04f, -0.25f);
+        porch.transform.localScale = new Vector3(0.8f, 0.08f, 0.4f);
+        porch.name = "Porch";
+        porch.GetComponent<Renderer>().sharedMaterial =
+            MaterialManager.GetSolidColor(new Color(0.60f, 0.55f, 0.45f));
+        Object.Destroy(porch.GetComponent<Collider>());
     }
 
     // ================================================================
