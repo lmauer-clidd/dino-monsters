@@ -2670,12 +2670,12 @@ public class OverworldManager : MonoBehaviour
                 break;
 
             case TILE_WALL:
-                tile.transform.position = new Vector3(x * tileSize, 0.5f, y * tileSize);
-                tile.transform.localScale = new Vector3(tileSize, 2f, tileSize);
-                renderer.sharedMaterial = MaterialManager.GetSolidColor(ColorWall);
-                // Add scattered rocks near walls
-                if (Random.value < 0.2f)
-                    AddRockDecoration(x, y);
+                // Wall tiles are FLAT — buildings provide their own 3D walls
+                // Render as dark ground tile under the building footprint
+                tile.transform.position = new Vector3(x * tileSize, -0.5f, y * tileSize);
+                tile.transform.localScale = new Vector3(tileSize, 1f, tileSize);
+                renderer.sharedMaterial = MaterialManager.GetSolidColor(
+                    new Color(ColorWall.r * 0.7f, ColorWall.g * 0.7f, ColorWall.b * 0.7f));
                 break;
 
             case TILE_TALL_GRASS:
