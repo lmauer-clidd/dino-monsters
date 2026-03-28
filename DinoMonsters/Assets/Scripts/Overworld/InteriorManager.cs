@@ -152,12 +152,18 @@ public class InteriorManager : MonoBehaviour
             hiddenOverworldParent = null;
         }
 
-        // Reposition player at return position
+        // Reposition player at return position and sync GameState
+        // returnPosition is Vector3(doorX, 0, doorY) — grid Y is in .z, not .y
+        int retX = (int)returnPosition.x;
+        int retY = (int)returnPosition.z;
         var player = OverworldManager.Instance?.player;
         if (player != null)
         {
-            player.SetGridPosition((int)returnPosition.x, (int)returnPosition.y);
+            player.SetGridPosition(retX, retY);
         }
+        GameState.Instance.PlayerX = retX;
+        GameState.Instance.PlayerY = retY;
+        GameState.Instance.CurrentMapId = returnMapId;
 
         // Zoom camera back out
         var cam = Object.FindObjectOfType<OverworldCamera>();
