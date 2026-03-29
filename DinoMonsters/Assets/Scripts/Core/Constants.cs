@@ -82,24 +82,57 @@ public static class Constants
     };
 
     // -------------------------------------------------------------------------
-    // UI Colors — warm palette from POC
+    // UI Colors — Fossil/Amber Art Direction palette
+    // Obsidienne → Bitume → Terre brûlée → Sédiment → Résine → Sable → Calcaire → Quartz
     // -------------------------------------------------------------------------
-    public static readonly Color ColorBlack       = HexToColor(0x181018);
-    public static readonly Color ColorWhite        = HexToColor(0xF0E8D0);  // warm cream
-    public static readonly Color ColorBgDark       = HexToColor(0x1a1a2e);
-    public static readonly Color ColorUiBg         = HexToColor(0x202038);
-    public static readonly Color ColorUiBorder     = HexToColor(0xC89840);  // amber
-    public static readonly Color ColorUiBorderLight = HexToColor(0xE8C868);
-    public static readonly Color ColorUiBorderDark = HexToColor(0x886830);
-    public static readonly Color ColorHpGreen      = HexToColor(0x48D848);
-    public static readonly Color ColorHpYellow     = HexToColor(0xF8D830);
-    public static readonly Color ColorHpRed        = HexToColor(0xF85030);
-    public static readonly Color ColorXpBlue       = HexToColor(0x58A8F8);
-    public static readonly Color ColorTextPrimary  = HexToColor(0xF0E8D0);
-    public static readonly Color ColorTextShadow   = HexToColor(0x181018);
-    public static readonly Color ColorTextDark     = HexToColor(0x383028);
-    public static readonly Color ColorDialogueBg   = HexToColor(0x181028);
-    public static readonly Color ColorMenuBg       = HexToColor(0x202038);
+
+    // Master palette
+    public static readonly Color ColorObsidienne   = HexToColor(0x181018); // deep black
+    public static readonly Color ColorBitume        = HexToColor(0x282028); // warm black
+    public static readonly Color ColorTerreBrulee   = HexToColor(0x503820); // warm brown
+    public static readonly Color ColorSediment      = HexToColor(0x886830); // earth/wood
+    public static readonly Color ColorResine        = HexToColor(0xC89840); // SIGNATURE amber
+    public static readonly Color ColorSableSec      = HexToColor(0xE8C868); // warm sand
+    public static readonly Color ColorCalcaire      = HexToColor(0xF0E8D0); // cream/bone
+    public static readonly Color ColorQuartz        = HexToColor(0xF8F0E8); // pure white
+
+    // Semantic aliases
+    public static readonly Color ColorBlack         = HexToColor(0x181018);
+    public static readonly Color ColorWhite          = HexToColor(0xF0E8D0);
+
+    // UI Panels — warm earthy tones (no more dark purple!)
+    public static readonly Color ColorBgDark         = HexToColor(0x282028); // Bitume
+    public static readonly Color ColorUiBg           = HexToColor(0x382818); // dark warm brown
+    public static readonly Color ColorUiBorder       = HexToColor(0xC89840); // Résine/amber
+    public static readonly Color ColorUiBorderLight  = HexToColor(0xE8C868); // Sable sec
+    public static readonly Color ColorUiBorderDark   = HexToColor(0x503820); // Terre brûlée
+
+    // HP/XP bars — art direction spec colors
+    public static readonly Color ColorHpGreen        = HexToColor(0x48B838);
+    public static readonly Color ColorHpYellow       = HexToColor(0xE8C038);
+    public static readonly Color ColorHpRed          = HexToColor(0xD83028);
+    public static readonly Color ColorXpBlue         = HexToColor(0x3078B8);
+    public static readonly Color ColorHpBarBg        = HexToColor(0x383028);
+
+    // Text
+    public static readonly Color ColorTextPrimary    = HexToColor(0xF0E8D0); // Calcaire (light on dark)
+    public static readonly Color ColorTextDarkPrimary = HexToColor(0x282028); // Bitume (dark on light)
+    public static readonly Color ColorTextSecondary  = HexToColor(0x685848); // warm gray
+    public static readonly Color ColorTextShadow     = HexToColor(0x181018);
+    public static readonly Color ColorTextDark       = HexToColor(0x383028);
+
+    // Dialogue — warm parchment style
+    public static readonly Color ColorDialogueBg     = HexToColor(0xF0E8D0); // Calcaire cream
+    public static readonly Color ColorDialogueBorder = HexToColor(0x503820); // Terre brûlée
+    public static readonly Color ColorDialogueAccent = HexToColor(0x886830); // Sédiment
+
+    // Menu
+    public static readonly Color ColorMenuBg         = HexToColor(0x382818); // warm dark brown
+    public static readonly Color ColorMenuOverlay    = new Color(0, 0, 0, 0.55f);
+
+    // Selection
+    public static readonly Color ColorSelection      = HexToColor(0xC89840); // Résine amber
+    public static readonly Color ColorCursor          = HexToColor(0xE85020); // red-orange
 
     // -------------------------------------------------------------------------
     // Status Effects — defined in DinoMonsters.Dinos.StatusEffect (Dino.cs)

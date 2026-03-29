@@ -91,6 +91,10 @@ public class PartyUI : MonoBehaviour
         if (rootRect == null) rootRect = gameObject.AddComponent<RectTransform>();
         StretchFill(rootRect);
 
+        // Darkened overlay background
+        var overlay = gameObject.AddComponent<Image>();
+        overlay.color = Constants.ColorMenuOverlay;
+
         // --- Left panel: party list ---
         listPanel = CreatePanel("PartyListPanel", rootRect,
             new Vector2(0f, 0f), new Vector2(0f, 1f),

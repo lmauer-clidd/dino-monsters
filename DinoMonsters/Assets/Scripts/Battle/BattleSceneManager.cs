@@ -357,10 +357,18 @@ public class BattleSceneManager : MonoBehaviour
         playerDinoModel.transform.position = PLAYER_DINO_POS + Vector3.left * 8f;
         playerDinoModel.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
 
+        // Attach procedural animator and start idle
+        var playerAnim = playerDinoModel.AddComponent<DinoAnimator>();
+        playerAnim.PlayIdle();
+
         // Enemy dino (right side, facing left toward player) — start off-screen for intro slide
         enemyDinoModel = DinoModelGenerator.CreateDinoModel(enemyDino.speciesId, true);
         enemyDinoModel.transform.position = ENEMY_DINO_POS + Vector3.right * 8f;
         enemyDinoModel.transform.rotation = Quaternion.Euler(0f, -90f, 0f);
+
+        // Attach procedural animator and start idle
+        var enemyAnim = enemyDinoModel.AddComponent<DinoAnimator>();
+        enemyAnim.PlayIdle();
     }
 
     // ===============================================================
@@ -616,65 +624,110 @@ public class BattleSceneManager : MonoBehaviour
         Vector3 attackerOrigin = attacker.transform.position;
         Vector3 targetPos = target.transform.position;
 
-        // --- Lunge forward ---
-        Vector3 lungeTarget = Vector3.Lerp(attackerOrigin, targetPos, 0.5f);
-        float lungeTime = 0.15f;
-        float elapsed = 0f;
+        // --- Try articulated attack via DinoAnimator ---
+        var attackerAnim = attacker.GetComponent<DinoAnimator>();
+        var targetAnim = target.GetComponent<DinoAnimator>();
 
-        while (elapsed < lungeTime)
+        if (attackerAnim != null)
         {
-            elapsed += Time.deltaTime;
-            float t = elapsed / lungeTime;
-            attacker.transform.position = Vector3.Lerp(attackerOrigin, lungeTarget, t);
-            yield return null;
+            // Articulated attack — the animator handles wind-up, strike, return
+            bool hitFired = false;
+            bool done = false;
+
+            attackerAnim.PlayAttack(
+                onHit: () =>
+                {
+                    hitFired = true;
+
+                    // Type-specific VFX particles
+                    int moveType = result.moveType;
+                    int movePower = result.movePower > 0 ? result.movePower : 50;
+                    StartCoroutine(BattleEffects3D.TypedAttack(this, moveType, attackerOrigin, targetPos, movePower));
+
+                    // Hit flash + SFX
+                    effects.HitFlash(target);
+                    if (AudioManager.Instance != null) AudioManager.Instance.PlayHit();
+
+                    // Target hit reaction (articulated flinch)
+                    if (targetAnim != null) targetAnim.PlayHit(null);
+
+                    // Critical / super effective extras
+                    if (result.isCritical)
+                    {
+                        effects.CriticalEffect(targetPos + Vector3.up * 0.5f);
+                        if (AudioManager.Instance != null) AudioManager.Instance.PlayCritical();
+                    }
+                    if (result.effectiveness > 1f)
+                    {
+                        effects.SuperEffectiveEffect(targetPos + Vector3.up * 0.5f);
+                        if (AudioManager.Instance != null) AudioManager.Instance.PlaySuperEffective();
+                    }
+
+                    // Camera shake
+                    StartCoroutine(CameraShake(result.isCritical ? 0.3f : 0.15f, result.isCritical ? 0.15f : 0.08f));
+                },
+                onDone: () => { done = true; }
+            );
+
+            // Wait for attack animation to complete
+            while (!done) yield return null;
+
+            // Safety: ensure hit always fires
+            if (!hitFired)
+            {
+                effects.HitFlash(target);
+                if (AudioManager.Instance != null) AudioManager.Instance.PlayHit();
+            }
+        }
+        else
+        {
+            // --- Legacy lunge animation (for non-articulated dinos) ---
+            Vector3 lungeTarget = Vector3.Lerp(attackerOrigin, targetPos, 0.5f);
+            float lungeTime = 0.15f;
+            float elapsed = 0f;
+
+            while (elapsed < lungeTime)
+            {
+                elapsed += Time.deltaTime;
+                float t = elapsed / lungeTime;
+                attacker.transform.position = Vector3.Lerp(attackerOrigin, lungeTarget, t);
+                yield return null;
+            }
+
+            // Impact
+            int moveType = result.moveType;
+            int movePower = result.movePower > 0 ? result.movePower : 50;
+            yield return StartCoroutine(BattleEffects3D.TypedAttack(this, moveType, attackerOrigin, targetPos, movePower));
+            effects.HitFlash(target);
+            if (AudioManager.Instance != null) AudioManager.Instance.PlayHit();
+
+            if (result.isCritical)
+            {
+                effects.CriticalEffect(targetPos + Vector3.up * 0.5f);
+                if (AudioManager.Instance != null) AudioManager.Instance.PlayCritical();
+            }
+            if (result.effectiveness > 1f)
+            {
+                effects.SuperEffectiveEffect(targetPos + Vector3.up * 0.5f);
+                if (AudioManager.Instance != null) AudioManager.Instance.PlaySuperEffective();
+            }
+
+            yield return StartCoroutine(CameraShake(result.isCritical ? 0.3f : 0.15f, result.isCritical ? 0.15f : 0.08f));
+
+            // Return to position
+            elapsed = 0f;
+            float returnTime = 0.2f;
+            Vector3 currentPos = attacker.transform.position;
+            while (elapsed < returnTime)
+            {
+                elapsed += Time.deltaTime;
+                float t = Mathf.SmoothStep(0f, 1f, elapsed / returnTime);
+                attacker.transform.position = Vector3.Lerp(currentPos, attackerOrigin, t);
+                yield return null;
+            }
+            attacker.transform.position = attackerOrigin;
         }
 
-        // --- Impact ---
-        // Type-specific attack effect based on move type and power
-        int moveType = result.moveType;
-        int movePower = result.movePower > 0 ? result.movePower : 50; // Default power for display
-        yield return StartCoroutine(BattleEffects3D.TypedAttack(this, moveType, attackerOrigin, targetPos, movePower));
-
-        // Hit flash on target
-        effects.HitFlash(target);
-
-        // Play hit SFX
-        if (AudioManager.Instance != null)
-            AudioManager.Instance.PlayHit();
-
-        // Critical hit extra effects
-        if (result.isCritical)
-        {
-            effects.CriticalEffect(targetPos + Vector3.up * 0.5f);
-            if (AudioManager.Instance != null)
-                AudioManager.Instance.PlayCritical();
-        }
-
-        // Super effective extra flash
-        if (result.effectiveness > 1f)
-        {
-            effects.SuperEffectiveEffect(targetPos + Vector3.up * 0.5f);
-            if (AudioManager.Instance != null)
-                AudioManager.Instance.PlaySuperEffective();
-        }
-
-        // Camera shake on hit
-        yield return StartCoroutine(CameraShake(result.isCritical ? 0.3f : 0.15f, result.isCritical ? 0.15f : 0.08f));
-
-        // --- Return to position ---
-        elapsed = 0f;
-        float returnTime = 0.2f;
-        Vector3 currentPos = attacker.transform.position;
-
-        while (elapsed < returnTime)
-        {
-            elapsed += Time.deltaTime;
-            float t = Mathf.SmoothStep(0f, 1f, elapsed / returnTime);
-            attacker.transform.position = Vector3.Lerp(currentPos, attackerOrigin, t);
-            yield return null;
-        }
-
-        attacker.transform.position = attackerOrigin;
         onDone?.Invoke();
     }
 
@@ -690,10 +743,19 @@ public class BattleSceneManager : MonoBehaviour
         if (AudioManager.Instance != null)
             AudioManager.Instance.PlayFaint();
 
-        effects.FaintAnimation(dinoModel);
-
-        // Wait for the faint animation to complete
-        yield return new WaitForSeconds(1.2f);
+        // Try articulated faint, fallback to legacy
+        var animator = dinoModel.GetComponent<DinoAnimator>();
+        if (animator != null)
+        {
+            bool done = false;
+            animator.PlayFaint(() => { done = true; });
+            while (!done) yield return null;
+        }
+        else
+        {
+            effects.FaintAnimation(dinoModel);
+            yield return new WaitForSeconds(1.2f);
+        }
 
         onDone?.Invoke();
     }
@@ -725,33 +787,117 @@ public class BattleSceneManager : MonoBehaviour
     {
         if (enemyDinoModel == null) yield break;
 
-        // Flash the enemy model to simulate ball hit
+        // ---- Ball throw animation ----
+        // Create ball at player dino position
+        var ball = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        Destroy(ball.GetComponent<Collider>());
+        ball.transform.localScale = Vector3.one * 0.25f;
+        ball.GetComponent<Renderer>().sharedMaterial = MaterialManager.GetSolidColor(Color.white);
+        ball.transform.position = PLAYER_DINO_POS + Vector3.up * 0.5f;
+
+        // Red bottom half (pokeball style)
+        var ballBottom = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        Destroy(ballBottom.GetComponent<Collider>());
+        ballBottom.transform.SetParent(ball.transform);
+        ballBottom.transform.localPosition = new Vector3(0, -0.15f, 0);
+        ballBottom.transform.localScale = new Vector3(0.95f, 0.5f, 0.95f);
+        ballBottom.GetComponent<Renderer>().sharedMaterial = MaterialManager.GetSolidColor(new Color(0.85f, 0.20f, 0.20f));
+        // Center button
+        var ballBtn = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        Destroy(ballBtn.GetComponent<Collider>());
+        ballBtn.transform.SetParent(ball.transform);
+        ballBtn.transform.localPosition = new Vector3(0, 0, 0.45f);
+        ballBtn.transform.localScale = Vector3.one * 0.25f;
+        ballBtn.GetComponent<Renderer>().sharedMaterial = MaterialManager.GetSolidColor(new Color(0.2f, 0.2f, 0.2f));
+
+        // Animate ball arc from player to enemy
+        Vector3 ballStart = PLAYER_DINO_POS + Vector3.up * 0.5f;
+        Vector3 ballEnd = ENEMY_DINO_POS + Vector3.up * 0.5f;
+        float throwDuration = 0.6f;
+        float elapsed = 0f;
+
+        while (elapsed < throwDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / throwDuration;
+            // Parabolic arc
+            Vector3 pos = Vector3.Lerp(ballStart, ballEnd, t);
+            pos.y += Mathf.Sin(t * Mathf.PI) * 2.0f; // arc height
+            ball.transform.position = pos;
+            // Spin the ball
+            ball.transform.Rotate(Vector3.forward, 600f * Time.deltaTime);
+            yield return null;
+        }
+
+        // Ball hits — flash effect
         if (effects != null)
             effects.CaptureEffect(ENEMY_DINO_POS + Vector3.up * 0.5f);
 
-        yield return new WaitForSeconds(0.3f);
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayHit();
 
-        // Hide enemy (inside ball)
+        yield return new WaitForSeconds(0.2f);
+
+        // Hide enemy (sucked into ball)
         enemyDinoModel.SetActive(false);
 
-        // Animate each shake
+        // Ball drops to ground
+        ball.transform.position = ENEMY_DINO_POS + Vector3.up * 0.3f;
+        ball.transform.rotation = Quaternion.identity;
+
+        // ---- Ball shake animation ----
+        Vector3 ballRestPos = ball.transform.position;
         for (int i = 0; i < shakes; i++)
         {
             yield return new WaitForSeconds(0.5f);
 
-            // Camera shake for each ball wobble
-            yield return StartCoroutine(CameraShake(0.15f, 0.04f));
+            // Wobble left
+            elapsed = 0f;
+            while (elapsed < 0.12f)
+            {
+                elapsed += Time.deltaTime;
+                float t = elapsed / 0.12f;
+                ball.transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(t * Mathf.PI) * 25f);
+                yield return null;
+            }
+            // Wobble right
+            elapsed = 0f;
+            while (elapsed < 0.12f)
+            {
+                elapsed += Time.deltaTime;
+                float t = elapsed / 0.12f;
+                ball.transform.rotation = Quaternion.Euler(0, 0, -Mathf.Sin(t * Mathf.PI) * 25f);
+                yield return null;
+            }
+            ball.transform.rotation = Quaternion.identity;
+
+            yield return StartCoroutine(CameraShake(0.1f, 0.03f));
         }
 
-        // If not all 4 shakes, the dino breaks free — show it again
+        // If not all 4 shakes, the dino breaks free
         if (shakes < 4)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.2f);
+            // Ball breaks — destroy it
+            Destroy(ball);
             enemyDinoModel.SetActive(true);
-
-            // Flash effect on break-free
             if (effects != null)
                 effects.HitFlash(enemyDinoModel);
+        }
+        else
+        {
+            // Capture success — ball clicks shut, sparkle
+            yield return new WaitForSeconds(0.3f);
+            // Shrink ball slightly (click)
+            ball.transform.localScale = Vector3.one * 0.20f;
+            yield return new WaitForSeconds(0.1f);
+            ball.transform.localScale = Vector3.one * 0.25f;
+
+            if (effects != null)
+                effects.LevelUpEffect(ball.transform); // sparkle effect
+
+            yield return new WaitForSeconds(0.5f);
+            Destroy(ball);
         }
     }
 
@@ -1079,6 +1225,7 @@ public class BattleSceneManager : MonoBehaviour
         Vector3 offscreenPos = PLAYER_DINO_POS + Vector3.left * 8f;
         playerDinoModel.transform.position = offscreenPos;
         playerDinoModel.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
+        playerDinoModel.AddComponent<DinoAnimator>().PlayIdle();
 
         {
             float duration = 0.5f;
@@ -1286,6 +1433,7 @@ public class BattleSceneManager : MonoBehaviour
         Vector3 startPos = ENEMY_DINO_POS + Vector3.right * 8f;
         enemyDinoModel.transform.position = startPos;
         enemyDinoModel.transform.rotation = Quaternion.Euler(0f, -90f, 0f);
+        enemyDinoModel.AddComponent<DinoAnimator>().PlayIdle();
 
         float duration = 0.6f;
         float elapsed = 0f;
@@ -1548,6 +1696,7 @@ public class BattleSceneManager : MonoBehaviour
             playerDinoModel = DinoModelGenerator.CreateDinoModel(dino.speciesId, false);
             playerDinoModel.transform.position = pos;
             playerDinoModel.transform.rotation = rot;
+            playerDinoModel.AddComponent<DinoAnimator>().PlayIdle();
         }
 
         // Flash effect on new model
@@ -1688,9 +1837,10 @@ public class BattleSceneManager : MonoBehaviour
         if (playerDinoModel != null) Destroy(playerDinoModel);
 
         playerDinoModel = DinoModelGenerator.CreateDinoModel(playerDino.speciesId, false);
-        Vector3 offscreenPos = PLAYER_DINO_POS + Vector3.left * 8f;
-        playerDinoModel.transform.position = offscreenPos;
+        Vector3 offscreenPos2 = PLAYER_DINO_POS + Vector3.left * 8f;
+        playerDinoModel.transform.position = offscreenPos2;
         playerDinoModel.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
+        playerDinoModel.AddComponent<DinoAnimator>().PlayIdle();
 
         {
             float duration = 0.5f;
@@ -1699,7 +1849,7 @@ public class BattleSceneManager : MonoBehaviour
             {
                 elapsed += Time.deltaTime;
                 float t = Mathf.SmoothStep(0f, 1f, elapsed / duration);
-                playerDinoModel.transform.position = Vector3.Lerp(offscreenPos, PLAYER_DINO_POS, t);
+                playerDinoModel.transform.position = Vector3.Lerp(offscreenPos2, PLAYER_DINO_POS, t);
                 yield return null;
             }
             playerDinoModel.transform.position = PLAYER_DINO_POS;
@@ -1721,23 +1871,23 @@ public class BattleSceneManager : MonoBehaviour
     {
         battleEnded = true;
 
-        // Play capture visual effect on enemy position
-        if (effects != null)
-            effects.CaptureEffect(ENEMY_DINO_POS + Vector3.up * 0.5f);
-
         if (AudioManager.Instance != null)
             AudioManager.Instance.PlayCapture();
 
-        // Hide enemy model (captured)
-        if (enemyDinoModel != null)
-            enemyDinoModel.SetActive(false);
-
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.5f);
 
         // Register caught in dinodex
         GameState.Instance.RegisterCaught(enemyDino.speciesId);
 
-        // Add to party or PC
+        // ---- XP reward for capture ----
+        int xpGained = enemyDino.level * 6 + 15; // slightly less than KO but still meaningful
+        bool xpMsgDone = false;
+        battleUI.ShowMessage($"{playerDino.nickname} gagne {xpGained} points d'experience!", () => xpMsgDone = true);
+        yield return new WaitUntil(() => xpMsgDone);
+
+        yield return StartCoroutine(ApplyXpWithAnimation(xpGained));
+
+        // ---- Add captured dino to party or PC ----
         if (GameState.Instance.Party.Count < GameState.MAX_PARTY_SIZE)
         {
             GameState.Instance.AddToParty(enemyDino);
@@ -1753,7 +1903,7 @@ public class BattleSceneManager : MonoBehaviour
             yield return new WaitUntil(() => msgDone);
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         EndBattle(true);
     }
 

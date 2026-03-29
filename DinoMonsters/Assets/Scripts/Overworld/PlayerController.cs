@@ -55,108 +55,39 @@ public class PlayerController : MonoBehaviour
 
     void BuildCharacterModel()
     {
-        modelRoot = new GameObject("PlayerModel").transform;
-        modelRoot.SetParent(transform);
-        modelRoot.localPosition = Vector3.zero;
+        modelRoot = CharacterModelGenerator.CreateCharacter(transform, CharacterModelGenerator.CharacterType.Player);
 
-        Color skinColor = new Color(0.93f, 0.80f, 0.67f);
-        Color shirtColor = new Color(0.20f, 0.45f, 0.85f);
-        Color pantsColor = new Color(0.22f, 0.22f, 0.35f);
-        Color hatColor = new Color(0.85f, 0.18f, 0.18f);
-        Color shoeColor = new Color(0.30f, 0.18f, 0.12f);
-        Color backpackColor = new Color(0.65f, 0.35f, 0.15f);
-        Color hairColor = new Color(0.25f, 0.15f, 0.08f);
+        // Resolve named joints for animation
+        bodyT = modelRoot.Find("Body");
+        headT = modelRoot.Find("Head");
+        armL = modelRoot.Find("ArmL");
+        armR = modelRoot.Find("ArmR");
+        legL = modelRoot.Find("LegL");
+        legR = modelRoot.Find("LegR");
 
-        // --- Torso (body) ---
-        var body = CreatePart("Body", modelRoot, new Vector3(0, 0.55f, 0),
-            new Vector3(0.38f, 0.30f, 0.22f), shirtColor, PrimitiveType.Cube);
-        bodyT = body.transform;
-        bodyRenderer = body.GetComponent<Renderer>();
+        // Eye references for blink animation — only set if actually found (never fallback to headT!)
+        if (headT != null)
+        {
+            eyeL = FindDeep(headT, "EyeL");
+            eyeR = FindDeep(headT, "EyeR");
+        }
 
-        // --- Waist / belt ---
-        CreatePart("Belt", bodyT, new Vector3(0, -0.14f, 0),
-            new Vector3(0.36f, 0.05f, 0.21f), new Color(0.30f, 0.28f, 0.20f), PrimitiveType.Cube);
+        hatT = headT; // hat is built into head joint
+        backpack = bodyT; // backpack is built into body joint
+        bodyRenderer = bodyT != null ? bodyT.GetComponentInChildren<Renderer>() : null;
 
-        // --- Head ---
-        var head = CreatePart("Head", modelRoot, new Vector3(0, 0.87f, 0),
-            new Vector3(0.28f, 0.28f, 0.26f), skinColor, PrimitiveType.Sphere);
-        headT = head.transform;
+        // Blink animation disabled — new model has no named EyeL/EyeR primitives
+    }
 
-        // --- Hair (back of head) ---
-        CreatePart("Hair", headT, new Vector3(0, 0.04f, -0.06f),
-            new Vector3(0.27f, 0.20f, 0.14f), hairColor, PrimitiveType.Sphere);
-
-        // --- Eyes ---
-        var eL = CreatePart("EyeL", headT, new Vector3(-0.07f, 0.02f, 0.12f),
-            new Vector3(0.06f, 0.06f, 0.03f), Color.white, PrimitiveType.Sphere);
-        eyeL = eL.transform;
-        CreatePart("PupilL", eL.transform, new Vector3(0, 0, 0.01f),
-            new Vector3(0.55f, 0.55f, 0.5f), new Color(0.15f, 0.10f, 0.05f), PrimitiveType.Sphere);
-
-        var eR = CreatePart("EyeR", headT, new Vector3(0.07f, 0.02f, 0.12f),
-            new Vector3(0.06f, 0.06f, 0.03f), Color.white, PrimitiveType.Sphere);
-        eyeR = eR.transform;
-        CreatePart("PupilR", eR.transform, new Vector3(0, 0, 0.01f),
-            new Vector3(0.55f, 0.55f, 0.5f), new Color(0.15f, 0.10f, 0.05f), PrimitiveType.Sphere);
-
-        // --- Mouth (small line) ---
-        CreatePart("Mouth", headT, new Vector3(0, -0.05f, 0.13f),
-            new Vector3(0.08f, 0.015f, 0.01f), new Color(0.75f, 0.45f, 0.40f), PrimitiveType.Cube);
-
-        // --- Hat ---
-        var hat = CreatePart("HatBrim", modelRoot, new Vector3(0, 1.04f, 0.02f),
-            new Vector3(0.36f, 0.05f, 0.36f), hatColor, PrimitiveType.Cylinder);
-        hatT = hat.transform;
-        CreatePart("HatTop", hatT, new Vector3(0, 0.06f, -0.02f),
-            new Vector3(0.28f, 0.10f, 0.28f), hatColor, PrimitiveType.Cylinder);
-        // Hat emblem (white circle on front)
-        CreatePart("HatEmblem", hatT, new Vector3(0, 0.06f, 0.12f),
-            new Vector3(0.08f, 0.08f, 0.02f), Color.white, PrimitiveType.Sphere);
-
-        // --- Arms ---
-        var aL = CreatePart("ArmL", modelRoot, new Vector3(-0.24f, 0.52f, 0),
-            new Vector3(0.10f, 0.28f, 0.10f), shirtColor, PrimitiveType.Capsule);
-        armL = aL.transform;
-        CreatePart("HandL", armL, new Vector3(0, -0.16f, 0),
-            new Vector3(0.07f, 0.07f, 0.07f), skinColor, PrimitiveType.Sphere);
-
-        var aR = CreatePart("ArmR", modelRoot, new Vector3(0.24f, 0.52f, 0),
-            new Vector3(0.10f, 0.28f, 0.10f), shirtColor, PrimitiveType.Capsule);
-        armR = aR.transform;
-        CreatePart("HandR", armR, new Vector3(0, -0.16f, 0),
-            new Vector3(0.07f, 0.07f, 0.07f), skinColor, PrimitiveType.Sphere);
-
-        // --- Legs ---
-        var lL = CreatePart("LegL", modelRoot, new Vector3(-0.09f, 0.22f, 0),
-            new Vector3(0.12f, 0.26f, 0.12f), pantsColor, PrimitiveType.Capsule);
-        legL = lL.transform;
-        CreatePart("ShoeL", legL, new Vector3(0, -0.15f, 0.02f),
-            new Vector3(0.11f, 0.06f, 0.15f), shoeColor, PrimitiveType.Cube);
-
-        var lR = CreatePart("LegR", modelRoot, new Vector3(0.09f, 0.22f, 0),
-            new Vector3(0.12f, 0.26f, 0.12f), pantsColor, PrimitiveType.Capsule);
-        legR = lR.transform;
-        CreatePart("ShoeR", legR, new Vector3(0, -0.15f, 0.02f),
-            new Vector3(0.11f, 0.06f, 0.15f), shoeColor, PrimitiveType.Cube);
-
-        // --- Backpack ---
-        var bp = CreatePart("Backpack", bodyT, new Vector3(0, 0.02f, -0.16f),
-            new Vector3(0.28f, 0.24f, 0.12f), backpackColor, PrimitiveType.Cube);
-        backpack = bp.transform;
-        // Backpack strap
-        CreatePart("StrapL", bp.transform, new Vector3(-0.10f, 0.10f, 0.06f),
-            new Vector3(0.03f, 0.18f, 0.02f), backpackColor * 0.7f, PrimitiveType.Cube);
-        CreatePart("StrapR", bp.transform, new Vector3(0.10f, 0.10f, 0.06f),
-            new Vector3(0.03f, 0.18f, 0.02f), backpackColor * 0.7f, PrimitiveType.Cube);
-        // Pokeball decoration on backpack
-        CreatePart("BPDecor", bp.transform, new Vector3(0, 0, -0.06f),
-            new Vector3(0.06f, 0.06f, 0.02f), Color.white, PrimitiveType.Sphere);
-
-        // Shadow on ground
-        var shadow = CreatePart("Shadow", transform, new Vector3(0, 0.01f, 0),
-            new Vector3(0.5f, 0.001f, 0.5f), new Color(0, 0, 0, 0.3f), PrimitiveType.Cylinder);
-        var shadowR = shadow.GetComponent<Renderer>();
-        shadowR.material = MaterialManager.GetTransparent(new Color(0, 0, 0, 0.3f), 0.3f);
+    private Transform FindDeep(Transform parent, string name)
+    {
+        foreach (Transform child in parent)
+        {
+            if (child.name == name) return child;
+            var found = FindDeep(child, name);
+            if (found != null) return found;
+        }
+        return null;
     }
 
     GameObject CreatePart(string name, Transform parent, Vector3 localPos, Vector3 localScale, Color color, PrimitiveType prim)
@@ -337,31 +268,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isMoving)
         {
-            float animSpeed = isRunning ? 14f : 10f;
-            walkCycle += Time.deltaTime * animSpeed;
-            float sin = Mathf.Sin(walkCycle);
-            float cos = Mathf.Cos(walkCycle);
-
-            // Leg swing (opposite phase)
-            float legAngle = sin * 30f;
-            if (legL != null) legL.localRotation = Quaternion.Euler(legAngle, 0, 0);
-            if (legR != null) legR.localRotation = Quaternion.Euler(-legAngle, 0, 0);
-
-            // Arm swing (opposite to legs)
-            float armAngle = sin * 25f;
-            if (armL != null) armL.localRotation = Quaternion.Euler(-armAngle, 0, 0);
-            if (armR != null) armR.localRotation = Quaternion.Euler(armAngle, 0, 0);
-
-            // Body bob (up/down)
-            float bob = Mathf.Abs(sin) * 0.04f;
-            if (bodyT != null) bodyT.localPosition = new Vector3(0, 0.55f + bob, 0);
-            if (headT != null) headT.localPosition = new Vector3(0, 0.87f + bob, 0);
-            if (hatT != null) hatT.localPosition = new Vector3(0, 1.04f + bob, 0.02f);
-
-            // Slight body tilt forward when running
-            float tilt = isRunning ? 8f : 3f;
-            if (bodyT != null) bodyT.localRotation = Quaternion.Euler(tilt, 0, cos * 2f);
-            if (headT != null) headT.localRotation = Quaternion.Euler(-tilt * 0.5f, 0, 0);
+            AnimateWalk();
         }
         else
         {
@@ -369,42 +276,93 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void AnimateWalk()
+    {
+        float animSpeed = isRunning ? 14f : 10f;
+        walkCycle += Time.deltaTime * animSpeed;
+        float sin = Mathf.Sin(walkCycle);
+        float cos = Mathf.Cos(walkCycle);
+        float absSin = Mathf.Abs(sin);
+        float runMult = isRunning ? 1.4f : 1.0f;
+
+        // ---- Legs: full stride with knee bend ----
+        float legSwing = sin * 35f * runMult;
+        float kneeOffset = absSin * 5f; // slight extra bend at extremes
+        if (legL != null)
+            legL.localRotation = Quaternion.Euler(legSwing + kneeOffset, 0, 0);
+        if (legR != null)
+            legR.localRotation = Quaternion.Euler(-legSwing + kneeOffset, 0, 0);
+
+        // ---- Arms: natural swing, opposite to legs, with elbow bend ----
+        float armSwing = sin * 30f * runMult;
+        float elbowBend = absSin * 8f;
+        if (armL != null)
+            armL.localRotation = Quaternion.Euler(-armSwing, 0, 3f + elbowBend);
+        if (armR != null)
+            armR.localRotation = Quaternion.Euler(armSwing, 0, -3f - elbowBend);
+
+        // ---- Body: bob + tilt + sway ----
+        float bob = absSin * 0.05f * runMult;
+        float tiltFwd = isRunning ? 10f : 4f;
+        float sway = cos * 2.5f * runMult; // lateral sway
+        if (bodyT != null)
+        {
+            bodyT.localPosition = new Vector3(cos * 0.01f * runMult, 0.55f + bob, 0);
+            bodyT.localRotation = Quaternion.Euler(tiltFwd, 0, sway);
+        }
+
+        // ---- Head: counter-tilt + slight bounce ----
+        if (headT != null)
+        {
+            float headBob = absSin * 0.03f * runMult;
+            headT.localPosition = new Vector3(0, 0.85f + headBob, 0);
+            // Head tilts opposite to body for natural feel
+            headT.localRotation = Quaternion.Euler(-tiltFwd * 0.4f, cos * 1.5f, -sway * 0.3f);
+        }
+    }
+
     void AnimateIdle()
     {
         breathCycle += Time.deltaTime * 2f;
-        float breath = Mathf.Sin(breathCycle) * 0.01f;
+        idleTimer += Time.deltaTime;
+        float breath = Mathf.Sin(breathCycle) * 0.012f;
+        float breathSlow = Mathf.Sin(breathCycle * 0.5f);
 
-        // Subtle breathing
+        // ---- Body: gentle breathing swell ----
         if (bodyT != null)
         {
             bodyT.localPosition = new Vector3(0, 0.55f + breath, 0);
-            bodyT.localRotation = Quaternion.identity;
+            // Subtle breathing sway (no scale — would crush the joint)
+            bodyT.localRotation = Quaternion.Euler(0, 0, breathSlow * 0.5f);
         }
+
+        // ---- Head: gentle look-around + nod ----
         if (headT != null)
         {
-            headT.localPosition = new Vector3(0, 0.87f + breath, 0);
-            headT.localRotation = Quaternion.identity;
+            float headNod = Mathf.Sin(breathCycle * 0.7f) * 2f;
+            float headTurn = Mathf.Sin(breathCycle * 0.3f + 1f) * 3f;
+            float headTilt = Mathf.Sin(breathCycle * 0.4f + 2f) * 1.5f;
+            headT.localPosition = new Vector3(0, 0.85f + breath * 0.8f, 0);
+            headT.localRotation = Quaternion.Euler(headNod, headTurn, headTilt);
         }
-        if (hatT != null)
-            hatT.localPosition = new Vector3(0, 1.04f + breath, 0.02f);
 
-        // Arms hang naturally
-        if (armL != null) armL.localRotation = Quaternion.Euler(0, 0, 3f);
-        if (armR != null) armR.localRotation = Quaternion.Euler(0, 0, -3f);
-        if (legL != null) legL.localRotation = Quaternion.identity;
-        if (legR != null) legR.localRotation = Quaternion.identity;
+        // ---- Arms: relaxed sway ----
+        if (armL != null)
+        {
+            float armSway = Mathf.Sin(breathCycle * 0.6f) * 3f;
+            armL.localRotation = Quaternion.Euler(armSway, 0, 4f + Mathf.Sin(breathCycle * 0.4f) * 1.5f);
+        }
+        if (armR != null)
+        {
+            float armSway = Mathf.Sin(breathCycle * 0.6f + 1f) * 3f;
+            armR.localRotation = Quaternion.Euler(armSway, 0, -4f - Mathf.Sin(breathCycle * 0.4f + 1f) * 1.5f);
+        }
 
-        // Idle blink
-        if (idleTimer > 3f && Mathf.Sin(idleTimer * 5f) > 0.95f)
-        {
-            if (eyeL != null) eyeL.localScale = new Vector3(0.06f, 0.01f, 0.03f);
-            if (eyeR != null) eyeR.localScale = new Vector3(0.06f, 0.01f, 0.03f);
-        }
-        else
-        {
-            if (eyeL != null) eyeL.localScale = new Vector3(0.06f, 0.06f, 0.03f);
-            if (eyeR != null) eyeR.localScale = new Vector3(0.06f, 0.06f, 0.03f);
-        }
+        // ---- Legs: subtle weight shift ----
+        if (legL != null)
+            legL.localRotation = Quaternion.Euler(Mathf.Sin(breathCycle * 0.25f) * 1.5f, 0, 0);
+        if (legR != null)
+            legR.localRotation = Quaternion.Euler(Mathf.Sin(breathCycle * 0.25f + Mathf.PI) * 1.5f, 0, 0);
     }
 
     // =========================================================================

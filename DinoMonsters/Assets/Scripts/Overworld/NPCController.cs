@@ -42,7 +42,6 @@ public class NPCController : MonoBehaviour
     private float moveSpeed = 3f;
 
     // Dialogue state
-    private int currentDialogueLine = 0;
     private bool inDialogue = false;
 
     // Facing
@@ -57,6 +56,9 @@ public class NPCController : MonoBehaviour
     private Transform exclamationMark;
     private float exclamationBounceTimer = 0f;
     private bool isExclamationBouncing = false;
+
+    // Articulated parts for animation
+    private Transform npcBody, npcHead, npcArmL, npcArmR, npcLegL, npcLegR;
 
     /// <summary>
     /// Initialize NPC with data. Called by OverworldManager.SpawnNPC.
@@ -122,54 +124,37 @@ public class NPCController : MonoBehaviour
 
     void BuildProceduralModel()
     {
-        modelRoot = new GameObject("NPCModel").transform;
-        modelRoot.SetParent(transform);
-        modelRoot.localPosition = Vector3.zero;
+        modelRoot = CharacterModelGenerator.CreateSimpleNPC(transform, bodyColor, isTrainer);
 
-        // Body — cylinder
-        var body = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        body.transform.SetParent(modelRoot);
-        body.transform.localPosition = new Vector3(0, 0.4f, 0);
-        body.transform.localScale = new Vector3(0.45f, 0.4f, 0.45f);
-        var bodyR = body.GetComponent<Renderer>();
-        bodyR.material = new Material(Shader.Find("Standard"));
-        bodyR.material.color = bodyColor;
-        Object.Destroy(body.GetComponent<Collider>());
-
-        // Head — sphere
-        var head = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        head.transform.SetParent(modelRoot);
-        head.transform.localPosition = new Vector3(0, 0.85f, 0);
-        head.transform.localScale = new Vector3(0.32f, 0.32f, 0.32f);
-        var headR = head.GetComponent<Renderer>();
-        headR.material = new Material(Shader.Find("Standard"));
-        headR.material.color = new Color(0.92f, 0.78f, 0.65f); // Skin
-        Object.Destroy(head.GetComponent<Collider>());
-
-        // Direction indicator (eyes)
+        // Direction indicator — create a small dark sphere for eye direction
         var indicator = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         indicator.transform.SetParent(modelRoot);
-        indicator.transform.localPosition = new Vector3(0, 0.85f, 0.18f);
-        indicator.transform.localScale = new Vector3(0.07f, 0.07f, 0.07f);
+        indicator.transform.localPosition = new Vector3(0, 0.87f, 0.16f);
+        indicator.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
         var indR = indicator.GetComponent<Renderer>();
-        indR.material = new Material(Shader.Find("Standard"));
-        indR.material.color = Constants.ColorBlack;
+        indR.sharedMaterial = MaterialManager.GetSolidColor(Color.black);
         Object.Destroy(indicator.GetComponent<Collider>());
         directionIndicator = indicator.transform;
 
-        // Trainer exclamation mark (small red sphere above head)
+        // Trainer exclamation mark
         if (isTrainer)
         {
             var mark = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             mark.transform.SetParent(modelRoot);
             mark.transform.localPosition = new Vector3(0, 1.15f, 0);
-            mark.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-            var markR = mark.GetComponent<Renderer>();
-            markR.material = new Material(Shader.Find("Standard"));
-            markR.material.color = new Color(0.9f, 0.2f, 0.2f);
+            mark.transform.localScale = new Vector3(0.10f, 0.10f, 0.10f);
+            mark.GetComponent<Renderer>().sharedMaterial = MaterialManager.GetEmissive(new Color(0.9f, 0.2f, 0.2f), 0.6f);
             Object.Destroy(mark.GetComponent<Collider>());
             exclamationMark = mark.transform;
         }
+
+        // Resolve articulated joints
+        npcBody = modelRoot.Find("Body");
+        npcHead = modelRoot.Find("Head");
+        npcArmL = modelRoot.Find("ArmL");
+        npcArmR = modelRoot.Find("ArmR");
+        npcLegL = modelRoot.Find("LegL");
+        npcLegR = modelRoot.Find("LegR");
 
         // Store base position for idle bob
         modelBasePosition = modelRoot.localPosition;
@@ -185,8 +170,11 @@ public class NPCController : MonoBehaviour
             UpdatePatrol();
         }
 
-        // Idle animations
-        UpdateIdleAnimations();
+        // Animations
+        if (isMoving)
+            AnimateNPCWalk();
+        else
+            UpdateIdleAnimations();
     }
 
     // =========================================================================
@@ -238,14 +226,77 @@ public class NPCController : MonoBehaviour
     //  Idle Animations
     // =========================================================================
 
+    void AnimateNPCWalk()
+    {
+        idleBobTimer += Time.deltaTime * 8f;
+        float sin = Mathf.Sin(idleBobTimer);
+        float absSin = Mathf.Abs(sin);
+
+        // Legs swing
+        float legSwing = sin * 28f;
+        if (npcLegL != null) npcLegL.localRotation = Quaternion.Euler(legSwing, 0, 0);
+        if (npcLegR != null) npcLegR.localRotation = Quaternion.Euler(-legSwing, 0, 0);
+
+        // Arms swing opposite
+        float armSwing = sin * 22f;
+        if (npcArmL != null) npcArmL.localRotation = Quaternion.Euler(-armSwing, 0, 3f);
+        if (npcArmR != null) npcArmR.localRotation = Quaternion.Euler(armSwing, 0, -3f);
+
+        // Body bob + tilt
+        float bob = absSin * 0.04f;
+        modelRoot.localPosition = modelBasePosition + new Vector3(0, bob, 0);
+        if (npcBody != null)
+            npcBody.localRotation = Quaternion.Euler(3f, 0, Mathf.Cos(idleBobTimer) * 2f);
+
+        // Head counter-movement
+        if (npcHead != null)
+            npcHead.localRotation = Quaternion.Euler(-1.5f, Mathf.Cos(idleBobTimer) * 1f, 0);
+    }
+
     void UpdateIdleAnimations()
     {
         if (modelRoot == null) return;
 
-        // --- Gentle up-down bob (0.02 amplitude, 1.5s period) ---
         idleBobTimer += Time.deltaTime;
-        float bobOffset = Mathf.Sin(idleBobTimer * (2f * Mathf.PI / 1.5f)) * 0.02f;
-        modelRoot.localPosition = modelBasePosition + new Vector3(0, bobOffset, 0);
+        float t = idleBobTimer;
+
+        // --- Body: gentle breathing bob ---
+        float breathBob = Mathf.Sin(t * 4.2f) * 0.012f;
+        modelRoot.localPosition = modelBasePosition + new Vector3(0, breathBob, 0);
+
+        // --- Head: look around, nod ---
+        if (npcHead != null)
+        {
+            float headNod = Mathf.Sin(t * 1.4f) * 2.5f;
+            float headTurn = Mathf.Sin(t * 0.6f + 0.7f) * 4f;
+            float headTilt = Mathf.Sin(t * 0.8f + 2f) * 2f;
+            npcHead.localRotation = Quaternion.Euler(headNod, headTurn, headTilt);
+        }
+
+        // --- Body: subtle breathing scale + sway ---
+        if (npcBody != null)
+        {
+            float sway = Mathf.Sin(t * 0.9f) * 1f;
+            npcBody.localRotation = Quaternion.Euler(0, 0, sway);
+        }
+
+        // --- Arms: relaxed idle sway ---
+        if (npcArmL != null)
+        {
+            float armL_swing = Mathf.Sin(t * 1.2f) * 4f;
+            npcArmL.localRotation = Quaternion.Euler(armL_swing, 0, 4f + Mathf.Sin(t * 0.7f) * 2f);
+        }
+        if (npcArmR != null)
+        {
+            float armR_swing = Mathf.Sin(t * 1.2f + 1.5f) * 4f;
+            npcArmR.localRotation = Quaternion.Euler(armR_swing, 0, -4f - Mathf.Sin(t * 0.7f + 1.5f) * 2f);
+        }
+
+        // --- Legs: subtle weight shift ---
+        if (npcLegL != null)
+            npcLegL.localRotation = Quaternion.Euler(Mathf.Sin(t * 0.5f) * 2f, 0, 0);
+        if (npcLegR != null)
+            npcLegR.localRotation = Quaternion.Euler(Mathf.Sin(t * 0.5f + Mathf.PI) * 2f, 0, 0);
 
         // --- Look toward player when within 3 tiles ---
         var player = FindObjectOfType<PlayerController>();
@@ -329,27 +380,87 @@ public class NPCController : MonoBehaviour
     /// </summary>
     public void Interact(PlayerController player)
     {
+        if (inDialogue) return;
+
         // Face the player
         FaceTowards(player.gridX, player.gridY);
 
-        // Show dialogue
+        // Lock player movement during dialogue
+        player.LockInput();
+        inDialogue = true;
+
+        // Show full dialogue sequence
         if (dialogueLines != null && dialogueLines.Length > 0)
         {
-            string line = dialogueLines[currentDialogueLine];
-            Debug.Log($"[{npcName}] {line}");
+            ShowDialogueSequence(player, 0);
+        }
+        else
+        {
+            player.UnlockInput();
+            inDialogue = false;
+        }
+    }
 
-            // Advance dialogue for next interaction
-            currentDialogueLine = (currentDialogueLine + 1) % dialogueLines.Length;
-
-            // TODO: Show in dialogue UI instead of Debug.Log
-            // DialogueUI.Instance.ShowDialogue(npcName, line);
+    private void ShowDialogueSequence(PlayerController player, int lineIndex)
+    {
+        if (lineIndex >= dialogueLines.Length)
+        {
+            // All lines done — check trainer battle
+            if (isTrainer && !GameState.Instance.IsTrainerDefeated(trainerId))
+            {
+                if (DialogueUI.Instance != null)
+                {
+                    DialogueUI.Instance.ShowText($"{npcName} veut se battre !", npcName, () =>
+                    {
+                        inDialogue = false;
+                        var setup = new BattleSetupData
+                        {
+                            isWild = false,
+                            trainerId = trainerId,
+                            trainerName = npcName,
+                            returnScene = GameState.Instance.CurrentMapId,
+                            returnPosition = new Vector2(player.gridX, player.gridY)
+                        };
+                        if (trainerSpeciesIds != null)
+                        {
+                            setup.trainerParty = new System.Collections.Generic.List<TrainerDinoEntry>();
+                            for (int i = 0; i < trainerSpeciesIds.Length; i++)
+                            {
+                                int lvl = (trainerLevels != null && i < trainerLevels.Length) ? trainerLevels[i] : 5;
+                                setup.trainerParty.Add(new TrainerDinoEntry { speciesId = trainerSpeciesIds[i], level = lvl });
+                            }
+                        }
+                        if (GameManager.Instance != null)
+                            GameManager.Instance.StartBattle(setup);
+                    });
+                }
+                else
+                {
+                    inDialogue = false;
+                    player.UnlockInput();
+                }
+            }
+            else
+            {
+                inDialogue = false;
+                player.UnlockInput();
+            }
+            return;
         }
 
-        // If trainer, trigger battle after dialogue
-        if (isTrainer)
+        string line = dialogueLines[lineIndex];
+
+        if (DialogueUI.Instance != null)
         {
-            Debug.Log($"[{npcName}] veut se battre !");
-            // TODO: Trigger trainer battle
+            DialogueUI.Instance.ShowText(line, npcName, () =>
+            {
+                ShowDialogueSequence(player, lineIndex + 1);
+            });
+        }
+        else
+        {
+            Debug.Log($"[{npcName}] {line}");
+            ShowDialogueSequence(player, lineIndex + 1);
         }
     }
 

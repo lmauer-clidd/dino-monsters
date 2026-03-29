@@ -28,6 +28,9 @@ public class PauseMenuUI : MonoBehaviour
     // --- World Map ---
     private WorldMapUI worldMapUI;
 
+    // --- Dinodex ---
+    private DinodexUI dinodexUI;
+
     // --- Navigation ---
     private int menuSelectedIndex = 0;
     private Button[] menuButtons;
@@ -41,18 +44,18 @@ public class PauseMenuUI : MonoBehaviour
     private RectTransform bagListContent;
     private TextMeshProUGUI bagEmptyText;
 
-    // --- Colors (consistent with BattleUI / Constants) ---
+    // --- Colors (Fossil/Amber art direction) ---
     private static readonly Color PANEL_BG = Constants.ColorUiBg;
     private static readonly Color PANEL_BORDER = Constants.ColorUiBorder;
     private static readonly Color TEXT_COLOR = Constants.ColorTextPrimary;
-    private static readonly Color OVERLAY_COLOR = new Color(0f, 0f, 0f, 0.6f);
+    private static readonly Color OVERLAY_COLOR = Constants.ColorMenuOverlay;
 
-    // Menu button colors
-    private static readonly Color BTN_DINOS    = new Color(0.41f, 0.56f, 0.94f);
-    private static readonly Color BTN_SAC      = new Color(0.47f, 0.78f, 0.30f);
-    private static readonly Color BTN_DINODEX  = new Color(0.75f, 0.55f, 0.30f);
-    private static readonly Color BTN_CARTE    = new Color(0.55f, 0.75f, 0.75f);
-    private static readonly Color BTN_SAVE     = new Color(0.94f, 0.78f, 0.30f);
+    // Menu button colors — earthy, warm tones
+    private static readonly Color BTN_DINOS    = new Color(0.35f, 0.50f, 0.75f);  // dusty blue
+    private static readonly Color BTN_SAC      = new Color(0.40f, 0.60f, 0.30f);  // forest green
+    private static readonly Color BTN_DINODEX  = new Color(0.70f, 0.50f, 0.25f);  // amber brown
+    private static readonly Color BTN_CARTE    = new Color(0.45f, 0.58f, 0.55f);  // teal
+    private static readonly Color BTN_SAVE     = new Color(0.78f, 0.60f, 0.25f);  // gold
     private static readonly Color BTN_OPTIONS  = new Color(0.60f, 0.60f, 0.65f);
     private static readonly Color BTN_QUIT     = new Color(0.75f, 0.35f, 0.30f);
 
@@ -66,6 +69,10 @@ public class PauseMenuUI : MonoBehaviour
 
     void Update()
     {
+        // Block pause menu when ShopUI or DialogueUI is active
+        if (ShopUI.Instance != null && ShopUI.Instance.IsOpen) return;
+        if (DialogueUI.Instance != null && DialogueUI.Instance.IsActive()) return;
+
         if (InputHelper.Pause)
         {
             if (isPaused)
@@ -292,17 +299,26 @@ public class PauseMenuUI : MonoBehaviour
         rect.anchoredPosition = new Vector2(-30f, 0f);
         rect.sizeDelta = new Vector2(260f, 460f);
 
-        var img = menuPanel.AddComponent<Image>();
-        img.color = new Color(PANEL_BG.r, PANEL_BG.g, PANEL_BG.b, 0.95f);
-        var outline = menuPanel.AddComponent<Outline>();
-        outline.effectColor = PANEL_BORDER;
-        outline.effectDistance = new Vector2(2f, 2f);
+        // Outer border (Terre brûlée)
+        var borderImg = menuPanel.AddComponent<Image>();
+        borderImg.color = Constants.ColorTerreBrulee;
+        // Inner fill
+        var menuInner = new GameObject("MenuInner");
+        menuInner.transform.SetParent(menuPanel.transform, false);
+        var menuInnerRect = menuInner.AddComponent<RectTransform>();
+        menuInnerRect.anchorMin = Vector2.zero;
+        menuInnerRect.anchorMax = Vector2.one;
+        menuInnerRect.offsetMin = new Vector2(3, 3);
+        menuInnerRect.offsetMax = new Vector2(-3, -3);
+        var menuInnerImg = menuInner.AddComponent<Image>();
+        menuInnerImg.color = new Color(Constants.ColorCalcaire.r, Constants.ColorCalcaire.g, Constants.ColorCalcaire.b, 0.96f);
 
         // Title
-        CreateText("MenuTitle", rect, "MENU",
+        var titleTmp = CreateText("MenuTitle", rect, "MENU",
             new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
-            new Vector2(0f, -10f), new Vector2(240f, 35f), 24, TextAlignmentOptions.Center)
-            .fontStyle = FontStyles.Bold;
+            new Vector2(0f, -10f), new Vector2(240f, 35f), 24, TextAlignmentOptions.Center);
+        titleTmp.fontStyle = FontStyles.Bold;
+        titleTmp.color = Constants.ColorTextDarkPrimary;
 
         // Buttons
         string[] labels = { "DINOS", "SAC", "DINODEX", "CARTE", "SAUVEGARDER", "OPTIONS", "QUITTER" };
@@ -324,7 +340,7 @@ public class PauseMenuUI : MonoBehaviour
             menuBaseColors[i] = colors[i];
 
             // Disable unimplemented buttons
-            if (labels[i] == "DINODEX" || labels[i] == "OPTIONS")
+            if (labels[i] == "OPTIONS")
             {
                 btn.interactable = false;
                 var btnImg = btn.GetComponent<Image>();
@@ -445,6 +461,9 @@ public class PauseMenuUI : MonoBehaviour
         if (worldMapUI != null)
             worldMapUI.Hide();
 
+        if (dinodexUI != null)
+            dinodexUI.Hide();
+
         UpdateMenuSelectionVisual();
     }
 
@@ -482,8 +501,19 @@ public class PauseMenuUI : MonoBehaviour
 
     private void OnDinodex()
     {
-        // Not implemented yet
-        Debug.Log("[PauseMenu] Dinodex not implemented yet");
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayMenuSelect();
+        isInSubPanel = true;
+        menuPanel.SetActive(false);
+
+        if (dinodexUI == null)
+        {
+            var dexGO = new GameObject("DinodexUI");
+            dexGO.transform.SetParent(rootPanel.transform, false);
+            dinodexUI = dexGO.AddComponent<DinodexUI>();
+            dinodexUI.OnBack = () => ShowMainMenu();
+        }
+
+        dinodexUI.Show();
     }
 
     private void OnCarte()

@@ -3509,8 +3509,19 @@ public class OverworldManager : MonoBehaviour
         // Check signs
         if (signs.ContainsKey(pos))
         {
-            Debug.Log($"[Sign] {signs[pos]}");
-            // TODO: Show dialogue UI
+            if (player != null) player.LockInput();
+            if (DialogueUI.Instance != null)
+            {
+                DialogueUI.Instance.ShowText(signs[pos], null, () =>
+                {
+                    if (player != null) player.UnlockInput();
+                });
+            }
+            else
+            {
+                Debug.Log($"[Sign] {signs[pos]}");
+                if (player != null) player.UnlockInput();
+            }
             return true;
         }
 

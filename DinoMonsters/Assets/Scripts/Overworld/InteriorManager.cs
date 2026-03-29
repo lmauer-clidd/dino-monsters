@@ -938,47 +938,40 @@ public class InteriorNPC : MonoBehaviour
 
     private void BuildNPCModel()
     {
-        // Body cylinder
-        var body = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        body.name = "Body";
-        body.transform.SetParent(transform);
-        body.transform.localPosition = new Vector3(0, 0.4f, 0);
-        body.transform.localScale = new Vector3(0.40f, 0.35f, 0.40f);
-        body.GetComponent<Renderer>().sharedMaterial = MaterialManager.GetSolidColor(bodyColor);
-        Object.Destroy(body.GetComponent<Collider>());
+        // Determine character type based on interaction
+        CharacterModelGenerator.CharacterType charType;
+        switch (interactionType)
+        {
+            case InteractionType.DinoCenterHeal:
+                charType = CharacterModelGenerator.CharacterType.Nurse;
+                break;
+            case InteractionType.Shop:
+                charType = CharacterModelGenerator.CharacterType.Shopkeeper;
+                break;
+            case InteractionType.GymLeader:
+                charType = CharacterModelGenerator.CharacterType.GymLeader;
+                break;
+            case InteractionType.GymTrainer:
+                charType = CharacterModelGenerator.CharacterType.Trainer;
+                break;
+            default:
+                charType = CharacterModelGenerator.CharacterType.Villager;
+                break;
+        }
 
-        // Head sphere
-        var head = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        head.name = "Head";
-        head.transform.SetParent(transform);
-        head.transform.localPosition = new Vector3(0, 0.82f, 0);
-        head.transform.localScale = new Vector3(0.30f, 0.30f, 0.30f);
-        head.GetComponent<Renderer>().sharedMaterial =
-            MaterialManager.GetSolidColor(new Color(0.92f, 0.78f, 0.65f));
-        Object.Destroy(head.GetComponent<Collider>());
+        CharacterModelGenerator.CreateCharacter(transform, charType, bodyColor);
 
-        // Eyes
-        var eye = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        eye.name = "Eyes";
-        eye.transform.SetParent(transform);
-        eye.transform.localPosition = new Vector3(0, 0.84f, 0.16f);
-        eye.transform.localScale = new Vector3(0.06f, 0.06f, 0.06f);
-        eye.GetComponent<Renderer>().sharedMaterial =
-            MaterialManager.GetSolidColor(new Color(0.15f, 0.10f, 0.05f));
-        Object.Destroy(eye.GetComponent<Collider>());
-
-        // Special markers based on type
+        // Trainer/Gym leader exclamation mark
         if (interactionType == InteractionType.GymLeader ||
             interactionType == InteractionType.GymTrainer)
         {
-            // Exclamation mark above head
             var mark = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             mark.name = "TrainerMark";
             mark.transform.SetParent(transform);
-            mark.transform.localPosition = new Vector3(0, 1.1f, 0);
-            mark.transform.localScale = new Vector3(0.08f, 0.08f, 0.08f);
+            mark.transform.localPosition = new Vector3(0, 1.15f, 0);
+            mark.transform.localScale = new Vector3(0.10f, 0.10f, 0.10f);
             mark.GetComponent<Renderer>().sharedMaterial =
-                MaterialManager.GetEmissive(new Color(0.9f, 0.2f, 0.2f), 1.0f);
+                MaterialManager.GetEmissive(new Color(0.9f, 0.2f, 0.2f), 0.8f);
             Object.Destroy(mark.GetComponent<Collider>());
         }
     }
@@ -1123,58 +1116,22 @@ public class InteriorNPC : MonoBehaviour
         { "Potion", "Super Potion", "Antidote", "Rappel", "Jurassic Ball", "Super Ball" };
     private static readonly int[] shopItemPrices = { 300, 700, 100, 1500, 200, 600 };
 
+    private void EnsureShopUI()
+    {
+        if (ShopUI.Instance == null)
+        {
+            var go = new GameObject("ShopUI");
+            go.AddComponent<ShopUI>();
+        }
+    }
+
     private void ShowBuyMenu()
     {
-        int count = shopItemIds.Length;
-        int money = GameState.Instance.Money;
-        string[] choices = new string[count + 1];
-        for (int i = 0; i < count; i++)
-            choices[i] = $"{shopItemNames[i]} - {shopItemPrices[i]}$";
-        choices[count] = "Retour";
-
-        if (DialogueUI.Instance != null)
+        EnsureShopUI();
+        ShopUI.Instance.OpenBuy(shopItemIds, shopItemNames, shopItemPrices, () =>
         {
-            DialogueUI.Instance.ShowChoices(
-                $"Vous avez {money}$.\nQue voulez-vous acheter ?",
-                choices,
-                (idx) =>
-                {
-                    if (idx >= 0 && idx < count)
-                    {
-                        int itemId = shopItemIds[idx];
-                        string itemName = shopItemNames[idx];
-                        int itemPrice = shopItemPrices[idx];
-
-                        if (GameState.Instance.Money >= itemPrice)
-                        {
-                            GameState.Instance.RemoveMoney(itemPrice);
-                            GameState.Instance.Inventory.AddItem(itemId);
-
-                            if (AudioManager.Instance != null)
-                                AudioManager.Instance.PlayMenuSelect();
-
-                            DialogueUI.Instance.ShowText(
-                                $"Vous avez achete {itemName} !\nIl vous reste {GameState.Instance.Money}$.",
-                                "VENDEUR",
-                                () => ShowBuyMenu()
-                            );
-                        }
-                        else
-                        {
-                            DialogueUI.Instance.ShowText(
-                                "Vous n'avez pas assez d'argent !",
-                                "VENDEUR",
-                                () => ShowBuyMenu()
-                            );
-                        }
-                    }
-                    else
-                    {
-                        HandleShopInteraction(); // Go back to buy/sell/quit
-                    }
-                }
-            );
-        }
+            HandleShopInteraction();
+        });
     }
 
     private void ShowSellMenu()
@@ -1193,52 +1150,11 @@ public class InteriorNPC : MonoBehaviour
             return;
         }
 
-        // Build sell choices (max 4 items due to DialogueUI MAX_CHOICES)
-        int displayCount = Mathf.Min(allItems.Count, 3);
-        string[] choices = new string[displayCount + 1];
-        for (int i = 0; i < displayCount; i++)
+        EnsureShopUI();
+        ShopUI.Instance.OpenSell(() =>
         {
-            var item = allItems[i];
-            var itemData = DataLoader.Instance?.GetItem(item.Key);
-            string name = itemData != null ? itemData.name : $"Objet #{item.Key}";
-            int sellPrice = itemData != null ? itemData.price / 2 : 50;
-            choices[i] = $"{name} x{item.Value} - {sellPrice}$";
-        }
-        choices[displayCount] = "Retour";
-
-        if (DialogueUI.Instance != null)
-        {
-            DialogueUI.Instance.ShowChoices(
-                "Que voulez-vous vendre ?",
-                choices,
-                (idx) =>
-                {
-                    if (idx >= 0 && idx < displayCount)
-                    {
-                        var item = allItems[idx];
-                        var itemData = DataLoader.Instance?.GetItem(item.Key);
-                        int sellPrice = itemData != null ? itemData.price / 2 : 50;
-                        string name = itemData != null ? itemData.name : $"Objet #{item.Key}";
-
-                        GameState.Instance.Inventory.RemoveItem(item.Key);
-                        GameState.Instance.AddMoney(sellPrice);
-
-                        if (AudioManager.Instance != null)
-                            AudioManager.Instance.PlayMenuSelect();
-
-                        DialogueUI.Instance.ShowText(
-                            $"Vous avez vendu {name} pour {sellPrice}$ !\nVous avez {GameState.Instance.Money}$.",
-                            "VENDEUR",
-                            () => ShowSellMenu()
-                        );
-                    }
-                    else
-                    {
-                        HandleShopInteraction();
-                    }
-                }
-            );
-        }
+            HandleShopInteraction();
+        });
     }
 
     private void CloseShopDialogue()

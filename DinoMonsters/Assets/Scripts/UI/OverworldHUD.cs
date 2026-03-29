@@ -160,15 +160,16 @@ public class OverworldHUD : MonoBehaviour
         hintRect.sizeDelta = new Vector2(360f, 36f);
 
         var hintImg = hintPanel.AddComponent<Image>();
-        hintImg.color = new Color(PANEL_BG.r, PANEL_BG.g, PANEL_BG.b, 0.85f);
+        hintImg.color = new Color(Constants.ColorCalcaire.r, Constants.ColorCalcaire.g, Constants.ColorCalcaire.b, 0.92f);
         var hintOutline = hintPanel.AddComponent<Outline>();
-        hintOutline.effectColor = PANEL_BORDER;
-        hintOutline.effectDistance = new Vector2(1f, 1f);
+        hintOutline.effectColor = Constants.ColorTerreBrulee;
+        hintOutline.effectDistance = new Vector2(2f, 2f);
 
         hintText = CreateText("HintText", hintRect, "Appuyez sur E pour interagir",
             new Vector2(0f, 0f), new Vector2(1f, 1f),
             Vector2.zero, Vector2.zero,
-            16, TextAlignmentOptions.Center);
+            15, TextAlignmentOptions.Center);
+        hintText.color = Constants.ColorTextDarkPrimary;
         var hintTextRect = hintText.GetComponent<RectTransform>();
         hintTextRect.anchorMin = Vector2.zero;
         hintTextRect.anchorMax = Vector2.one;
@@ -251,6 +252,7 @@ public class OverworldHUD : MonoBehaviour
     private RectTransform CreateHUDPanel(string name, RectTransform parent,
         Vector2 anchorMin, Vector2 anchorMax, Vector2 anchoredPos, Vector2 sizeDelta)
     {
+        // Outer frame (Terre brûlée border)
         var go = new GameObject(name);
         go.transform.SetParent(parent, false);
         var rect = go.AddComponent<RectTransform>();
@@ -260,12 +262,30 @@ public class OverworldHUD : MonoBehaviour
         rect.anchoredPosition = anchoredPos;
         rect.sizeDelta = sizeDelta;
 
-        var img = go.AddComponent<Image>();
-        img.color = new Color(PANEL_BG.r, PANEL_BG.g, PANEL_BG.b, 0.80f);
+        var borderImg = go.AddComponent<Image>();
+        borderImg.color = Constants.ColorTerreBrulee;
 
-        var outline = go.AddComponent<Outline>();
-        outline.effectColor = PANEL_BORDER;
-        outline.effectDistance = new Vector2(1f, 1f);
+        // Inner fill (warm dark brown, semi-transparent)
+        var inner = new GameObject("Inner");
+        inner.transform.SetParent(go.transform, false);
+        var innerRect = inner.AddComponent<RectTransform>();
+        innerRect.anchorMin = Vector2.zero;
+        innerRect.anchorMax = Vector2.one;
+        innerRect.offsetMin = new Vector2(2, 2);
+        innerRect.offsetMax = new Vector2(-2, -2);
+        var innerImg = inner.AddComponent<Image>();
+        innerImg.color = new Color(Constants.ColorUiBg.r, Constants.ColorUiBg.g, Constants.ColorUiBg.b, 0.88f);
+
+        // Amber accent line (top)
+        var accent = new GameObject("Accent");
+        accent.transform.SetParent(go.transform, false);
+        var accentRect = accent.AddComponent<RectTransform>();
+        accentRect.anchorMin = new Vector2(0, 1);
+        accentRect.anchorMax = new Vector2(1, 1);
+        accentRect.pivot = new Vector2(0.5f, 1);
+        accentRect.anchoredPosition = Vector2.zero;
+        accentRect.sizeDelta = new Vector2(0, 2);
+        accent.AddComponent<Image>().color = Constants.ColorResine;
 
         return rect;
     }
